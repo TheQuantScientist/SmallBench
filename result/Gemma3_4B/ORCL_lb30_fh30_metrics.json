@@ -1,0 +1,49 @@
+{
+  "symbol": "ORCL",
+  "lookback": 30,
+  "horizon": 30,
+  "test_start": "2026-01-01",
+  "n_valid_windows": 44,
+  "parse_failures": 0,
+  "date_range": [
+    "2026-01-02",
+    "2026-03-06"
+  ],
+  "metrics_per_step": [
+    {
+      "horizon_step": 1,
+      "mae": 8.370613636363636,
+      "rmse": 12.095627650105632,
+      "mape": 5.250245728457001,
+      "n_samples": 44
+    },
+    {
+      "horizon_step": 7,
+      "mae": 16.251,
+      "rmse": 21.71186457174552,
+      "mape": 10.355272957310378,
+      "n_samples": 44
+    },
+    {
+      "horizon_step": 14,
+      "mae": 26.21647727272727,
+      "rmse": 31.833711333270585,
+      "mape": 16.97234519897501,
+      "n_samples": 44
+    },
+    {
+      "horizon_step": 21,
+      "mae": 29.907590909090914,
+      "rmse": 37.307832893740596,
+      "mape": 19.956894678492876,
+      "n_samples": 44
+    },
+    {
+      "horizon_step": 30,
+      "mae": 35.42370454545455,
+      "rmse": 43.46559748263823,
+      "mape": 23.629407091507186,
+      "n_samples": 44
+    }
+  ]
+}

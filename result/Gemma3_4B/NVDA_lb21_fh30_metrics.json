@@ -1,0 +1,49 @@
+{
+  "symbol": "NVDA",
+  "lookback": 21,
+  "horizon": 30,
+  "test_start": "2026-01-01",
+  "n_valid_windows": 44,
+  "parse_failures": 0,
+  "date_range": [
+    "2026-01-02",
+    "2026-03-06"
+  ],
+  "metrics_per_step": [
+    {
+      "horizon_step": 1,
+      "mae": 3.957954545454541,
+      "rmse": 5.581216684721902,
+      "mape": 2.1715850603301448,
+      "n_samples": 44
+    },
+    {
+      "horizon_step": 7,
+      "mae": 6.05725,
+      "rmse": 7.921032552928023,
+      "mape": 3.320908280977907,
+      "n_samples": 44
+    },
+    {
+      "horizon_step": 14,
+      "mae": 8.137295454545454,
+      "rmse": 9.918971692258133,
+      "mape": 4.482061456407805,
+      "n_samples": 44
+    },
+    {
+      "horizon_step": 21,
+      "mae": 11.589295454545452,
+      "rmse": 14.772776220128701,
+      "mape": 6.529209618552133,
+      "n_samples": 44
+    },
+    {
+      "horizon_step": 30,
+      "mae": 13.401181818181819,
+      "rmse": 16.620504897428795,
+      "mape": 7.423671700405748,
+      "n_samples": 44
+    }
+  ]
+}

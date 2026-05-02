@@ -1,0 +1,49 @@
+{
+  "symbol": "CRM",
+  "lookback": 21,
+  "horizon": 30,
+  "test_start": "2026-01-01",
+  "n_valid_windows": 44,
+  "parse_failures": 0,
+  "date_range": [
+    "2026-01-02",
+    "2026-03-06"
+  ],
+  "metrics_per_step": [
+    {
+      "horizon_step": 1,
+      "mae": 14.007999999999992,
+      "rmse": 18.89868771177704,
+      "mape": 7.075889492539428,
+      "n_samples": 44
+    },
+    {
+      "horizon_step": 7,
+      "mae": 22.069068181818178,
+      "rmse": 25.53768129424368,
+      "mape": 10.985856385876511,
+      "n_samples": 44
+    },
+    {
+      "horizon_step": 14,
+      "mae": 29.951,
+      "rmse": 34.12024831719829,
+      "mape": 15.255349893796971,
+      "n_samples": 44
+    },
+    {
+      "horizon_step": 21,
+      "mae": 35.92090909090909,
+      "rmse": 42.238677251478244,
+      "mape": 18.840367224549837,
+      "n_samples": 44
+    },
+    {
+      "horizon_step": 30,
+      "mae": 41.28722727272727,
+      "rmse": 46.91081282458913,
+      "mape": 22.020240605124066,
+      "n_samples": 44
+    }
+  ]
+}

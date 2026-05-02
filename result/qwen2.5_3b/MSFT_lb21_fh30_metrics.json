@@ -1,0 +1,49 @@
+{
+  "symbol": "MSFT",
+  "lookback": 21,
+  "horizon": 30,
+  "test_start": "2026-01-01",
+  "n_valid_windows": 40,
+  "parse_failures": 4,
+  "date_range": [
+    "2026-01-02",
+    "2026-03-06"
+  ],
+  "metrics_per_step": [
+    {
+      "horizon_step": 1,
+      "mae": 11.584274999999998,
+      "rmse": 19.3415811614511,
+      "mape": 2.7128430079550885,
+      "n_samples": 40
+    },
+    {
+      "horizon_step": 7,
+      "mae": 23.640824999999996,
+      "rmse": 31.240255784404198,
+      "mape": 5.64679665136655,
+      "n_samples": 40
+    },
+    {
+      "horizon_step": 14,
+      "mae": 36.032775,
+      "rmse": 44.93693373913044,
+      "mape": 8.940063522750183,
+      "n_samples": 40
+    },
+    {
+      "horizon_step": 21,
+      "mae": 53.86469999999999,
+      "rmse": 59.60063026344604,
+      "mape": 13.64982850363819,
+      "n_samples": 40
+    },
+    {
+      "horizon_step": 30,
+      "mae": 60.94250000000001,
+      "rmse": 67.64477762584485,
+      "mape": 15.66198088973246,
+      "n_samples": 40
+    }
+  ]
+}
