@@ -1,0 +1,49 @@
+{
+  "symbol": "JPM",
+  "lookback": 30,
+  "horizon": 30,
+  "test_start": "2026-01-01",
+  "n_valid_windows": 6,
+  "parse_failures": 37,
+  "date_range": [
+    "2026-01-14",
+    "2026-03-03"
+  ],
+  "metrics_per_step": [
+    {
+      "horizon_step": 1,
+      "mae": 8.931666666666652,
+      "rmse": 9.932398686453666,
+      "mape": 2.9313729759714207,
+      "n_samples": 6
+    },
+    {
+      "horizon_step": 7,
+      "mae": 13.56116666666667,
+      "rmse": 15.470234759046155,
+      "mape": 4.562007952326538,
+      "n_samples": 6
+    },
+    {
+      "horizon_step": 14,
+      "mae": 17.88633333333333,
+      "rmse": 20.982702256859106,
+      "mape": 6.11274317855699,
+      "n_samples": 6
+    },
+    {
+      "horizon_step": 21,
+      "mae": 26.60766666666666,
+      "rmse": 31.85880462289819,
+      "mape": 9.22732819290482,
+      "n_samples": 6
+    },
+    {
+      "horizon_step": 30,
+      "mae": 33.10416666666665,
+      "rmse": 36.93230810324928,
+      "mape": 11.10282534173005,
+      "n_samples": 6
+    }
+  ]
+}

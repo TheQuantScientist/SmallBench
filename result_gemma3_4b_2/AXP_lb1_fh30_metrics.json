@@ -1,0 +1,49 @@
+{
+  "symbol": "AXP",
+  "lookback": 1,
+  "horizon": 30,
+  "test_start": "2026-01-01",
+  "n_valid_windows": 42,
+  "parse_failures": 1,
+  "date_range": [
+    "2026-01-02",
+    "2026-03-05"
+  ],
+  "metrics_per_step": [
+    {
+      "horizon_step": 1,
+      "mae": 5.9625,
+      "rmse": 8.386696354232415,
+      "mape": 1.742315197125326,
+      "n_samples": 42
+    },
+    {
+      "horizon_step": 7,
+      "mae": 16.842571428571425,
+      "rmse": 20.610820196937237,
+      "mape": 5.096612024249087,
+      "n_samples": 42
+    },
+    {
+      "horizon_step": 14,
+      "mae": 29.480476190476192,
+      "rmse": 33.73166944960096,
+      "mape": 9.236381109053497,
+      "n_samples": 42
+    },
+    {
+      "horizon_step": 21,
+      "mae": 43.54602380952382,
+      "rmse": 47.04625112462153,
+      "mape": 13.92976420313802,
+      "n_samples": 42
+    },
+    {
+      "horizon_step": 30,
+      "mae": 57.707690476190486,
+      "rmse": 61.51818054987214,
+      "mape": 18.77221676292222,
+      "n_samples": 42
+    }
+  ]
+}

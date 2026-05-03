@@ -1,0 +1,49 @@
+{
+  "symbol": "BAC",
+  "lookback": 7,
+  "horizon": 30,
+  "test_start": "2026-01-01",
+  "n_valid_windows": 36,
+  "parse_failures": 7,
+  "date_range": [
+    "2026-01-02",
+    "2026-03-05"
+  ],
+  "metrics_per_step": [
+    {
+      "horizon_step": 1,
+      "mae": 1.9371388888888887,
+      "rmse": 2.313503289866306,
+      "mape": 3.727409128314539,
+      "n_samples": 36
+    },
+    {
+      "horizon_step": 7,
+      "mae": 3.422888888888889,
+      "rmse": 3.9811572507947424,
+      "mape": 6.682932317339062,
+      "n_samples": 36
+    },
+    {
+      "horizon_step": 14,
+      "mae": 5.7214722222222205,
+      "rmse": 7.065815320179892,
+      "mape": 11.485133887252706,
+      "n_samples": 36
+    },
+    {
+      "horizon_step": 21,
+      "mae": 7.369777777777776,
+      "rmse": 9.909697416616154,
+      "mape": 14.991287003239695,
+      "n_samples": 36
+    },
+    {
+      "horizon_step": 30,
+      "mae": 10.576,
+      "rmse": 14.024921344600198,
+      "mape": 21.34179259847702,
+      "n_samples": 36
+    }
+  ]
+}

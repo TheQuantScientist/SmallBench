@@ -1,0 +1,49 @@
+{
+  "symbol": "C",
+  "lookback": 14,
+  "horizon": 30,
+  "test_start": "2026-01-01",
+  "n_valid_windows": 25,
+  "parse_failures": 18,
+  "date_range": [
+    "2026-01-02",
+    "2026-03-05"
+  ],
+  "metrics_per_step": [
+    {
+      "horizon_step": 1,
+      "mae": 4.50668,
+      "rmse": 6.993654784159708,
+      "mape": 3.912996255956208,
+      "n_samples": 25
+    },
+    {
+      "horizon_step": 7,
+      "mae": 7.953239999999999,
+      "rmse": 11.227336123943202,
+      "mape": 7.028471422058716,
+      "n_samples": 25
+    },
+    {
+      "horizon_step": 14,
+      "mae": 9.064319999999999,
+      "rmse": 12.495137236541261,
+      "mape": 7.968083349039251,
+      "n_samples": 25
+    },
+    {
+      "horizon_step": 21,
+      "mae": 13.87704,
+      "rmse": 17.173890254686036,
+      "mape": 12.28186001406305,
+      "n_samples": 25
+    },
+    {
+      "horizon_step": 30,
+      "mae": 20.973080000000003,
+      "rmse": 24.942714287743424,
+      "mape": 18.712879978092886,
+      "n_samples": 25
+    }
+  ]
+}

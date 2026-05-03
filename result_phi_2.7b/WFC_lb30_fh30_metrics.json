@@ -1,0 +1,49 @@
+{
+  "symbol": "WFC",
+  "lookback": 30,
+  "horizon": 30,
+  "test_start": "2026-01-01",
+  "n_valid_windows": 10,
+  "parse_failures": 33,
+  "date_range": [
+    "2026-02-10",
+    "2026-02-27"
+  ],
+  "metrics_per_step": [
+    {
+      "horizon_step": 1,
+      "mae": 3.8808999999999982,
+      "rmse": 4.466914606302653,
+      "mape": 4.495397803086162,
+      "n_samples": 10
+    },
+    {
+      "horizon_step": 7,
+      "mae": 5.7079,
+      "rmse": 6.387613020526526,
+      "mape": 6.838939214110465,
+      "n_samples": 10
+    },
+    {
+      "horizon_step": 14,
+      "mae": 10.6599,
+      "rmse": 13.08253714307741,
+      "mape": 13.63013890120146,
+      "n_samples": 10
+    },
+    {
+      "horizon_step": 21,
+      "mae": 15.211999999999998,
+      "rmse": 18.844478236342866,
+      "mape": 19.7734186700659,
+      "n_samples": 10
+    },
+    {
+      "horizon_step": 30,
+      "mae": 21.4319,
+      "rmse": 23.88629197050057,
+      "mape": 26.603423606650967,
+      "n_samples": 10
+    }
+  ]
+}
