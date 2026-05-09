@@ -1,0 +1,49 @@
+{
+  "symbol": "GOOGL",
+  "lookback": 21,
+  "horizon": 30,
+  "test_start": "2026-01-01",
+  "n_valid_windows": 40,
+  "parse_failures": 3,
+  "date_range": [
+    "2026-01-02",
+    "2026-03-05"
+  ],
+  "metrics_per_step": [
+    {
+      "horizon_step": 1,
+      "mae": 124.62925,
+      "rmse": 125.91034808048938,
+      "mape": 38.811271654312826,
+      "n_samples": 40
+    },
+    {
+      "horizon_step": 7,
+      "mae": 115.09575,
+      "rmse": 118.17120600933207,
+      "mape": 35.98900965603494,
+      "n_samples": 40
+    },
+    {
+      "horizon_step": 14,
+      "mae": 105.915075,
+      "rmse": 109.25121822238414,
+      "mape": 33.475437965900355,
+      "n_samples": 40
+    },
+    {
+      "horizon_step": 21,
+      "mae": 92.14090000000002,
+      "rmse": 96.25291178244946,
+      "mape": 29.810959907676498,
+      "n_samples": 40
+    },
+    {
+      "horizon_step": 30,
+      "mae": 84.137625,
+      "rmse": 87.2903803017549,
+      "mape": 27.40642508085157,
+      "n_samples": 40
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "symbol": "CSCO",
+  "lookback": 30,
+  "horizon": 30,
+  "test_start": "2026-01-01",
+  "n_valid_windows": 41,
+  "parse_failures": 2,
+  "date_range": [
+    "2026-01-02",
+    "2026-03-05"
+  ],
+  "metrics_per_step": [
+    {
+      "horizon_step": 1,
+      "mae": 54.35473170731707,
+      "rmse": 64.67421249956604,
+      "mape": 69.48234847619464,
+      "n_samples": 41
+    },
+    {
+      "horizon_step": 7,
+      "mae": 58.392,
+      "rmse": 69.25702902638096,
+      "mape": 75.07853399283071,
+      "n_samples": 41
+    },
+    {
+      "horizon_step": 14,
+      "mae": 62.16624390243902,
+      "rmse": 73.69732353084306,
+      "mape": 79.16323936219297,
+      "n_samples": 41
+    },
+    {
+      "horizon_step": 21,
+      "mae": 66.29014634146341,
+      "rmse": 78.86600483747348,
+      "mape": 84.44108536535393,
+      "n_samples": 41
+    },
+    {
+      "horizon_step": 30,
+      "mae": 70.71439024390244,
+      "rmse": 84.59502115228825,
+      "mape": 88.92103660201153,
+      "n_samples": 41
+    }
+  ]
+}
