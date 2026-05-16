@@ -1,0 +1,176 @@
+{
+  "symbol": "C",
+  "lookback": 30,
+  "horizon": 30,
+  "total_failures": 21,
+  "failures": [
+    {
+      "date": "2026-01-02",
+      "raw_output": "import json\nimport random\n\ndef generate_data(n):\n    data = {'system': []}\n    for i in range(1, n+1):\n        date = f\"202{random.randint(0, 9999)}\"\n        system_data = {'date': date, 'open': random.uniform(100, 200), 'high': random.uniform(200, 300), 'low': random.uniform(150, 250), 'close': random.uniform(250, 350)}\n        data['system'].append(system_data)\n    return json.dumps(data)\n\nn = 30\nprint(generate_data(n))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-01-05",
+      "raw_output": "import pandas as pd\nimport numpy as np\n\n# Read the JSON file into a DataFrame\ndf = pd.read_json('data.json')\n\n# Select the 'price' column and round to 2 decimal places\nprices = df['price'].round(2)\n\n# Concatenate the prices with semicolons\noutput = ';'.join(map(str, prices))\n\nprint(output)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-01-06",
+      "raw_output": "import json\nimport random\n\ndef get_random_data(num):\n    \"\"\"\n    Generate a random dictionary with the given number of entries and return it as a JSON string.\n    \"\"\"\n    # Create an empty list to store the data\n    data = []\n\n    # Loop num times and generate a random dictionary for each iteration\n    for i in range(num):\n        # Generate a random key-value pair\n        key = str(random.randint(1, 100))\n        value = round(random.uniform(0, 1), 2)\n\n        # Add the key-value pair to the data list\n        data.append({'key': key, 'value': value})\n\n    # Convert the data list to a JSON string and return it\n    return json.dumps(data)\n\ndef main():\n \n \n \n \n \nif __name__ == \"__main__\":",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-01-07",
+      "raw_output": "import json\nimport re\n\ndata = {'system': 'System', 'data': {'date': '20220101', 'open': 116.602223807069, 'high': 118.6913287706683, 'low': 115.8112396858791, 'close': 121.864791870117, 'volume': 19940100}}\n\n# Extract the date from the data\ndate = re.findall(r'\\d{8}', json.dumps(data['data']))[0]\n\n# Calculate the average of the high and low values\navg_high_low = (data['data']['high'] + data['data']['low']) / 2\n\n# Round the average to two decimal places\nrounded_avg_high_low = round(avg_high_low, 2)\n\n# Print the date and the rounded average\nprint(date + \";\", rounded_avg_high_low)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-01-08",
+      "raw_output": "import json\nimport random\n\ndef generate_random_data(num_records):\n    data = {'date': [], 'open': [], 'high': [], 'low': [], 'close': []}\n    for i in range(num_records):\n        date = random.choice(['20220101', '20220201', '20220301'])\n        open_price = round(random.uniform(100, 200), 2)\n        high_price = round(random.uniform(open_price * 1.1, open_price * 1.2), 2)\n        low_price = round(random.uniform(open_price * 0.9, open_price * 0.95), 2)\n        close_price = round(random.uniform(low_price * 1.05, low_price * 1.1), 2)\n        data['date'].append(date)\n        data['open'].append(open_price)\n        data['high'].append(high_price)\n        data['low'].append(low_price)\n        data['close'].append(close_price)\n    return json.dumps(data, indent=4)\n\nprint(generate_random_data(30))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-01-09",
+      "raw_output": "import json\nimport random\n\ndef generate_random_data(num_records):\n    data = {'system': []}\n    for i in range(num_records):\n        record = {}\n        date = datetime.datetime.now() + datetime.timedelta(days=i)\n        record['date'] = date.strftime('%Y-%m-%d')\n        system_data = {'system': []}\n        for j in range(30):\n            value = random.uniform(0, 100)\n            system_data['system'].append(value)\n        record['system'] = system_data\n        data['system'].append(record)\n    return json.dumps(data, indent=4)\n\nprint(generate_random_data(10))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-01-12",
+      "raw_output": "import json\nimport re\n\ndata = {'system': 'System', 'name': 'John Doe', 'age': 30}\njson_string = json.dumps(data)\n\n# Remove all non-numeric characters and split the string by semicolon\nnumbers = [float(num) for num in re.findall('\\d+\\.\\d{2}', json_string)]\n\n# Print the first 30 numbers\nfor i, number in enumerate(numbers):\n    if i == 29:\n        break\n    print(number)\n```",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-01-16",
+      "raw_output": "import json\nimport random\n\ndef generate_random_data(num_days):\n    data = {'date': [], 'open': [], 'high': [], 'low': [], 'close': []}\n    for i in range(num_days):\n        date = f\"202{random.randint(0, 9999)}\"\n        data['date'].append(date)\n        open_price = random.uniform(100, 200)\n        high_price = random.uniform(open_price + 1, 300)\n        low_price = random.uniform(open_price - 1, high_price - 1)\n        close_price = random.uniform(low_price + 1, high_price)\n        data['open'].append(round(open_price, 2))\n        data['high'].append(round(high_price, 2))\n        data['low'].append(round(low_price, 2))\n        data['close'].append(round(close_price, 2))\n    return data\n\ndata = generate_random_data(30)\njson_data = json.dumps(data, indent=4)\nprint(json_data)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-01-20",
+      "raw_output": "import json\nimport random\n\ndef get_random_numbers(data):\n    \"\"\"\n    This function takes a dictionary of data and returns a list of 30 random numbers, \n    each number being the average of two randomly selected values from the 'values' key.\n    \"\"\"\n    nums = []\n    for i in range(30):\n        value1 = random.choice(data['values'])\n        value2 = random.choice(data['values'])\n        avg = (value1 + value2) / 2\n        nums.append(avg)\n    return nums\n\ndef format_numbers(nums):\n    \"\"\"\n    This function takes a list of numbers and formats them as strings, with two decimal places.\n    \"\"\"\n    formatted_nums = [f\"{num:.2f}\" for num in nums]\n    return formatted_nums\n\ndata = json.loads(input())\nrandom_numbers = get_random_numbers(data)\nformatted_numbers = format_numbers(random_numbers)\nprint(\";\".join(formatted_numbers))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-01-22",
+      "raw_output": "import json\nimport random\n\ndef generate_random_numbers(data):\n    # get the number of days in a month from the data\n    num_days = len(data['dates'])\n    # create an empty list to store the random numbers\n    random_numbers = []\n    for i in range(num_days):\n        # get the number of days between the current and previous date\n        num_days_between = data['dates'][i+1] - data['dates'][i]\n        # generate a random number between 0 and the number of days between\n        random_number = random.randint(0, num_days_between)\n        # add the random number to the list\n        random_numbers.append(random_number)\n    return random_numbers\n\n# read the data from a JSON file\nwith open('data.json') as f:\n    data = json.load(f)\n\n# generate 10 random numbers using the function\nrandom_numbers = generate_random_numbers(data)\n\n# print the random numbers\nprint(random_numbers[:10]) # output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-01-23",
+      "raw_output": "import json\nimport random\n\ndef generate_random_data(num_days):\n    data = {'date': [], 'open': [], 'high': [], 'low': [], 'close': []}\n    for i in range(num_days):\n        date = f'202{i+1:02d}-01'\n        random.seed(f'{date}')\n        data['date'].append(date)\n        data['open'].append(round(random.uniform(110, 120), 2))\n        data['high'].append(round(random.uniform(120, 130), 2))\n        data['low'].append(round(random.uniform(100, 110), 2))\n        data['close'].append(round(random.uniform(110, 120), 2))\n    return data\n\ndef write_json_file(filename, data):\n    with open(filename, 'w') as f:\n        json.dump(data, f)\n\nif __name__ == \"__main__\":\n    num_days = 30\n    filename = 'random_data.json'\n    data = generate_random_data(num_days)\n    write_json_file(filename, data)\n```",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-01-28",
+      "raw_output": "import random\nimport string\n\ndef generate_random_string(length):\n    return ''.join(random.choices(string.ascii_uppercase + string.digits, k=length))\n\ndef generate_random_numbers(num_of_numbers, num_of_decimals):\n    result = []\n    for i in range(num_of_numbers):\n        number = random.randint(1, 100)\n        result.append('{:.{}f}'.format(number, num_of_decimals))\n    return ';'.join(result)\n\ndef generate_random_data():\n    num_of_numbers = 30\n    num_of_decimals = 2\n    return {'date':generate_random_string(10), \n            'start_time':generate_random_string(10), \n            'end_time':generate_random_string(10), \n            'total_hours':generate_random_numbers(num_of_numbers, num_of_decimals), \n            'starting_hour':generate_random_numbers(num_of_numbers, num_of_decimals), \n            'ending_hour':generate_random_numbers(num_of_numbers, num_of_decimals)}\n\n# Example usage:\ndata = generate_random_data()\nprint(f\"{data['date']} {data['start_time']} {data['end_time']} {data['total_hours']} {data['starting_hour']} {data['ending_hour']}\")\n```",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-03",
+      "raw_output": "import json\nimport re\n\njson_data = '''{\n    \"system\": {\n        \"name\": \"System\",\n        \"version\": \"1.0\",\n        \"description\": \"A system for managing data\",\n        \"date_created\": \"2021-01-01T00:00:00Z\",\n        \"date_modified\": \"2021-02-01T00:00:00Z\",\n        \"last_updated\": \"2021-03-01T00:00:00Z\",\n        \"users\": [\n            {\n                \"name\": \"User1\",\n                \"email\": \"user1@example.com\",\n                \"password\": \"password1\"\n            },\n            {\n                \"name\": \"User2\",\n                \"email\": \"user2@example.com\",\n                \"password\": \"password2\"\n            }\n        ]\n    }\n}'''\n\ndata = json.loads(json_data)\n\n# Extract the user names from the users list\nusers = [user[\"name\"] for user in data[\"system\"][\"users\"]]\n\n# Join the user names with a semicolon separator and print the result\nprint(\";\".join(users))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-04",
+      "raw_output": "import re\n\ndef extract_data(json_string):\n    pattern = r'(\\d+\\.\\d{1,2})'\n    matches = re.findall(pattern, json_string)\n    return matches[:30]",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-05",
+      "raw_output": "import re\n\ndef extract_data(json_string):\n    # Extract the data from the json string\n    data = json.loads(json_string)\n\n    # Initialize an empty list to store the extracted numbers\n    numbers = []\n\n    # Loop through each day in the data\n    for day in data['system']:\n        # Use a regular expression to find all the numbers with two decimal places\n        match = re.findall(r\"\\d+\\.\\d{2}\", str(day))\n\n        # Append the first 30 numbers to the list\n        numbers.extend(match[:30])\n\n    return numbers",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-09",
+      "raw_output": "import json\nimport random\n\ndef generate_random_data(num_rows):\n    data = []\n    for i in range(num_rows):\n        date = f\"202{i+1}-01\"\n        values = [random.uniform(100, 200) for _ in range(30)]\n        data.append({'date': date, 'values': values})\n    return json.dumps(data)\n\nnum_rows = 10\nprint(generate_random_data(num_rows))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-10",
+      "raw_output": "import re\n\ndef extract_numbers(data):\n    pattern = r'\\d+\\.\\d{1,2}'\n    matches = re.findall(pattern, data)\n    return matches\n\nprint(extract_numbers(input))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-11",
+      "raw_output": "import json\nimport re\n\ndef extract_data(json_file):\n    with open(json_file) as f:\n        data = json.load(f)\n\n    # Extract the data from each day and store it in a list of lists\n    daily_data = []\n    for date, values in data.items():\n        daily_data.append([values['open'], values['high'], values['low']])\n\n    # Convert the daily data to a single list of numbers\n    all_data = [num for day in daily_data for num in day]\n\n    # Remove any non-numeric characters and convert to float\n    clean_data = [float(re.sub('[^0-9.]', '', str(num))) for num in all_data]\n\n    return clean_data\n\njson_file = \"stock_prices.json\"\nclean_data = extract_data(json_file)\nprint(clean_data)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-17",
+      "raw_output": "import json\nimport re\n\nwith open('data.json') as f:\n    data = json.load(f)\n\nfor date in data['system']:\n    date_str = str(date)\n    # remove the '.' and ',' from the string\n    date_str = re.sub(r',|\\.', '', date_str)\n    # split the string into a list of numbers\n    numbers = [float(num) for num in date_str.split(';')]\n    print(numbers[:30])\n```",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-26",
+      "raw_output": "import re\n\ndef extract_data(json_string):\n    data = json.loads(json_string)\n    result = []\n    for i in range(30):\n        date = data['system'][i]\n        open_price = re.findall('\\d+\\.\\d{2}', data['system'][i])[0]\n        high_price = re.findall('\\d+\\.\\d{2}', data['system'][i])[1]\n        low_price = re.findall('\\d+\\.\\d{2}', data['system'][i])[2]\n        result.append(f\"{date}: {open_price}, {high_price}, {low_price}\")\n    return ';'.join(result)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-27",
+      "raw_output": "import json\nimport re\n\ndef get_numbers(data):\n    # Extract the data from the JSON object\n    numbers = []\n    for date, values in data.items():\n        for value in values['values']:\n            # Find all the numbers in the string and store them in a list\n            nums = re.findall(r\"\\d+\\.\\d+\", str(value))\n            for num in nums:\n                numbers.append(float(num))\n\n    # Return the list of numbers\n    return numbers\n\n# Test the function with an example JSON object\ndata = json.loads('{\"system\": {\"values\": [{\"date\": \"2021-01-01\", \"values\": [{\"open\": 110.0, \"high\": 111.0, \"low\": 109.0, \"close\": 110.0}]},",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    }
+  ]
+}

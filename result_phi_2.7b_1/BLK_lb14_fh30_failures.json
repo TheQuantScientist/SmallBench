@@ -1,0 +1,16 @@
+{
+  "symbol": "BLK",
+  "lookback": 14,
+  "horizon": 30,
+  "total_failures": 1,
+  "failures": [
+    {
+      "date": "2026-02-13",
+      "raw_output": "import json\nimport pandas as pd\n\ndef stock_forecast(data):\n    # load data from JSON file\n    df = pd.read_json(data)\n\n    # calculate daily returns\n    df['returns'] = df['close'].pct_change()\n\n    # filter out negative returns\n    df = df[df['returns'] > 0]\n\n    # drop the first 14 rows (lookback days)\n    df = df.drop(labels=range(14), axis=0)\n\n    # calculate the moving average of the last 30 days\n    df['ma_30'] = df['returns'].rolling(window=30).mean()\n\n    # predict the next 30 daily closing prices\n    df['predicted'] = df['ma_30'].shift(-1) * 100 + df['close'][-1]\n\n    # convert to a list of numbers with 4 decimal places\n    return [round(num, 4) for num in df['predicted']]\n\n# test the function with user input data\ndata = json.loads('{\"symbol\":\"BLK\",\"timeframe\":\"1d\",\"lookback_days\":14,\"data\":[{\"Date\":\"2026-01-26\",\"open\":1127.2942394800575,\"high\":1135.1604818712249,\"low\":111",
+      "parse_failed": true,
+      "lookback": 14,
+      "horizon": 30,
+      "symbol": "BLK"
+    }
+  ]
+}

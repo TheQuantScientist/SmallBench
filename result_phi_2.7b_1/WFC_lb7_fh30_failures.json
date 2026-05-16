@@ -1,0 +1,24 @@
+{
+  "symbol": "WFC",
+  "lookback": 7,
+  "horizon": 30,
+  "total_failures": 2,
+  "failures": [
+    {
+      "date": "2026-02-02",
+      "raw_output": "import json\nimport numpy as np\n\n# Load the data from the user input\ndata = json.loads(input())\n\n# Extract the stock symbol and timeframe\nsymbol = data['symbol']\ntimeframe = data['timeframe']\nlookback_days = data['lookback_days']\n\n# Convert the data to a numpy array\ndf = np.array([[float(x) for x in row['data'][0]['open']] for row in data['data']])\n\n# Calculate the moving average for each day\nma = df.rolling(lookback_days).mean()\n\n# Predict the next 30 daily closing prices\npredictions = ma[-1] + np.random.normal(0, 0.01, 30)\n\n# Format the predictions as a string of numbers separated by semicolons\noutput = ';'.join([f\"{x:.4f}\" for x in predictions])\n\nprint(output)",
+      "parse_failed": true,
+      "lookback": 7,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-24",
+      "raw_output": "import json\nimport random\n\ndata = json.loads(input)\n\ndef get_random_date():\n    return data['symbol'] + '-' + str(random.randint(2021, 2026))[-2:] + '-' + str(random.randint(1, 28))\n\ndef get_random_price():\n    return round(random.uniform(data['open'], data['close']), 2)\n\nfor _ in range(30):\n    print('{:.4f}'.format(get_random_price()), end=';')\n\n# Output example: \n# 142.35;142.85;143.35;\n# ...",
+      "parse_failed": true,
+      "lookback": 7,
+      "horizon": 30,
+      "symbol": "WFC"
+    }
+  ]
+}

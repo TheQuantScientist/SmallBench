@@ -1,0 +1,32 @@
+{
+  "symbol": "V",
+  "lookback": 1,
+  "horizon": 30,
+  "total_failures": 3,
+  "failures": [
+    {
+      "date": "2026-02-19",
+      "raw_output": "import json\nimport random\n\ndef stock_forecast(data):\n    symbol = data['symbol']\n    timeframe = data['timeframe']\n    lookback_days = data['lookback_days']\n\n    # Generate a list of random numbers for the next 30 days\n    random_numbers = [round(random.uniform(data['open'], data['close']), 2) for _ in range(30)]\n\n    return ';'.join([str(num) for num in random_numbers])\n\n# Example usage:\nuser_data = {\"symbol\":\"V\",\"timeframe\":\"1d\",\"lookback_days\":1,\"data\":[{\"Date\":\"2026-02-18\",\"open\":319.5,\"high\":322.2799987792969,\"low\":316.7200012207031,\"close\":320.29998779296875,\"volume\":7091900}]}\noutput = stock_forecast(user_data)\nprint(output)\n```",
+      "parse_failed": true,
+      "lookback": 1,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-03-03",
+      "raw_output": "import json\nimport random\n\ndef stock_forecast(data):\n    symbol = data['symbol']\n    timeframe = data['timeframe']\n    lookback_days = data['lookback_days']\n\n    # Generate a list of dates for the next 30 days\n    dates = [f\"2021-01-{i+1}\" for i in range(30)]\n\n    # Generate random stock prices for each date\n    prices = []\n    for date in dates:\n        open_price = round(random.uniform(data['open'], data['high']), 2)\n        high_price = round(random.uniform(data['low'], data['high']), 2)\n        low_price = round(random.uniform(data['low'], data['high']), 2)\n        volume = random.randint(0, 1000000)\n\n        # Add the stock price to the list of prices for this date\n        prices.append({\n            'date': date,\n            'open_price': open_price,\n            'high_price': high_price,\n            'low_price': low_price,\n            'volume': volume\n        })\n\n    # Generate the stock forecast for each date\n    forecast = []\n    for i in range(30):\n        date = dates[i]\n        open_price = prices[i]['open_price']\n        high_price = prices[i]['high_price']\n        low_price = prices[i]['low_price']\n        volume = prices[i]['volume']\n\n        # Calculate the average price for this date\n        average_price = round((open_price + high_price + low_price) / 3, 2)\n\n        # Generate a random number between 0 and 1 to determine if the stock goes up or down\n        random_number = random.uniform(0, 1)\n\n        if random_number < 0.5:\n            average_price += round(random.uniform(-1, 1), 2)\n\n        # Add the forecast for this date to the list of forecasts\n        forecast.append({\n            'date': date,\n            'open_price': open_price,\n            'high_price': high_price,\n            'low_price': low_price,\n            'volume': volume,\n            'average_price': average_price\n        })\n\n    # Convert the list of forecasts to a string with semicolon-separated numbers\n    forecast_string = ';'.join([f\"{forecast[i]['date']}:{forecast[i]['open_price']}:{forecast[i]['high_price']}:{forecast[i]['low_price']}:{forecast[i]['volume']}:{forecast[i]['average_price']}\" for i in range(30)])\n\n    return forecast_string\n\n# Test the function with a sample JSON data\ndata = {\n    \"symbol\": \"V\",\n    \"timeframe\": \"1d\",\n    \"lookback_days\": 1,\n    \"data\": [{\n        \"Date\": \"2021-03-02\",\n        \"open\": 315.5,\n        \"high\": 322.6000061035156,\n        \"low\": 314.6000061035156,\n        \"close\": 320.510009765625,\n        \"volume\": 6674900\n    }]\n}\n\nprint(stock_forecast(data)) # Output: 142.35;142.85;143.35;...",
+      "parse_failed": true,
+      "lookback": 1,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-03-04",
+      "raw_output": "import json\nimport random\n\ndef stock_forecast(data):\n    symbol = data['symbol']\n    timeframe = data['timeframe']\n    lookback_days = data['lookback_days']\n\n    # Get the historical data for the symbol and timeframe\n    historical_data = get_historical_data(symbol, timeframe)\n\n    # Calculate the moving average of the closing prices\n    moving_average = calculate_moving_average(historical_data)\n\n    # Generate a random number between -1 and 1 for each day in the future\n    random_numbers = [random.uniform(-1, 1) for _ in range(30)]\n\n    # Calculate the predicted closing prices for the next 30 days\n    predicted_prices = calculate_predicted_prices(moving_average, random_numbers)\n\n    # Format the predicted prices as a string with 4 decimal places and semicolon-separated\n    formatted_prices = ';'.join([f\"{price:.4f}\" for price in predicted_prices])\n\n    return formatted_prices\n\ndef get_historical_data(symbol, timeframe):\n    # This is a placeholder function that would actually retrieve the historical data from an API or database\n    return [{\"Date\": \"2021-03-01\", \"open\": 100.0, \"high\": 110.0, \"low\": 90.0, \"close\": 95.0, \"volume\": 1000}]\n\ndef calculate_moving_average(historical_data):\n    # This is a placeholder function that would actually calculate the moving average of the closing prices\n    return [100.0] * len(historical_data)\n\ndef calculate_predicted_prices(moving_average, random_numbers):\n    # This is a placeholder function that would actually use the moving average and random numbers to predict the next 30 daily Closing prices\n    return [random.uniform(moving_average[-1] - 1, moving_average[-1] + 1) for _ in range(30)]\n\ndata = {\n    \"symbol\": \"V\",\n    \"timeframe\": \"1d\",\n    \"lookback_days\": 1\n}\n\nformatted_prices = stock_forecast(data)\nprint(formatted_prices)\n```",
+      "parse_failed": true,
+      "lookback": 1,
+      "horizon": 30,
+      "symbol": "V"
+    }
+  ]
+}

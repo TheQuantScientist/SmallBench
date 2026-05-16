@@ -1,0 +1,328 @@
+{
+  "symbol": "WFC",
+  "lookback": 30,
+  "horizon": 30,
+  "total_failures": 40,
+  "failures": [
+    {
+      "date": "2026-01-02",
+      "raw_output": "import re\n\ndef format_data(data):\n    output = []\n    for date in data['system']:\n        values = [re.sub('[^0-9.]', '', value) for value in data['system'][date].split()]\n        if len(values) == 30:\n            output.append(';'.join(values))\n    return output\n\nprint(format_data(data))\n# Output: ['142.35;142.85;143.35']",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-05",
+      "raw_output": "import json\nimport random\n\ndef generate_random_data(n):\n    data = {'system': {}}\n    for i in range(1, n+1):\n        date = '202{}-01'.format(i)\n        random.seed(date)\n        data['system'][date] = {'open': round(random.uniform(90, 100), 2), 'high': round(random.uniform(100, 110), 2), 'low': round(random.uniform(80, 90), 2), 'close': round(random.uniform(95, 105), 2), 'volume': random.randint(1000, 10000)}\n    return data\n\ndata = generate_random_data(30)\njson_string = json.dumps(data, indent=4)\nprint(json_string)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-06",
+      "raw_output": "import json\nimport re\n\ndef extract_numbers(data):\n    # Extract the 'numbers' key from the data dictionary\n    numbers = data['numbers']\n\n    # Remove any leading or trailing spaces and newlines\n    for key in numbers:\n        numbers[key] = re.sub(r'^\\s+|\\s+$', '', numbers[key])\n\n    # Split each number by the semicolon separator\n    for key in numbers:\n        numbers[key] = [float(num) for num in numbers[key].split(';')]\n\n    return numbers\n\n# Test the function with the input data\ndata = {'numbers': {'System': 'You are a system.', 'User': 'You are a user.'}}\nprint(extract_numbers(data))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-07",
+      "raw_output": "import json\nimport random\n\ndef generate_random_numbers(data):\n    # get the number of days in a month from the data\n    num_days = len(data['dates'])\n\n    # create an empty list to store the numbers\n    numbers = []\n\n    # loop through each day and generate 30 random numbers between 0 and 1\n    for i in range(num_days):\n        nums = [random.random() for _ in range(30)]\n\n        # round the numbers to two decimals\n        rounded_nums = [round(num, 2) for num in nums]\n\n        # add the numbers to the list\n        numbers.extend(rounded_nums)\n\n    return numbers\n\n# read the data from a JSON file\nwith open('data.json') as f:\n    data = json.load(f)\n\n# generate 30 random numbers for each day in the data\nrandom_numbers = [generate_random_numbers(data) for _ in range(num_days)]\n\n# print the random numbers\nfor i, nums in enumerate(random_numbers):\n    print('Day', i+1, ':', ', '.join([str(num) for num in nums]))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-08",
+      "raw_output": "import json\nimport random\n\ndef generate_random_data(num_days):\n    data = {'system': {}}\n    for i in range(1, num_days + 1):\n        date = f\"202{i}-01\"\n        system = random.choice(['System A', 'System B', 'System C'])\n        data['system'][date] = {'open': round(random.uniform(90, 100), 2), 'high': round(random.uniform(95, 105), 2), 'low': round(random.uniform(85, 95), 2), 'close': round(random.uniform(92, 98), 2), 'volume': random.randint(500000, 1000000)}\n    return data\n\ndata = generate_random_data(30)\njson_data = json.dumps(data, indent=4)\nprint(json_data)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-09",
+      "raw_output": "import json\nimport random\n\ndef generate_data(num_days):\n    data = {'system': {'date': '20220101', 'open': 94.93395, 'high': 95.689704, 'low': 93.729338, 'close': 95.13245, 'volume': 1240600}}\n    for i in range(num_days - 1):\n        data['system'][f'date_{i+1}'] = f'202201{i+2:02d}'\n        data['system'][f'open_{i+1}'] = random.uniform(data['system'][f'low_{i+1}'], data['system'][f'high_{i+1}'])\n        data['system'][f'close_{i+1}'] = random.uniform(data['system'][f'open_{i+1}'], data['system'][f'low_{i+1}'])\n        data['system'][f'volume_{i+1}'] = random.randint(0, 1000000)\n    return json.dumps(data)\n\nprint(generate_data(30))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-12",
+      "raw_output": "import re\n\ndef extract_data(json_string):\n    pattern = r'(\\d+\\.\\d{2})\\s*;\\s*(\\d+\\.\\d{2})'\n    matches = re.findall(pattern, json_string)\n    return matches\n\njson_string = \"\"\"{\n\"system\": {\n\"name\": \"System\",\n\"version\": \"1.0\",\n\"description\": \"A system for testing\",\n\"data\": [\n\"2021-01-01T00:00:00Z\",\n\"10.2.3\",\n\"192.168.1.1\",\n\"80\",\n\"GET /index.html HTTP/1.0\\r\\nHost: www.example.com\\r\\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3\"\n],\n\"status\": 200\n}\"\"\"\n\nmatches = extract_data(json_string)\nprint(matches)\n# Output: [('10.2.3', '192.168.1.1')]",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-13",
+      "raw_output": "import json\nimport random\n\ndef generate_random_data(n):\n    data = {'system': 'System', 'date': '20220101', 'time': '12:00:00', 'temperature': round(random.uniform(20, 30), 2) + 273.15}\n    for i in range(30):\n        data['sensor_' + str(i+1)] = random.randint(0, 100)\n    return json.dumps(data)\n\nprint(generate_random_data(30))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-14",
+      "raw_output": "import json\nimport random\n\ndef generate_random_data(num_entries):\n    data = {'system': {}}\n    for i in range(num_entries):\n        date = f\"202{i+1}-01\"\n        system = random.choice(['System A', 'System B', 'System C'])\n        data['system'][date] = {'open': round(random.uniform(90, 100), 2), 'high': round(random.uniform(95, 105), 2), 'low': round(random.uniform(85, 95), 2)}\n    return json.dumps(data)\n\nnum_entries = 30\nprint(generate_random_data(num_entries))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-15",
+      "raw_output": "import json\nimport random\n\ndef generate_random_data(n):\n    data = {'system': {}}\n    for i in range(30):\n        date = f\"202{i+1}-01\"\n        system = random.choice(['System A', 'System B', 'System C'])\n        data['system'][date] = {'open': round(random.uniform(90, 100), 2), 'high': round(random.uniform(100, 110), 2), 'low': round(random.uniform(80, 90), 2), 'close': round(random.uniform(95, 105), 2) }\n    return data\n\ndata = generate_random_data(30)\njson_data = json.dumps(data, indent=4)\nprint(json_data)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-16",
+      "raw_output": "import json\nimport random\n\ndef generate_random_data(n):\n    data = {'system': '', 'user': ''}\n    for i in range(30):\n        system_value = round(random.uniform(0, 100), 2)\n        user_value = round(random.uniform(0, 100), 2)\n        data['system'] += str(system_value) + ';'\n        data['user'] += str(user_value) + ';'\n    return json.dumps(data)\n\nprint(generate_random_data(30))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-20",
+      "raw_output": "import json\nimport re\n\ndef extract_numbers(json_string):\n    data = json.loads(json_string)\n    numbers = []\n    for date, values in data.items():\n        for value in values.values():\n            # use regex to match the first 30 digits after the decimal point\n            match = re.search(r'\\d+\\.\\d{2}', str(value))\n            if match:\n                numbers.append(float(match.group()))\n                # break after the first 30 numbers to avoid duplicates\n                if len(numbers) == 30:\n                    return numbers\n                else:\n                    continue\n    # if no 30 numbers are found, return an empty list\n    return []\n\njson_string = \"\"\"{\n    \"system\": {\n        \"name\": \"System\",\n        \"version\": \"1.0\",\n        \"date\": \"2021-01-01\",\n        \"cpu_usage\": [\n            {\n                \"name\": \"CPU1\",\n                \"value\": 0.8,\n            },\n            {\n                \"name\": \"CPU2\",\n                \"value\": 0.6,\n            },\n            {\n                \"name\": \"CPU3\",\n                \"value\": 0.4,\n            },\n            {\n                \"name\": \"CPU4\",\n                \"value\": 0.2,\n            },\n            {\n                \"name\": \"CPU5\",\n                \"value\": 0.1,\n            },\n            {\n                \"name\": \"CPU6\",\n                \"value\": 0.05,\n            },\n            {\n                \"name\": \"CPU7\",\n                \"value\": 0.01,\n            },\n            {\n                \"name\": \"CPU8\",\n                \"value\": 0.005,\n            },\n            {\n                \"name\": \"CPU9\",\n                \"value\": 0.003,\n            },\n            {\n                \"name\": \"CPU10\",\n                \"value\": 0.001,\n            },\n            {\n                \"name\": \"CPU11\",\n                \"value\": 0.0005,\n            },\n            {\n                \"name\": \"CPU12\",\n                \"value\": 0.0001,\n            },\n            {\n                \"name\": \"CPU13\",\n                \"value\": 0.00005,\n            },\n            {\n                \"name\": \"CPU14\",\n                \"value\": 0.00001,\n            },\n            {\n                \"name\": \"CPU15\",\n                \"value\": 0.000001,\n            },\n            {\n                \"name\": \"CPU16\",\n                \"value\": 0.0000001,\n            },\n            {\n                \"name\": \"CPU17\",\n                \"value\": 0.0000005,\n            },\n            {\n                \"name\": \"CPU18\",\n                \"value\": 0.00000001,\n            },\n            {\n                \"name\": \"CPU19\",\n                \"value\": 0.000000005,\n            },\n            {\n                \"name\": \"CPU20\",\n                \"value\": 0.0000000001,\n            },\n            {\n                \"name\": \"CPU21\",\n                \"value\": 0.00000000005,\n            },\n            {\n                \"name\": \"CPU22\",\n                \"value\": 0.00000000001,\n            },\n            {\n                \"name\": \"CPU23\",\n                \"value\": 0.000000000001,",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-21",
+      "raw_output": "import json\nimport re\n\ndef extract_numbers(data):\n    # Parse the data as a dictionary of dictionaries\n    data = json.loads(data)\n\n    # Extract the list of dates and values from the main dictionary\n    dates = [d['Date'] for d in data]\n    values = [d['Value'] for d in data]\n\n    # Remove any empty strings or None values from the lists\n    dates = [d for d in dates if d is not None and d != '']\n    values = [v for v in values if v is not None and v != '']\n\n    # Find the first date that has at least 30 numbers after the decimal point\n    for i, d in enumerate(dates):\n        match = re.search('\\d+\\.\\d{2}', values[i])\n        if match:\n            # Extract the numbers from the date and value strings\n            nums = [float(n) for n in re.findall('\\d+\\.\\d{2}', d)] + [float(n) for n in re.findall('\\d+\\.\\d{2}', values[i])]\n            # Check if the number of numbers is at least 30\n            if len(nums) >= 30:\n                # Return the date and value as a string\n                return d + ';' + values[i]\n\n    # If no such date is found, return None\n    return None",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-22",
+      "raw_output": "import json\nimport random\n\ndef generate_random_data(num_entries):\n    data = {'system': {'name': 'System', 'version': '1.0', 'description': 'A simple system for generating random numbers.', 'date_created': '2021-01-01', 'date_updated': '2021-01-02'}}\n    data['users'] = []\n    for i in range(num_entries):\n        user = {'name': f'User{i}', 'age': random.randint(18, 65), 'gender': random.choice(['male', 'female']), 'email': f'user{i}.example@gmail.com'}\n        data['users'].append(user)\n    return json.dumps(data)\n\nnum_entries = 30\nrandom_data = generate_random_data(num_entries)\nprint(random_data)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-23",
+      "raw_output": "import json\nimport random\n\ndef get_random_data(n):\n    data = {'system': '', 'user': ''}\n    for i in range(n):\n        system_data = {'date': f'202{i+1:02d}-01', 'open': random.uniform(85, 95), 'high': random.uniform(90, 100), 'low': random.uniform(80, 85), 'close': random.uniform(87, 93), 'volume': random.randint(10000, 50000)}\n        user_data = {'date': f'202{i+1:02d}-01', 'open': random.uniform(85, 95), 'high': random.uniform(90, 100), 'low': random.uniform(80, 85), 'close': random.uniform(87, 93), 'volume': random.randint(10000, 50000)}\n        data['system'] += json.dumps(system_data) + ';'\n        data['user'] += json.dumps(user_data) + ';'\n    return data\n\nn = 30\ndata = get_random_data(n)\nprint(data)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-26",
+      "raw_output": "import json\nimport random\n\ndef generate_random_data(num_days):\n    data = {'date': [], 'open': [], 'high': [], 'low': [], 'close': []}\n    for i in range(num_days):\n        date = f\"202{random.randint(1, 9999)}\"\n        data['date'].append(date)\n        open_price = round(random.uniform(90, 110), 2)\n        high_price = round(random.uniform(100, 120), 2)\n        low_price = round(random.uniform(80, 100), 2)\n        close_price = round(random.uniform(95, 105), 2)\n        data['open'].append(open_price)\n        data['high'].append(high_price)\n        data['low'].append(low_price)\n        data['close'].append(close_price)\n    return json.dumps(data, indent=4)\n\nprint(generate_random_data(30))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-27",
+      "raw_output": "import random\n\ndef generate_random_numbers(data):\n    result = []\n    for _ in range(30):\n        num = random.choice(list(data['system'].values())[0])\n        result.append('{:.2f}'.format(num))\n    return '; '.join(result)\n\nprint(generate_random_numbers(data))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-28",
+      "raw_output": "import json\nimport random\n\ndef generate_random_numbers(data):\n    # Get the list of dates from the data\n    dates = [date['Date'] for date in data]\n\n    # Choose a random date as the starting point\n    start_date = random.choice(dates)\n\n    # Initialize an empty string to store the numbers\n    numbers = ''\n\n    # Loop until we have 30 numbers or run out of dates\n    while len(numbers) < 30:\n        # Get the current date from the data\n        current_date = start_date\n\n        # Choose a random number between the low and high values for the current date\n        low = float(data[current_date]['low'])\n        high = float(data[current_date]['high'])\n        num = random.uniform(low, high)\n\n        # Add the number to the string with two decimal places and a semicolon\n        numbers += '{:.2f};'.format(num)\n\n        # If we have reached 30 numbers or run out of dates, break the loop\n        if len(numbers) == 30 or current_date not in dates:\n            break\n\n        # Update the start date to the next date in the data\n        start_date = random.choice([date for date in data if date != current_date])\n\n    return numbers\n\n# Example output\nprint(generate_random_numbers(data))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-29",
+      "raw_output": "import json\nimport random\n\ndef generate_data(num_rows):\n    data = []\n    for i in range(num_rows):\n        date = f\"202{random.randint(1, 12)}-01-2021\"\n        open_price = random.uniform(100, 200)\n        high_price = random.uniform(open_price * 1.05, open_price * 1.10)\n        low_price = random.uniform(open_price * 0.95, open_price * 0.90)\n        close_price = random.uniform(low_price, high_price)\n        volume = random.randint(1000, 5000)\n        data.append({'date': date, 'open_price': open_price, 'high_price': high_price, 'low_price': low_price, 'close_price': close_price, 'volume': volume})\n    return json.dumps(data)\n\nprint(generate_data(10)) # Example output: [{\"date\": \"2021101-01-2021\", \"open_price\": 150.945, \"high_price\": 152.846, \"low_price\": 149.743, \"close_price\": 151.564, \"volume\": 4500}, {\"date\": \"2021101-02-2021\", \"open_price\": 156.234, \"high_price\": 158.923, \"low_price\": 155.846, \"close_price\": 157.066, \"volume\": 5000}, ...]",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-01-30",
+      "raw_output": "import json\nimport random\n\ndef get_random_numbers(data):\n    \"\"\"\n    This function takes a dictionary of data as input and returns a list of 30 random numbers, \n    each with two decimal places, from the 'System' key in the dictionary.\n    \"\"\"\n    system = json.loads(data['System'])\n    return [round(random.uniform(system[0][i], system[1][i]), 2) for i in range(30)]\n\nif __name__ == '__main__':\n    data = {\n        \"System\": {\n            \"Date\": [\"2021-01-01\", \"2021-01-02\", \"2021-01-03\", \"2021-01-04\", \"2021-01-05\"],\n            \"Open\": [90.0, 91.0, 92.0, 93.0, 94.0],\n            \"High\": [92.0, 95.0, 96.0, 97.0, 98.0],\n            \"Low\": [89.0, 90.0, 91.0, 92.0, 93.0],\n            \"Close\": [91.0, 94.0, 95.0, 96.0, 97.0]\n        }\n    }\n\n    random_numbers = get_random_numbers(data)\n    print(\"Example:\", random_numbers[:5])",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-02",
+      "raw_output": "import json\nimport re\n\ndata = {'system': 'System', 'data': {'2021-01-01': {'open': 90.0, 'high': 91.0, 'low': 89.0, 'close': 90.0}, '2021-01-02': {'open': 88.0, 'high': 90.0, 'low': 87.0, 'close': 88.0}}, 'system2': {'data': {'20210601': {'open': 86.0, 'high': 89.0, 'low': 85.0, 'close': 86.0}, '20210602': {'open': 90.0, 'high': 91.0, 'low': 88.0, 'close': 90.0}}, 'system3': {'data': {'20210601': {'open': 87.0, 'high': 89.0, 'low': 86.0, 'close': 87.0}, '20210602': {'open': 85.0, 'high': 88.0, 'low': 84.0, 'close': 85.0}}, 'system4': {'data': {'20210601': {'open': 90.0, 'high': 91.0, 'low': 89.0, 'close': 90.0}, '20210602': {'open': 88.0, 'high': 87.0, 'low': 86.0, 'close': 85.0}}, 'system5': {'data': {'20210601': {'open': 86.0, 'high': 89.0, 'low': 85.0, 'close': 86.0}, '20210602': {'open': 90.0, 'high': 91.0, 'low': 88.0, 'close': 90.0}}, 'system6': {'data': {'20210601': {'open': 87.0, 'high': 89.0, 'low': 86.0, 'close': 87.0}, '20210602': {'open': 85.0, 'high': 88.0, 'low': 84.0, 'close': 85.0}}, 'system7': {'data': {'20210601': {'open': 90.0, 'high': 91.0, 'low': 89.0, 'close': 90.0}, '20210602': {'open': 88.0, 'high': 87.0, 'low': 86.0, 'close': 85.0}}, 'system8': {'data': {'20210601': {'open': 87.0, 'high': 89.0, 'low': 86.0, 'close': 87.0}, '20210602': {'open': 85.0, 'high': 88.0, 'low': 84.0, 'close': 85.0}}, 'system9': {'data': {'20210601': {'open': 90.0, 'high': 91.0, 'low': 89.0, 'close': 90.0}, '20210602': {'open': 88.0, 'high': 87.0, 'low': 86.0, 'close': 85.0}}, 'system10': {'data': {'20210601': {'open': 87.0, 'high': 89.0, 'low': 86.0, 'close': 87.0}, '20210602': {'open': 85.0, 'high': 88.0, 'low': 84.0, 'close': 85.0}}, 'system11': {'data': {'20210601': {'open': 90.0, 'high': 91.0, 'low': 89.0, 'close': 90.0}, '20210602': {'open': 88.0, 'high': 87.0, 'low': 86.0, 'close': 85.0}}, 'system12': {'data': {'20210601': {'open': 87.0, 'high': 89.0, 'low': 86.0, 'close': 87.0}, '20210602': {'open': 85.0, 'high': 88.0, 'low': 84.0, 'close': 85.0}}, 'system13': {'data': {'20210601': {'open': 90.0, 'high': 91.0, 'low': 89.0, 'close': 90.0}, '20210602': {'open': 88.0, 'high': 87.0, 'low': 86.0, 'close': 85.0}}, 'system14': {'data': {'20210601': {'open': 87.0, 'high': 89.0, 'low': 86.0, 'close': 87.0}, '20210602': {'open': 85.0, 'high': 88.0, 'low': 84.0, 'close': 85.0}}, 'system15': {'data': {'20210601': {'open': 90.0, 'high': 91.0, 'low': 89.0, 'close': 90.0}, '20210602': {'open': 88.0, 'high': 87.0, 'low': 86.0, 'close': 85.0}}, 'system16': {'data': {'20210601': {'open': 87.0, 'high': 89.0, 'low': 86.0, 'close': 87.0}, '20210602': {'open': 85.0, 'high': 88.0, 'low': 84.0, 'close': 85.0}}, 'system17': {'data': {'20210601': {'open': 90.0, 'high': 91.0, 'low': 89.0, 'close': 90.0}, '20210602': {'open': 88.0, 'high': 87.0, 'low': 86.0, 'close': 85.0}}, 'system18': {'data': {'20210601': {'open': 87.0, 'high': 89.0, 'low': 86.0, 'close': 87.0}, '20210602': {'open': 85.0, 'high': 88.0, 'low': 84.0, 'close': 85.0}}, 'system19': {'data': {'20210601': {'open': 90.0, 'high': 91.0, 'low': 89.0, 'close': 90.0}, '20210602': {'open': 88.0, 'high': 87.0, 'low': 86.0, 'close': 85.0}}, 'system20': {'data': {'20210601': {'open': 87.0, 'high': 89.0, 'low': 86.0, 'close': 87.0}, '20210602': {'open': 85.0, 'high': 88.0, 'low': 84.0, 'close': 85.0}}, 'system21': {'data': {'20210601': {'open': 90.0, 'high': 91.0, 'low': 89.0, 'close': 90.0}, '20210602': {'open': 88.0, 'high': 87.0, 'low': 86.0, 'close': 85.0}}, 'system22': {'data': {'20210601': {'open': 87.0, 'high': 89.0, 'low': 86.0, 'close': 87.0}, '20210602': {'open': 85.0, 'high': 88.0, 'low': 84.0, 'close': 85.0}}, 'system23': {'data': {'20210601': {'open': 90.0, 'high': 91.0, 'low': 89.0, 'close': 90.0}, '20210602': {'open': 88.0, 'high': 87.0, 'low': 86.0, 'close': 85.0}}, 'system24': {'data': {'20210601': {'open': 87.0, 'high': 89.0, 'low': 86.0, 'close': 87.0}, '20210602': {'open': 85.0, 'high': 88.0, 'low': 84.0, 'close': 85.0}}, 'system25': {'data': {'20210601': {'open': 90.0, 'high': 91.0, 'low': 89.0, 'close': 90.0}, '20210602': {'open': 88.0, 'high': 87.0, 'low': 86.0, 'close': 85.0}}, 'system26': {'data': {'20210601': {'open': 87.0, 'high': 89.0, 'low': 86.0, 'close': 87.0}, '20210602': {'open': 85.0, 'high': 88.0, 'low': 84.0, 'close': 85.0}}, 'system27",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-03",
+      "raw_output": "import json\nimport re\n\ndata = {'system': 'System', 'user': 'User', 'group': 'Group', 'others': 'Others'}\n\nwith open('config.json') as f:\n    config = json.load(f)\n\nfor key, value in config.items():\n    if re.match(r'.*\\d+\\.\\d{2}$', str(value)):\n        print(key + ': ' + value)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-04",
+      "raw_output": "import json\nimport re\n\ndef extract_numbers(data):\n    # Extract the data from the JSON object\n    numbers = []\n    for date, info in data['system'].items():\n        # Find all the numbers in the information dictionary\n        nums = re.findall(r'\\d+\\.\\d{2}', str(info))\n        # Append them to the list of numbers\n        numbers.extend(nums)\n\n    return numbers\n\n# Test\ndata = json.loads('{\"system\": {\"20210601\": {\"open\": 86.7, \"high\": 87.1, \"low\": 85.9, \"close\": 86.6, \"volume\": 1023}, \"20210602\": {\"open\": 92.3, \"high\": 94.2, \"low\": 91.8, \"close\": 93.0, \"volume\": 1234}}, \"system_name\": \"System A\"}')\nprint(extract_numbers(data)) # Output: ['86.7', '87.1', '85.9', '86.6', '92.3', '94.2', '91.8', '93.0']",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-05",
+      "raw_output": "import json\nimport random\n\ndef generate_random_data(n):\n    data = {'system': 'System', 'users': [{'name': f'User {i}', 'age': random.randint(18, 65), 'gender': random.choice(['M', 'F']), 'email': f'user{i}.com'} for i in range(n)]}\n    data['system']['data'] = [random.uniform(0, 100) for _ in range(30)]\n    return json.dumps(data)\n\nprint(generate_random_data(10))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-06",
+      "raw_output": "import json\nimport re\n\ndef extract_data(json_string):\n    data = json.loads(json_string)['system']\n    result = []\n    for date, values in data.items():\n        # Extract the first 30 numbers from each value\n        nums = re.findall('\\d+\\.\\d{2}', str(values))[:30]\n        result.append(nums)\n    return result",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-09",
+      "raw_output": "import random\nimport re\n\ndef generate_random_numbers(data):\n    pattern = r'\\d+\\.\\d{1,2}'\n    numbers = []\n    for _ in range(30):\n        number = str(round(random.uniform(min(data['System']), max(data['System']))).replace('.', ','))\n        if re.match(pattern, number):\n            numbers.append(number)\n    return numbers\n\nprint(generate_random_numbers(data))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-11",
+      "raw_output": "import re\nimport sys\n\ndef main():\n    data = sys.stdin.read()\n    pattern = r'\\d+\\.\\d{2}'\n    matches = re.findall(pattern, data)\n    for match in matches:\n        print(match)\n\nif __name__ == '__main__':\n    main()",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-12",
+      "raw_output": "import json\nimport random\n\ndef generate_random_numbers(num_of_numbers):\n    # Generate a list of 30 random numbers between 0 and 1\n    random_numbers = [round(random.uniform(0, 1), 2) for _ in range(num_of_numbers)]\n\n    # Convert the list to a string with semicolon-separated values\n    return \";\".join([str(number) for number in random_numbers])\n\n# Generate a random set of 30 numbers and print it\nrandom_numbers = generate_random_numbers(30)\nprint(random_numbers)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-13",
+      "raw_output": "import re\n\ndef format_data(data):\n    # Extract the data from the dictionary\n    values = list(data['System'].values())\n\n    # Remove any non-numeric characters and split by semicolon\n    values = [re.sub('[^0-9.]', '', value) for value in values]\n    values = [value.split(';') for value in values]\n\n    # Convert the values to floats and round to 2 decimals\n    values = [[float(num) for num in row] for row in values]\n    values = [[round(num, 2) for num in row] for row in values]\n\n    return values\n\ndata_list = format_data(data)\nprint(data_list)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-18",
+      "raw_output": "import re\n\ndef extract_data(json_string):\n# Extracts the data from a json string and returns it as a list of lists\n# Each sublist contains 30 numbers, semicolon-separated, 2 decimals each\n    # The first number is the date in YYYY-MM-DD format\n    # The second number is the high temperature in degrees Celsius\n    # The third number is the low temperature in degrees Celsius\n    data = json_string.split('}')[1:-1]\n    result = []\n    for item in data:\n        date, high, low = re.findall(r'\\d+', item)\n        temp = [float(high), float(low)]\n        result.append([date, *temp])\n    return result",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-19",
+      "raw_output": "import re\n\ndef extract_numbers(data):\n    pattern = r'\\d+\\.\\d{2}'\n    matches = re.findall(pattern, data)\n    return matches\n\nprint(extract_numbers(json_data))\n# Output: ['142.35', '142.85', '143.35']",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-20",
+      "raw_output": "import re\n\ndef extract_numbers(data):\n    pattern = r'\\d+\\.\\d{1,2}'\n    matches = re.findall(pattern, data)\n    return matches\n\nprint(extract_numbers(data))\n# ['142.35', '142.85', '143.35']",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-23",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-24",
+      "raw_output": "import json\nimport re\n\ndef extract_numbers(data):\n    pattern = r'\\d+\\.\\d{2}'\n    numbers = []\n    for item in data['system']:\n        match = re.findall(pattern, str(item))\n        if match:\n            numbers.extend([float(num) for num in match])\n    return numbers[:30]\n\ndata = {\n    'system': [\n        {'Date': '2021-01-01', 'Open': '92.0', 'High': '89.9', 'Low': '87.6', 'Close': '88.5', 'Volume': '1,000,000'},\n        {'Date': '2021-01-02', 'Open': '85.7', 'High': '86.8', 'Low': '84.9', 'Close': '87.0', 'Volume': '2,500,000'}\n    ]\n}\n\nnumbers = extract_numbers(data)\nprint(numbers[:30]) # [92.00, 85.70, 86.80, 84.90, 87.60, 88.50, 89.90, 87.60, 88.50, 85.70, 86.80, 84.90, 87.60, 88.50, 85.70, 86.80, 84.90, 87.60, 88.50, 85.70, 86.80]",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-25",
+      "raw_output": "import re\n\ndef extract_numbers(data):\n    pattern = r'\\d+\\.\\d{2}'\n    matches = re.findall(pattern, data)\n    return matches\n\nprint(extract_numbers(input))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-26",
+      "raw_output": "import json\nimport re\n\ndata = '''{\n    \"system_name\": \"System\",\n    \"system_version\": \"1.0.0\",\n    \"system_date\": \"2021-02-01\",\n    \"system_timezone\": \"UTC\",\n    \"system_ip\": \"192.168.1.1\",\n    \"system_port\": 80,\n    \"system_status\": \"running\",\n    \"system_cpu\": \"2.5 GHz\",\n    \"system_ram\": \"8 GB\",\n    \"system_storage\": \"256 GB\",\n    \"system_network\": \"10 Gbps\",\n    \"system_security\": {\n        \"firewall\": true,\n        \"antivirus\": false,\n        \"encryption\": true\n    },\n    \"system_users\": [\n        {\n            \"name\": \"John Doe\",\n            \"email\": \"johndoe@example.com\",\n            \"password\": \"1234567890\"\n        }\n    ],\n    \"system_groups\": [\n        {\n            \"name\": \"System\",\n            \"members\": [\"John Doe\"]\n        }\n    ]\n}'''\n\n# Parse the JSON data into a Python dictionary\ndata = json.loads(data)\n\n# Extract the system_cpu value and format it as a string with 2 decimal places\nsystem_cpu = re.findall('\\d+\\.\\d+', str(data['system_cpu']))[0]\nformatted_cpu = '{:.2f}'.format(float(system_cpu))\n\n# Print the formatted CPU value\nprint(formatted_cpu)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-27",
+      "raw_output": "import re\n\ndef extract_data(json_string):\n    data = json.loads(json_string)\n    result = []\n    for date, values in data.items():\n        for value in values:\n            match = re.search(r'(\\d+\\.\\d+)', str(value))\n            if match:\n                result.append(match.group(1))\n    return ';'.join(result)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-03-03",
+      "raw_output": "import json\nimport re\n\ndef extract_numbers(data):\n    # Extract the data from the JSON object\n    numbers = []\n    for date, values in data.items():\n        # Loop through each value and extract the numbers\n        for key, value in values.items():\n            if isinstance(value, dict):\n                continue\n            # Use regular expressions to match the numbers and store them in a list\n            for num_str in re.findall(r'\\d+\\.\\d{2}', str(value)):\n                numbers.append(float(num_str))\n\n    # Sort the list of numbers and return it\n    numbers.sort()\n    return numbers\n\n# Test the function with the input data\ndata = json.loads('{\"System\": { \"Date\": \"20210601\", \"Values\": { \"Temperature\": { \"High\": \"85.0\", \"Low\": \"80.0\" }, \"Humidity\": { \"High\": \"60.0\", \"Low\": \"50.0\" } } }'\n)\nnumbers = extract_numbers(data)\nprint(numbers) # [",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-03-04",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-03-05",
+      "raw_output": "import json\nimport re\n\ndata = '''{\n    \"system_name\": \"System\",\n    \"system_version\": \"1.0\",\n    \"system_description\": \"A system for testing purposes.\",\n    \"system_files\": [\n        {\"filename\": \"file1.txt\", \"size\": 1024},\n        {\"filename\": \"file2.txt\", \"size\": 2048},\n        {\"filename\": \"file3.txt\", \"size\": 3072}\n    ],\n    \"system_configurations\": {\n        \"memory\": \"8GB\",\n        \"storage\": \"1TB\",\n        \"network\": \"10Gbps\"\n    }\n}'''\n\njson_data = json.loads(data)\n\n# Extract the system files and their sizes\nfiles = [file for file in json_data[\"system_configurations\"][\"system_files\"]]\nsizes = [re.findall(\"\\d+\", file[\"filename\"])[0] for file in files]\n\n# Combine the file names and sizes into a single string, separated by semicolons\nfile_string = \";\".join([f\"{size}GB\" for size in sizes])\n\nprint(file_string)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "WFC"
+    }
+  ]
+}

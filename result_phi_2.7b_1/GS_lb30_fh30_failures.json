@@ -1,0 +1,32 @@
+{
+  "symbol": "GS",
+  "lookback": 30,
+  "horizon": 30,
+  "total_failures": 3,
+  "failures": [
+    {
+      "date": "2026-01-09",
+      "raw_output": "import json\nimport pandas as pd\n\n# Load the data from JSON file\nwith open('stock_data.json') as f:\n    data = json.load(f)\n\n# Convert the dictionary to a DataFrame\ndf = pd.DataFrame(data['prices'])\n\n# Round the prices to 2 decimal places\ndf['price'] = df['price'].round(2)\n\n# Print the first 5 rows of the DataFrame\nprint(df.head())\n```",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "GS"
+    },
+    {
+      "date": "2026-01-12",
+      "raw_output": "import json\nimport pandas as pd\n\n# Load the data from JSON file\nwith open('data.json') as f:\n    data = json.load(f)\n\n# Convert the dictionary to a DataFrame\ndf = pd.DataFrame(data['prices'])\n\n# Round the closing prices to 2 decimal places\ndf['close'] = df['close'].round(2)\n\n# Print the first 5 rows of the DataFrame\nprint(df.head())",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "GS"
+    },
+    {
+      "date": "2026-02-05",
+      "raw_output": "932.21, 939.22, 889.20, 905.18, 907.19, 910.17, 915.16, 925.14, 935.13, 940.12, 945.11, 955.09, 965.08, 970.06, 975.04, 980.03, 985.02, 990.01, 995.00, 1000.00",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "GS"
+    }
+  ]
+}

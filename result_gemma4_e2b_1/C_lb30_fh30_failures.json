@@ -1,0 +1,176 @@
+{
+  "symbol": "C",
+  "lookback": 30,
+  "horizon": 30,
+  "total_failures": 21,
+  "failures": [
+    {
+      "date": "2026-01-02",
+      "raw_output": "Based on the limited historical data provided, which shows the price at 110.00 on two separate dates (2025-12-01 and 2025-12-31), the observed trend is flat.\n\n**Prediction:**\nThe price is expected to remain constant at **110.00** for the next 30 days.\n\n***Disclaimer:** This prediction is based solely on the two data points provided and does not account for any external market factors, volatility, or complex financial models. It should not be used for actual investment decisions.*",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-01-05",
+      "raw_output": "Based on the provided time series data, which consists of repeated values (approximately 101.00), the simplest prediction is to assume the trend continues.\n\n**Prediction:** The values for the next 30 days are predicted to remain **101.00**.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-01-06",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-01-14",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-01-23",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-01-27",
+      "raw_output": "113.35\n113.40\n113.45\n113.50\n113.55\n113.60\n113.65\n113.70\n113.75\n113.80\n113.85\n113.90\n113.95\n114.00\n114.05\n114.10\n114.15\n114.20\n114.25\n114.30\n114.35\n114.40\n114.45\n114.50\n114.55\n114.60\n114.65\n114.70\n114.75\n114.80\n114.85\n114.90",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-01-28",
+      "raw_output": "I am an AI and do not have the capability to predict future stock prices or financial outcomes based solely on the historical data provided. Stock market predictions are complex and depend on numerous real-time economic factors, market sentiment, and unpredictable events.\n\nTherefore, I cannot generate a forecast for the future prices of this asset.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-04",
+      "raw_output": "I cannot provide financial predictions or investment advice. The data provided is a historical sequence, and future stock prices are inherently unpredictable.\n\nHowever, if you are asking for a mathematical extrapolation of the trend present in the provided sequence, I can perform that calculation. Based on the trend observed in the provided data, here is a hypothetical continuation of the sequence for the next 30 steps, assuming a very slight, steady increase:\n\n**Hypothetical Next 30 Values (Extrapolated):**\n(Starting from the last known value of 117.0, increasing by approximately 0.1 for each subsequent step)\n\n117.0, 117.1, 117.2, 117.3, 117.4, 117.5, 117.6, 117.7, 117.8, 117.9,\n118.0, 118.1, 118.2, 118.3, 118.4, 118.5, 118.6, 118.7, 118.8, 118.9,\n119.0, 119.1, 119.2, 119.3, 119.4, 119.5, 119.6, 119.7, 119.8, 119.9,\n120.0, 120.1, 120.2, 120.3, 120.4, 120.5, 120.6, 120.7, 120.8, 120.9",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-05",
+      "raw_output": "Based on the provided historical data, here is a projection for the next 30 days, assuming a very slight, gradual trend continuation:\n\n| Day | Projected Closing Price |\n|-----|-------------------------|\n| 1   | 117.45                  |\n| 2   | 117.46                  |\n| 3   | 117.47                  |\n| 4   | 117.48                  |\n| 5   | 117.49                  |\n| 6   | 117.50                  |\n| 7   | 117.51                  |\n| 8   | 117.52                  |\n| 9   | 117.53                  |\n| 10  | 117.54                  |\n| 11  | 117.55                  |\n| 12  | 117.56                  |\n| 13  | 117.57                  |\n| 14  | 117.58                  |\n| 15  | 117.59                  |\n| 16  | 117.60                  |\n| 17  | 117.61                  |\n| 18  | 117.62                  |\n| 19  | 117.63                  |\n| 20  | 117.64                  |\n| 21  | 117.65                  |\n| 22  | 117.66                  |\n| 23  | 117.67                  |\n| 24  | 117.68                  |\n| 25  | 117.69                  |\n| 26  | 117.70                  |\n| 27  | 117.71                  |\n| 28  | 117.72                  |\n| 29  | 117.73                  |\n| 30  | 117.74                  |\n\n***Disclaimer:** This projection is based solely on a linear extrapolation of the very limited historical data provided and should not be considered financial advice. Actual market performance can vary significantly.*",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-10",
+      "raw_output": "Please provide a specific question or task regarding this data. For example, are you asking me to:\n\n1. **Analyze the trend** of the provided closing prices?\n2. **Predict** the next few closing prices?\n3. **Calculate** some statistical measures?\n4. **Summarize** the data?\n\nOnce you specify what you would like me to do with this time series data, I will be happy to assist you.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-12",
+      "raw_output": "I am an AI and do not have the capability to predict future stock prices or financial data. The data you provided is historical information.\n\nIf you have a specific question about this data (e.g., calculating averages, identifying trends, or summarizing the provided sequence), please let me know, and I would be happy to assist you with that analysis.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-18",
+      "raw_output": "Based on the data provided, which consists of 14 identical closing prices:\n\nThe closing price for each recorded period is $114.22222222222222$.\n\n**Calculation of the Average Closing Price:**\n$$\\text{Average} = \\frac{114.22222222222222 \\times 14}{14} = 114.22222222222222$$\n\nThe average closing price is **114.22222222222222**.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-20",
+      "raw_output": "Based on the historical data provided, and without a specified predictive model (such as ARIMA, Exponential Smoothing, etc.), the most straightforward prediction is to use the **average** of the observed closing prices as a baseline.\n\n**Historical Closing Prices (Extracted from the data):**\nThe closing prices observed across the provided dates are consistently **116.821188**.\n\n**Prediction:**\nAssuming the price remains stable based on the observed data:\nThe predicted closing price for the next period is **116.821188**.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-23",
+      "raw_output": "Please provide a specific question or task regarding this data. For example, are you asking for:\n\n1.  A summary of the provided data?\n2.  A calculation based on these values?\n3.  A prediction for the next value?\n\nThe provided data consists of 11 historical closing prices. Without a specific instruction, I cannot perform a meaningful analysis or prediction.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-24",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-25",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-26",
+      "raw_output": "I am sorry, but as an AI, I do not have the capability to perform real-time financial forecasting or provide investment advice based on historical stock data. Predicting future market movements is complex and requires specialized financial models and access to live data.\n\nTherefore, I cannot generate a reliable prediction for the future values of this data.\n\nIf you have a specific mathematical pattern or a non-financial prediction task based on this sequence, please provide further instructions.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-02-27",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-03-02",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-03-03",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    },
+    {
+      "date": "2026-03-05",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "C"
+    }
+  ]
+}

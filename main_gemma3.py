@@ -15,9 +15,9 @@ from typing import List, Optional, Dict, Any
 # ────────────────────────────────────────────────
 
 DATA_DIR    = Path("C:/HocCode/lab/data")
-RESULTS_DIR = Path("C:/HocCode/lab/result_gemma3_4b_3_5")
+RESULTS_DIR = Path("C:/HocCode/lab/result_gemma4_e2b_1")
 
-MODEL_NAME = "gemma3:4b" # <-- thay ten model o day
+MODEL_NAME = "gemma4:e2b" # <-- thay ten model o day
 
 
 TEST_START_DATE = "2026-01-01"
@@ -44,7 +44,7 @@ Input data includes historical Open, High, Low, Volume of the past {lookback} da
 CRITICAL OUTPUT RULES (You MUST follow strictly):
 1. Output EXACTLY {horizon} numbers, no more, no less.
 2. Separate numbers with SEMICOLON (;), no other separators.
-3. Each number must have EXACTLY 3 decimal places (e.g., 142.350, not 142.35 or 142.4).
+3. Each number must have EXACTLY 4 decimal places (e.g., 142.3502, not 142.35 or 142.4).
 4. ABSOLUTELY NO text, words, stock symbols (e.g., BAC, AXP), explanations, brackets, newlines, or extra characters.
 
 TEMPLATE: {template}

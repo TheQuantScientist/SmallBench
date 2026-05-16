@@ -1,0 +1,49 @@
+{
+  "symbol": "V",
+  "lookback": 1,
+  "horizon": 30,
+  "test_start": "2026-01-01",
+  "n_valid_windows": 40,
+  "parse_failures": 3,
+  "date_range": [
+    "2026-01-02",
+    "2026-03-05"
+  ],
+  "metrics_per_step": [
+    {
+      "horizon_step": 1,
+      "mae": 142.61555000000004,
+      "rmse": 163.38571215057334,
+      "mape": 43.114441134629985,
+      "n_samples": 40
+    },
+    {
+      "horizon_step": 7,
+      "mae": 137.97217500000002,
+      "rmse": 155.58425111615574,
+      "mape": 42.51767828507854,
+      "n_samples": 40
+    },
+    {
+      "horizon_step": 14,
+      "mae": 148.2455,
+      "rmse": 164.62556788087323,
+      "mape": 46.36620870750303,
+      "n_samples": 40
+    },
+    {
+      "horizon_step": 21,
+      "mae": 131.02275,
+      "rmse": 143.53970202125265,
+      "mape": 41.397120962424324,
+      "n_samples": 40
+    },
+    {
+      "horizon_step": 30,
+      "mae": 138.47575,
+      "rmse": 151.14481896198097,
+      "mape": 44.556152700446425,
+      "n_samples": 40
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "symbol": "AXP",
+  "lookback": 30,
+  "horizon": 30,
+  "total_failures": 16,
+  "failures": [
+    {
+      "date": "2026-01-06",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "AXP"
+    },
+    {
+      "date": "2026-01-07",
+      "raw_output": "I am an AI and cannot provide financial advice or accurate future stock price predictions. Stock market movements are complex and depend on numerous unpredictable factors.\n\nHowever, if you require a hypothetical projection based purely on mathematical extrapolation of the provided data, I can perform a simple linear projection.\n\n**Based on the last known closing price of 382.30 (as of 2026-01-06), and assuming a hypothetical, small, steady increase of +0.50 per day for the next 30 trading days, the projection would look like this:**\n\n| Day Offset | Hypothetical Closing Price |\n| :---: | :---: |\n| Day 1 | 382.80 |\n| Day 2 | 383.30 |\n| Day 3 | 383.80 |\n| Day 4 | 384.30 |\n| Day 5 | 384.80 |\n| Day 6 | 385.30 |\n| Day 7 | 385.80 |\n| Day 8 | 386.30 |\n| Day 9 | 386.80 |\n| Day 10 | 387.30 |\n| Day 11 | 387.80 |\n| Day 12 | 388.30 |\n| Day 13 | 388.80 |\n| Day 14 | 389.30 |\n| Day 15 | 389.80 |\n| Day 16 | 390.30 |\n| Day 17 | 390.80 |\n| Day 18 | 391.30 |\n| Day 19 | 391.80 |\n| Day 20 | 392.30 |\n| Day 21 | 392.80 |\n| Day 22 | 393.30 |\n| Day 23 | 393.80 |\n| Day 24 | 394.30 |\n| Day 25 | 394.80 |\n| Day 26 | 395.30 |\n| Day 27 | 395.80 |\n| Day 28 | 396.30 |\n| Day 29 | 396.80 |\n| Day 30 | **397.30** |\n\n***Disclaimer: This table is purely illustrative and should not be used for actual investment decisions.***",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "AXP"
+    },
+    {
+      "date": "2026-01-08",
+      "raw_output": "Please note that as an AI, I cannot provide real-time or guaranteed financial predictions. The following data is a **hypothetical continuation** based on the trend observed in the provided historical data. Do not use this information for actual investment decisions.\n\nHere is the continuation of the sequence for the next 30 days, starting from the last recorded date (2025-12-06):\n\n| Date | Hypothetical Closing Price |\n| :--- | :--- |\n| 2025-12-07 | 378.50 |\n| 2025-12-08 | 379.10 |\n| 2025-12-09 | 378.80 |\n| 2025-12-10 | 379.50 |\n| 2025-12-11 | 380.10 |\n| 2025-12-12 | 379.90 |\n| 2025-12-13 | 380.50 |\n| 2025-12-14 | 381.00 |\n| 2025-12-15 | 380.80 |\n| 2025-12-16 | 381.50 |\n| 2025-12-17 | 382.00 |\n| 2025-12-18 | 381.80 |\n| 2025-12-19 | 382.50 |\n| 2025-12-20 | 383.00 |\n| 2025-12-21 | 382.80 |\n| 2025-12-22 | 383.50 |\n| 2025-12-23 | 384.00 |\n| 2025-12-24 | 383.80 |\n| 2025-12-25 | 384.50 |\n| 2025-12-26 | 385.00 |\n| 2025-12-27 | 384.80 |\n| 2025-12-28 | 385.50 |\n| 2025-12-29 | 386.00 |\n| 2025-12-30 | 385.80 |\n| 2025-12-31 | 386.50 |\n| 2026-01-01 | 387.00 |\n| 2026-01-02 | 386.80 |\n| 2026-01-03 | 387.50 |\n| 2026-01-04 | 388.00 |\n| 2026-01-05 | 387.80 |\n| 2026-01-06 | 388.50 |\n| 2026-01-07 | 389.00 |\n| 2026-01-08 | 388.80 |\n| 2026-01-09 | 389.50 |\n| 2026-01-10 | 390.00 |",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "AXP"
+    },
+    {
+      "date": "2026-01-12",
+      "raw_output": "I am a large language model, and I do not have the capability to predict future stock prices or engage in financial forecasting. Stock market movements are influenced by countless unpredictable factors, and any attempt to predict them would be speculative and unreliable.\n\nThe data you provided is historical information, and I can only process and analyze that data, not predict future outcomes. For investment decisions, it is highly recommended to consult with qualified financial advisors and use professional market analysis tools.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "AXP"
+    },
+    {
+      "date": "2026-01-13",
+      "raw_output": "Please provide a question regarding the data you have supplied. I am ready to assist you once you ask a specific question.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "AXP"
+    },
+    {
+      "date": "2026-01-22",
+      "raw_output": "Based on the historical data provided, here are 30 projected future data points, continuing the sequence from the last recorded date (2026-01-21). Please note that this is a purely illustrative projection and should not be used for actual financial decisions.\n\n| Date | Projected Closing Price (USD) |\n| :--- | :--- |\n| 2026-01-22 | 372.50 |\n| 2026-01-23 | 373.10 |\n| 2026-01-24 | 371.80 |\n| 2026-01-25 | 374.50 |\n| 2026-01-26 | 375.00 |\n| 2026-01-27 | 373.90 |\n| 2026-01-28 | 376.20 |\n| 2026-01-29 | 377.50 |\n| 2026-01-30 | 378.10 |\n| 2026-01-31 | 379.00 |\n| 2026-02-01 | 378.50 |\n| 2026-02-02 | 375.80 |\n| 2026-02-03 | 374.00 |\n| 2026-02-04 | 376.50 |\n| 2026-02-05 | 377.00 |\n| 2026-02-06 | 378.80 |\n| 2026-02-07 | 379.50 |\n| 2026-02-08 | 380.10 |\n| 2026-02-09 | 379.90 |\n| 2026-02-10 | 377.20 |\n| 2026-02-11 | 375.50 |\n| 2026-02-12 | 374.80 |\n| 2026-02-13 | 376.00 |\n| 2026-02-14 | 377.80 |\n| 2026-02-15 | 378.50 |\n| 2026-02-16 | 379.20 |\n| 2026-02-17 | 380.00 |\n| 2026-02-18 | 379.70 |\n| 2026-02-19 | 377.50 |\n| 2026-02-20 | 375.00 |",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "AXP"
+    },
+    {
+      "date": "2026-02-06",
+      "raw_output": "Please provide the numerical time series data you are referring to. The input provided is a structured text/JSON format, but it does not contain the actual numerical values required to perform a prediction.\n\nIf you provide the sequence of values (e.g., a list of closing prices over time), I would be happy to analyze the data and attempt to provide a forecast.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "AXP"
+    },
+    {
+      "date": "2026-02-10",
+      "raw_output": "Based on the provided data, which consists entirely of the value 351.0 across all recorded points, the observed trend is perfectly flat.\n\nTherefore, the prediction for the next few time steps, assuming this flat trend continues, is:\n\n**Predicted Value:** 351.00",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "AXP"
+    },
+    {
+      "date": "2026-02-12",
+      "raw_output": "I am an AI and do not have the capability to predict future stock market prices. Financial markets are complex and influenced by numerous unpredictable factors.\n\nTherefore, I cannot provide a prediction for the future performance of this stock.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "AXP"
+    },
+    {
+      "date": "2026-02-13",
+      "raw_output": "Based on the provided data, which appears to be a sequence of historical points, and lacking a clear, consistent time-series trend for reliable forecasting, I cannot generate a statistically sound prediction.\n\nHowever, if forced to extrapolate based solely on the provided sequence, the most recent value is: **358.1078125**.\n\n**Prediction:** 358.1078125",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "AXP"
+    },
+    {
+      "date": "2026-02-18",
+      "raw_output": "Based on the historical data provided, here are 30 hypothetical future closing price predictions for the asset. Please note that this is a simulation based purely on the sequence of the input data and does not constitute financial advice or a reliable forecast.\n\n| Prediction Day | Hypothetical Closing Price |\n| :------------: | :------------------------: |\n| 1 | 358.50 |\n| 2 | 358.75 |\n| 3 | 359.00 |\n| 4 | 359.25 |\n| 5 | 359.50 |\n| 6 | 359.75 |\n| 7 | 360.00 |\n| 8 | 360.25 |\n| 9 | 360.50 |\n| 10 | 360.75 |\n| 11 | 361.00 |\n| 12 | 361.25 |\n| 13 | 361.50 |\n| 14 | 361.75 |\n| 15 | 362.00 |\n| 16 | 362.25 |\n| 17 | 362.50 |\n| 18 | 362.75 |\n| 19 | 363.00 |\n| 20 | 363.25 |\n| 21 | 363.50 |\n| 22 | 363.75 |\n| 23 | 364.00 |\n| 24 | 364.25 |\n| 25 | 364.50 |\n| 26 | 364.75 |\n| 27 | 365.00 |\n| 28 | 365.25 |\n| 29 | 365.50 |\n| 30 | 365.75 |",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "AXP"
+    },
+    {
+      "date": "2026-02-24",
+      "raw_output": "Based on the 11 closing prices extracted from the data provided, the average is calculated as follows:\n\nThe extracted closing prices are:\n341.7901094, 341.7901094, 341.7901094, 341.7901094, 341.7901094, 341.7901094, 341.7901094, 341.7901094, 341.7901094, 341.7901094, 341.7901094.\n\n**Calculation:**\nSum of prices = $11 \\times 341.7901094 = 3759.6912034$\nAverage = $\\frac{3759.6912034}{11} \\approx 341.7901094$\n\nThe average of these closing prices is **341.7901094**.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "AXP"
+    },
+    {
+      "date": "2026-02-26",
+      "raw_output": "33.50000000000000000000000000000000",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "AXP"
+    },
+    {
+      "date": "2026-02-27",
+      "raw_output": "I am an AI and do not have the capability to predict future stock prices with certainty. Financial markets are complex and influenced by numerous unpredictable factors.\n\nHowever, based on the historical data you provided, I can generate a **hypothetical sequence** of 30 closing prices by assuming a very slight, gradual trend continuation. **Please treat these numbers purely as an illustrative example and not as actual financial advice.**\n\nThe last recorded closing price was **341.79**.\n\nHere is a hypothetical projection for the next 30 trading days, assuming a very slight average daily decrease of approximately 0.25:\n\n| Day | Hypothetical Closing Price |\n|-----|----------------------------|\n| 1   | 341.54                     |\n| 2   | 341.29                     |\n| 3   | 341.04                     |\n| 4   | 340.79                     |\n| 5   | 340.54                     |\n| 6   | 340.29                     |\n| 7   | 340.04                     |\n| 8   | 339.79                     |\n| 9   | 339.54                     |\n| 10  | 339.29                     |\n| 11  | 339.04                     |\n| 12  | 338.79                     |\n| 13  | 338.54                     |\n| 14  | 338.29                     |\n| 15  | 338.04                     |\n| 16  | 337.79                     |\n| 17  | 337.54                     |\n| 18  | 337.29                     |\n| 19  | 337.04                     |\n| 20  | 336.79                     |\n| 21  | 336.54                     |\n| 22  | 336.29                     |\n| 23  | 336.04                     |\n| 24  | 335.79                     |\n| 25  | 335.54                     |\n| 26  | 335.29                     |\n| 27  | 335.04                     |\n| 28  | 334.79                     |\n| 29  | 334.54                     |\n| 30  | 334.29                     |\n\n**Disclaimer:** This projection is purely hypothetical and should not be used for actual investment decisions. Please consult with a qualified financial advisor for personalized investment advice.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "AXP"
+    },
+    {
+      "date": "2026-03-04",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "AXP"
+    },
+    {
+      "date": "2026-03-05",
+      "raw_output": "Based on the historical data provided, predicting future stock prices is inherently speculative and cannot be done with certainty. The following sequence represents 30 hypothetical future closing prices, extrapolated from the observed volatility and trend in the provided data, for illustrative purposes only.\n\n**Hypothetical Future Closing Prices (30 Days):**\n\n1. 305.50\n2. 306.15\n3. 304.80\n4. 307.25\n5. 308.00\n6. 309.50\n7. 310.10\n8. 309.85\n9. 311.30\n10. 312.50\n11. 313.00\n12. 312.80\n13. 314.10\n14. 315.50\n15. 316.00\n16. 315.80\n17. 317.20\n18. 318.00\n19. 319.50\n20. 320.10\n21. 321.30\n22. 322.50\n23. 323.00\n24. 322.80\n25. 324.10\n26. 325.50\n27. 326.00\n28. 325.80\n29. 327.20\n30. 328.00\n\n***Disclaimer:** This data is purely hypothetical and should not be used for actual investment decisions. Real-world stock performance depends on numerous complex economic, political, and market factors.*",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "AXP"
+    }
+  ]
+}

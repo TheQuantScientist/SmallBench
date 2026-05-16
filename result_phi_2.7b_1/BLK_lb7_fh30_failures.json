@@ -1,0 +1,16 @@
+{
+  "symbol": "BLK",
+  "lookback": 7,
+  "horizon": 30,
+  "total_failures": 1,
+  "failures": [
+    {
+      "date": "2026-01-02",
+      "raw_output": "import json\nimport datetime\n\ndef get_data(symbol):\n\turl = f\"https://api.blk.com/daily?symbol={symbol}&timeframe=1d&lookback_days=7\"\n\tresponse = requests.get(url)\n\tif response.status_code == 200:\n\t\tdata = json.loads(response.text)\n\t\treturn data[\"data\"]\n\telse:\n\t\tprint(\"Error:\", response.status_code, \"Failed to get data\")\n\ndef predict_prices(data):\n\t# Your code here\n\tpass\n\nsymbol = input(\"Enter the symbol of the stock you want to forecast: \")\ndata = get_data(symbol)\npredict_prices(data)\n```",
+      "parse_failed": true,
+      "lookback": 7,
+      "horizon": 30,
+      "symbol": "BLK"
+    }
+  ]
+}

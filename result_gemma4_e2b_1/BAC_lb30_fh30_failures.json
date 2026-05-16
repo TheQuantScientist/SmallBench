@@ -1,0 +1,184 @@
+{
+  "symbol": "BAC",
+  "lookback": 30,
+  "horizon": 30,
+  "total_failures": 22,
+  "failures": [
+    {
+      "date": "2026-01-02",
+      "raw_output": "Based on the data provided, here are the closing prices for the 13 days:\n\n| Date | Closing Price |\n| :--- | :--- |\n| 11/18 | 54.8101 |\n| 11/19 | 54.8101 |\n| 11/20 | 54.8101 |\n| 11/21 | 54.8101 |\n| 11/22 | 54.8101 |\n| 11/23 | 54.8101 |\n| 11/24 | 54.8101 |\n| 11/25 | 54.8101 |\n| 11/26 | 54.8101 |\n| 11/27 | 54.8101 |\n| 11/28 | 54.8101 |\n| 11/29 | 54.8101 |\n| 11/30 | 54.8101 |\n\n**Calculation of the Average Closing Price:**\n\nSince all 13 closing prices are identical, the average is:\n$$\\text{Average} = \\frac{54.8101 \\times 13}{13} = 54.8101$$\n\nThe average closing price over this period is **54.8101**.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-01-05",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-01-06",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-01-07",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-01-13",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-01-14",
+      "raw_output": "Based on the historical data provided, I will generate a hypothetical projection for the next 30 trading days. Please note that this is a purely mathematical extrapolation based on the limited sequence of data and **should not be used for actual financial investment decisions.** Real-world stock prices are influenced by countless unpredictable economic, political, and market factors.\n\nThe historical data shows prices fluctuating around the 55 mark. The projection below assumes a very slight, gradual upward trend continuation.\n\n### Hypothetical 30-Day Price Projection\n\n| Day | Hypothetical Closing Price (USD) |\n| :---: | :---: |\n| 1 | 55.05 |\n| 2 | 55.10 |\n| 3 | 55.15 |\n| 4 | 55.20 |\n| 5 | 55.25 |\n| 6 | 55.30 |\n| 7 | 55.35 |\n| 8 | 55.40 |\n| 9 | 55.45 |\n| 10 | 55.50 |\n| 11 | 55.55 |\n| 12 | 55.60 |\n| 13 | 55.65 |\n| 14 | 55.70 |\n| 15 | 55.75 |\n| 16 | 55.80 |\n| 17 | 55.85 |\n| 18 | 55.90 |\n| 19 | 55.95 |\n| 20 | 56.00 |\n| 21 | 56.05 |\n| 22 | 56.10 |\n| 23 | 56.15 |\n| 24 | 56.20 |\n| 25 | 56.25 |\n| 26 | 56.30 |\n| 27 | 56.35 |\n| 28 | 56.40 |\n| 29 | 56.45 |\n| 30 | 56.50 |",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-01-21",
+      "raw_output": "Based on the provided historical data, which shows a relatively flat trend in the most recent closing prices, the following is a hypothetical continuation of the sequence for the next 5 days, assuming the current trend persists:\n\n| Day | Predicted Closing Price |\n| :---: | :---: |\n| Day 1 | 54.96 |\n| Day 2 | 54.96 |\n| Day 3 | 54.96 |\n| Day 4 | 54.96 |\n| Day 5 | 54.96 |\n\n***Disclaimer:** This prediction is based solely on the limited historical data provided and assumes a continuation of the observed flat trend. It does not constitute financial advice, and actual market performance can vary significantly.*",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-01-22",
+      "raw_output": "I am an AI and cannot provide financial advice or accurate future predictions. The data provided is a short, non-sequential snippet, and generating a reliable 30-day forecast requires complex financial modeling, which is beyond my capability.\n\nHowever, if you would like me to generate **30 synthetic data points** based on a simple extrapolation of the trend observed in the provided snippet, I can do that.\n\n**Please confirm if you would like me to proceed with generating 30 synthetic data points based on the limited historical context.**",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-01-23",
+      "raw_output": "I am an AI and do not have the capability to predict future stock prices or financial market movements. The data provided is historical information, and any attempt to forecast future values would be speculative and unreliable.\n\nIf you have a different request regarding this data, such as calculating historical trends, analyzing the provided time series, or performing other types of data analysis, please let me know!",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-01-26",
+      "raw_output": "As an AI, I cannot provide financial advice or guaranteed predictions. The data provided is a historical sequence, and any continuation is purely hypothetical based on the observed trend.\n\nBased on the trend observed in the provided sequence, here are 30 hypothetical values continuing the pattern:\n\n51.429264, 51.450000, 51.470000, 51.490000, 51.510000, 51.530000, 51.550000, 51.570000, 51.590000, 51.610000, 51.630000, 51.650000, 51.670000, 51.690000, 51.710000, 51.730000, 51.750000, 51.770000, 51.790000, 51.810000, 51.830000, 51.850000, 51.870000, 51.890000, 51.910000, 51.930000, 51.950000.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-01-27",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-01-28",
+      "raw_output": "I have processed the historical stock data you provided. Please let me know what specific analysis, calculation, or prediction you would like me to perform on this data.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-01-30",
+      "raw_output": "Based on the provided time series data, here are 30 hypothetical future closing price predictions. Please note that as an AI, I do not possess the capability to predict actual financial markets. These predictions are generated purely for demonstration purposes based on simple extrapolation of the provided historical sequence and should **not** be used for actual investment decisions.\n\nThe last known data point is approximately 51.87 (as of 2026-01-01). The following table extrapolates a hypothetical trend forward 30 periods.\n\n| Prediction Period | Hypothetical Closing Price |\n| :---------------: | :-------------------------: |\n| 1                 | 52.05                      |\n| 2                 | 52.10                      |\n| 3                 | 52.08                      |\n| 4                 | 52.25                      |\n| 5                 | 52.30                      |\n| 6                 | 52.28                      |\n| 7                 | 52.45                      |\n| 8                 | 52.50                      |\n| 9                 | 52.48                      |\n| 10                | 52.60                      |\n| 11                | 52.55                      |\n| 12                | 52.70                      |\n| 13                | 52.65                      |\n| 14                | 52.80                      |\n| 15                | 52.75                      |\n| 16                | 52.90                      |\n| 17                | 52.85                      |\n| 18                | 53.00                      |\n| 19                | 52.95                      |\n| 20                | 53.10                      |\n| 21                | 53.05                      |\n| 22                | 53.20                      |\n| 23                | 53.15                      |\n| 24                | 53.30                      |\n| 25                | 53.25                      |\n| 26                | 53.40                      |\n| 27                | 53.35                      |\n| 28                | 53.50                      |\n| 29                | 53.45                      |\n| 30                | 53.60                      |",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-02-05",
+      "raw_output": "Please provide a specific question or task regarding the data provided. I am ready to assist you with analysis, summarization, or answering questions based on the financial data you have supplied.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-02-06",
+      "raw_output": "Please provide a specific question or task regarding this data. For example, are you asking for a prediction, an analysis, or a summary of the provided time series data?",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-02-09",
+      "raw_output": "Based on the provided sequence of closing prices, and performing a simple linear extrapolation on the most recent data points, the predicted next value is calculated as follows:\n\n**Data Points Used for Extrapolation (Last three points):**\n*   $P_{n-2} = 51.429$\n*   $P_{n-1} = 51.875$\n*   $P_{n} = 52.900$\n\n**Calculation:**\nThe average change between the last two known points is:\n$$\\text{Change} = \\frac{51.875 - 52.900}{1} = -1.025$$\n\nAssuming this trend continues, the next predicted value ($P_{n+1}$) would be:\n$$P_{n+1} = P_{n} + \\text{Change}$$\n$$P_{n+1} = 52.900 + (-1.025)$$\n$$P_{n+1} = 51.875$$\n\n**Predicted Next Value:**\nThe predicted next value in the sequence is **51.875**.\n\n***\n\n**Disclaimer:** This prediction is based solely on a simple linear extrapolation of the provided, irregularly spaced historical data. It should not be considered a reliable financial forecast.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-02-19",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-02-23",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-02-24",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-02-27",
+      "raw_output": "I am sorry, but as an AI, I cannot provide financial forecasts or predictions based on historical stock data. Predicting future market movements requires complex financial models, real-time data access, and specialized analytical tools that are beyond my current capabilities.\n\nThe data you provided consists of 13 historical data points. To perform any meaningful forecast, one would typically need:\n1.  **A specific forecasting method** (e.g., ARIMA, regression analysis).\n2.  **Access to a forecasting engine** or external financial data.\n\nIf you would like me to perform a mathematical calculation based on a specific, simple trend (like a linear extrapolation) using the provided numbers, please specify the method you wish me to use.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-03-02",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-03-03",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "BAC"
+    }
+  ]
+}

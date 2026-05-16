@@ -1,0 +1,48 @@
+{
+  "symbol": "BAC",
+  "lookback": 7,
+  "horizon": 30,
+  "total_failures": 5,
+  "failures": [
+    {
+      "date": "2026-01-28",
+      "raw_output": "import json\nimport datetime\n\ndef stock_forecast(data):\n\t# Get the data from the user input\n\tsymbol = data['symbol']\n\ttimeframe = data['timeframe']\n\tlookback_days = data['lookback_days']\n\tdata = []\n\n\t# Open, High, Low, Volume of the past 7 days\n\tfor i in range(7):\n\t\tdate = datetime.datetime.strptime(symbol + '_' + str(i+1) + '_' + timeframe, '%Y-%m-%d')\n\t\topen_price = float(data[date]['open'])\n\t\thigh_price = float(data[date]['high'])\n\t\tlow_price = float(data[date]['low'])\n\t\tvolume = int(data[date]['volume'])\n\n\t\t# Calculate the average of the past 7 days\n\t\taverage_price = (open_price + high_price + low_price) / 3\n\n\t\t# Add the average price to the data list\n\t\tdata.append({'Date': date, 'Average': average_price})\n\n\t# Predict the next 30 daily Closing prices\n\tfor i in range(30):\n\t\tdate = datetime.datetime.strptime(symbol + '_' + str(i+1) + '_' + timeframe, '%Y-%m-%d')\n\t\taverage_price = data[date]['Average']\n\n\t\t# Calculate the next day's Closing price based on the average of the past 7 days\n\t\tnext_day_close = round(average_price * 1.05, 4)\n\n\t\t# Add the next day's Closing price to the data list\n\t\tdata.append({'Date': date, 'Closing': next_day_close})\n\n\t# Output the predicted Closing prices as a string of numbers separated by semicolons\n\toutput = ''\n\tfor i in range(30):\n\t\tdate = datetime.datetime.strptime(symbol + '_' + str(i+1) + '_' + timeframe, '%Y-%m-%d')\n\t\tnext_day_close = data[date]['Closing']\n\n\t\t# Format the next day's Closing price with 4 decimal places and add it to the output string\n\t\toutput += f\"{next_day_close:.4f};\"\n\n\treturn output\n\ndata = json.loads(input())\nprint(stock_forecast(data))",
+      "parse_failed": true,
+      "lookback": 7,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-02-03",
+      "raw_output": "import json\nimport random\n\ndef stock_forecast(data):\n    # Your code here\n    pass\n\njson_data = \"\"\"{\n  \"symbol\": \"BAC\",\n  \"timeframe\": \"1d\",\n  \"lookback_days\": 7,\n  \"data\": [\n    {\"Date\": \"2026-01-23\", \"open\": 51.817071128221, \"high\": 51.90656535684477, \"low\": 51.091175181",
+      "parse_failed": true,
+      "lookback": 7,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-02-17",
+      "raw_output": "import json\nimport datetime\n\ndef get_data(symbol):\n    with open('BAC.json') as f:\n        data = json.load(f)\n    return data[symbol]['data']\n\ndef predict_prices(data, days):\n    # Your code here\n    pass\n\n# Example usage\ndata = get_data('BAC')\ndays = 7\npredicted_prices = predict_prices(data, days)\nprint(\";\".join([f\"{price:.2f}\" for price in predicted_prices]))\n```\n\nThis code uses the `json` module to read the stock data from a JSON file and then uses a simple linear regression model to predict the next 30 daily closing prices. The output is then formatted as semicolon-separated numbers with 2 decimal places. Note that this is just an example and the actual prediction algorithm will be more complex and require additional data preprocessing and feature engineering.",
+      "parse_failed": true,
+      "lookback": 7,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-02-19",
+      "raw_output": "import json\nimport random\n\ndef get_data(symbol):\n    with open('data/' + symbol) as f:\n        return json.load(f)\n\ndef predict_next_30_prices(data):\n    # Your code here\n    pass\n\nsymbol = 'BAC'\ndata = get_data(symbol)\npredicted_prices = predict_next_30_prices(data)\nprint(';'.join([f\"{price:.2f}\" for price in predicted_prices]))",
+      "parse_failed": true,
+      "lookback": 7,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-02-23",
+      "raw_output": "import json\nimport random\n\ndata = json.loads(input)\n\ndef get_random_price():\n    return round(random.uniform(data['open'], data['close']), 2)\n\nfor i in range(30):\n    print(get_random_price(), end=';')",
+      "parse_failed": true,
+      "lookback": 7,
+      "horizon": 30,
+      "symbol": "BAC"
+    }
+  ]
+}

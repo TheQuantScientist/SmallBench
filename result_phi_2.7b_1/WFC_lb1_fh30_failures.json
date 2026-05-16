@@ -1,0 +1,24 @@
+{
+  "symbol": "WFC",
+  "lookback": 1,
+  "horizon": 30,
+  "total_failures": 2,
+  "failures": [
+    {
+      "date": "2026-02-18",
+      "raw_output": "import json\nimport numpy as np\n\ndef stock_forecast(data):\n    # Get the data from the user\n    symbol = data['symbol']\n    timeframe = data['timeframe']\n    lookback_days = data['lookback_days']\n\n    # Load the data\n    df = pd.read_json(f'{symbol}_{timeframe}.json')\n\n    # Get the last day's closing price\n    last_day_close = df['close'].iloc[-1]\n\n    # Calculate the moving average\n    ma = np.mean(df['close'])\n\n    # Forecast the next 30 days\n    forecast = [last_day_close + (i * ma) for i in range(30)]\n\n    # Convert to string and return\n    return ';'.join([f\"{num:.4f}\" for num in forecast])\n\ndata = {'symbol': 'WFC', 'timeframe': '1d', 'lookback_days': 1}\nprint(stock_forecast(data))\n```\n\nThis code uses the `json` and `numpy` libraries to load the stock data, calculate the moving average, and forecast the next 30 days' closing prices. The output is a string of exactly 30 numbers, each with 4 decimal places, separated by semicolons.",
+      "parse_failed": true,
+      "lookback": 1,
+      "horizon": 30,
+      "symbol": "WFC"
+    },
+    {
+      "date": "2026-02-19",
+      "raw_output": "import json\nimport numpy as np\n\ndef stock_forecast(data):\n    # Get the data from the JSON file\n    symbol = data['symbol']\n    timeframe = data['timeframe']\n    lookback_days = data['lookback_days']\n\n    # Load the data into a numpy array\n    df = pd.read_json(f\"{symbol}_{timeframe}.json\")[:lookback_days]\n\n    # Calculate the moving average and standard deviation of the closing prices\n    ma = df['close'].rolling(window=30).mean()\n    std = df['close'].rolling(window=30).std()\n\n    # Generate a random walk with mean 0 and standard deviation 1\n    random_walk = np.random.normal(0, 1, size=30)\n\n    # Calculate the forecast for the next 30 days\n    forecast = ma + std * random_walk\n\n    # Convert the forecast to a string of numbers separated by semicolons\n    forecast_str = ';'.join([f'{num:.4f}' for num in forecast])\n\n    return forecast_str\n\ndata = {\n    \"symbol\": \"WFC\",\n    \"timeframe\": \"1d\",\n    \"lookback_days\": 1,\n}\n\nprint(stock_forecast(data))",
+      "parse_failed": true,
+      "lookback": 1,
+      "horizon": 30,
+      "symbol": "WFC"
+    }
+  ]
+}

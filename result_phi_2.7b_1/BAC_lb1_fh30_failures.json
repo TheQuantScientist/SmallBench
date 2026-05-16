@@ -1,0 +1,48 @@
+{
+  "symbol": "BAC",
+  "lookback": 1,
+  "horizon": 30,
+  "total_failures": 5,
+  "failures": [
+    {
+      "date": "2026-01-20",
+      "raw_output": "import json\nimport random\n\ndef stock_forecast(data):\n    # Get the data from the JSON file\n    with open(data) as f:\n        stock_data = json.load(f)\n\n    # Extract the symbol, timeframe, and lookback days from the JSON file\n    symbol = stock_data['symbol']\n    timeframe = stock_data['timeframe']\n    lookback_days = stock_data['lookback_days']\n\n    # Generate random data for the next 30 days\n    random_data = []\n    for i in range(30):\n        random_data.append({'Date':f\"2021-01-{i+1}\", 'open':round(random.uniform(50,100),2), \n                            'high':round(random.uniform(60,120),2), 'low':round(random.uniform(40,80),2), \n                            'close':round(random.uniform(55,115),2), 'volume':random.randint(1000,10000)})\n\n    # Combine the random data with the historical data for the same symbol and timeframe\n    combined_data = []\n    for i in range(lookback_days):\n        combined_data.append({'Date':f\"2021-01-{i+1}\", 'open':stock_data['data'][0]['open'], \n                              'high':stock_data['data'][0]['high'], 'low':stock_data['data'][0]['low'], \n                              'close':stock_data['data'][0]['close'], 'volume':stock_data['data'][0]['volume']})\n\n    # Combine the random data with the historical data for the same symbol and timeframe\n    for i in range(30):\n        combined_data.append({'Date':f\"2021-01-{i+1}\", 'open':random_data[i]['open'], \n                              'high':random_data[i]['high'], 'low':random_data[i]['low'], \n                              'close':random_data[i]['close'], 'volume':random_data[i]['volume']})\n\n    # Convert the combined data to a list of dictionaries with the required format\n    forecast = []\n    for i in range(30):\n        forecast.append({'Date':f\"2021-01-{i+1}\", 'open':combined_data[i]['open'], \n                         'high':combined_data[i]['high'], 'low':combined_data[i]['low'], \n                         'close':combined_data[i]['close'], 'volume':combined_data[i]['volume']})\n\n    # Convert the forecast to a list of numbers with the required format\n    forecast_numbers = []\n    for i in range(30):\n        forecast_numbers.append(round(forecast[i]['open'],2))\n        forecast_numbers.append(round(forecast[i]['high'],2))\n        forecast_numbers.append(round(forecast[i]['low'],2))\n        forecast_numbers.append(round(forecast[i]['close'],2))\n        forecast_numbers.append(forecast[i]['volume']/1000)\n\n    # Convert the forecast numbers to a string with the required format\n    forecast_string = \"\"\n    for i in range(30):\n        forecast_string += f\"{forecast_numbers[3*i]};{forecast_numbers[3*i+1]};{forecast_numbers[3*i+2]};{forecast_numbers[3*i+3]};{forecast_numbers[3*i+4]};\"\n\n    return forecast_string\n\n# Test the function with a sample JSON file\ndata = \"BAC.json\"\nprint(stock_forecast(data)) # Output: 142.35;142.85;143.35;142.95;144.25;145.05;146.15;147.45;148.55;149.65;150.75;151.85;152.95;153.05;154.15;155.25;156.35;157.45;158.55;159.65;160.75;161.85;162.95;163.05;164.15;165.25;166.35;167.45;168.55;169.65;170.75;171.85;172.95;173.05;174.15;175.25;176.35;177.45;178.55;179.65;180.75;181.85",
+      "parse_failed": true,
+      "lookback": 1,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-01-21",
+      "raw_output": "import json\nimport random\n\ndef stock_forecast(data):\n    # Get the data from the user\n    symbol = data['symbol']\n    timeframe = data['timeframe']\n    lookback_days = data['lookback_days']\n\n    # Generate a list of random numbers for each day in the timeframe\n    daily_data = []\n    for i in range(30):\n        random_numbers = [round(random.uniform(50, 100), 2) for _ in range(4)]\n        daily_data.append(random_numbers)\n\n    # Convert the daily data to a list of lists\n    weekly_data = []\n    for i in range(lookback_days):\n        week_data = [daily_data[i] + daily_data[i+1] for i in range(len(daily_data)-1)]\n        weekly_data.append(week_data)\n\n    # Flatten the weekly data into a single list of numbers\n    forecasted_data = []\n    for week in weekly_data:\n        forecasted_data += [num for day in week for num in day]\n\n    return forecasted_data\n\n# Test the function with the user's data\nuser_data = {'symbol': 'BAC', 'timeframe': '1d', 'lookback_days': 1}\nforecasted_data = stock_forecast(user_data)\nprint(';'.join([str(num) for num in forecasted_data]))\n```",
+      "parse_failed": true,
+      "lookback": 1,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-02-17",
+      "raw_output": "import json\nimport numpy as np\n\ndef stock_forecast(data):\n    # Load the data from JSON\n    json_data = json.loads(data)\n    symbol = json_data['symbol']\n    timeframe = json_data['timeframe']\n    lookback_days = json_data['lookback_days']\n\n    # Get the historical data for the symbol and timeframe\n    df = pd.read_json(f\"{symbol}_{timeframe}.json\")[:lookback_days]\n\n    # Calculate the moving average\n    ma = df['close'].rolling(window=30).mean()\n\n    # Forecast the next 30 days\n    forecast = ma.values * 1.05 + np.random.normal(0, 0.1, 30)\n\n    # Convert to string and return\n    return ';'.join([f\"{num:.4f}\" for num in forecast])\n\ndata = \"\"\"{\"symbol\":\"BAC\",\"timeframe\":\"1d\",\"lookback_days\":1,\"data\":[{\"Date\":\"2026-02-13\",\"open\":51.61819498829466,\"high\":52.52307939787106,\"low\":51.1508358142183,\"close\":52.25459671020508,\"volume\":31772100}]}\"\"\"\n\nprint(stock_forecast(data))\n```",
+      "parse_failed": true,
+      "lookback": 1,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-02-20",
+      "raw_output": "import json\nimport random\n\ndef stock_forecast(data):\n    \"\"\"\n    This function takes in a dictionary of BAC daily data and returns the next 30 closing prices as a list of floats with 2 decimal places.\n    \"\"\"\n    # Extracting the data from the JSON object\n    symbol = data['symbol']\n    timeframe = data['timeframe']\n    lookback_days = data['lookback_days']\n    data = json.loads(json.dumps(data))[0]['data']\n\n    # Generating random numbers for the next 30 days\n    random_numbers = [round(random.uniform(data['open'], data['close']) + (i * 0.01), 2) for i in range(30)]\n\n    # Returning the list of predicted closing prices\n    return random_numbers\n\n# Example usage:\nBAC_data = {\"symbol\":\"BAC\",\"timeframe\":\"1d\",\"lookback_days\":1,\"data\":[{\"Date\":\"2026-02-19\",\"open\":51.618195720575166,\"high\":52.5131380254912,\"low\":51.53864740083459,\"close\":52.47336196899414,\"volume\":47148600}]}\npredicted_prices = stock_forecast(BAC_data)\nprint(\"Predicted closing prices for BAC:\", predicted_prices)\n```",
+      "parse_failed": true,
+      "lookback": 1,
+      "horizon": 30,
+      "symbol": "BAC"
+    },
+    {
+      "date": "2026-02-27",
+      "raw_output": "import json\nimport numpy as np\n\ndef stock_forecast(data):\n    \"\"\"\n    This function takes in a JSON object containing BAC daily data and returns the next 30 daily Closing prices.\n    \"\"\"\n    # Extracting the data from the JSON object\n    symbol = data['symbol']\n    timeframe = data['timeframe']\n    lookback_days = data['lookback_days']\n    data = json.loads(data)\n\n    # Calculating the daily returns\n    returns = []\n    for i in range(1, len(data['data'])):\n        open_price = data['data'][i-1]['open']\n        high_price = data['data'][i-1]['high']\n        low_price = data['data'][i-1]['low']\n        close_price = data['data'][i]['close']\n        volume = data['data'][i]['volume']\n\n        # Calculating the daily return\n        daily_return = (close_price - open_price) / open_price\n\n        # Appending the daily return to the list of returns\n        returns.append(daily_return)\n\n    # Calculating the mean and standard deviation of the returns\n    mean_return = np.mean(returns)\n    std_return = np.std(returns)\n\n    # Generating the next 30 daily Closing prices\n    next_30_prices = []\n    for i in range(1, 31):\n        daily_return = mean_return + std_return * i\n        next_price = data['data'][-1]['close'] * (1 + daily_return)\n        next_30_prices.append(round(next_price, 4))\n\n    # Converting the list of prices to a string with semicolon-separated values\n    output = ';'.join([str(x) for x in next_30_prices])\n\n    return output\n\ndata = \"\"\"{\"symbol\":\"BAC\",\"timeframe\":\"1d\",\"lookback_days\":1,\"data\":[{\"Date\":\"2026-02-26\",\"open\":51.58836332356563,\"high\":52.373919542207126,\"low\":51.44915092515456,\"close\":52.00600051879883,\"volume\":52418500}]}\"\"\"\nprint(stock_forecast(data)) # Output: 142.35;142.85;143.35;...\n```",
+      "parse_failed": true,
+      "lookback": 1,
+      "horizon": 30,
+      "symbol": "BAC"
+    }
+  ]
+}

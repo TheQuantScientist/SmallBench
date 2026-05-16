@@ -1,0 +1,16 @@
+{
+  "symbol": "V",
+  "lookback": 21,
+  "horizon": 30,
+  "total_failures": 1,
+  "failures": [
+    {
+      "date": "2026-02-04",
+      "raw_output": "import json\nimport random\n\ndef stock_forecast(data):\n    # extract the data from the JSON object\n    symbol = data['symbol']\n    timeframe = data['timeframe']\n    lookback_days = data['lookback_days']\n    data = json.loads(data)\n\n    # generate random daily closing prices for the next 30 days\n    prices = []\n    for i in range(30):\n        open_price = round(random.uniform(data['open'][i], data['high'][i]), 4)\n        high_price = round(random.uniform(data['open'][i], data['high'][i]), 4)\n        low_price = round(random.uniform(data['low'][i], data['high'][i]), 4)\n        close_price = round(random.uniform(data['open'][i], data['high'][i]), 4)\n        volume = random.randint(0, data['volume'][i])\n\n        prices.append({\n            'Date': f\"2021-{i+1}\",\n            'open': open_price,\n            'high': high_price,\n            'low': low_price,\n            'close': close_price,\n            'volume': volume\n        })\n\n    # calculate the average price for each day\n    averages = []\n    for i in range(lookback_days):\n        prices_for_day = [price['close'] for price in prices if price['Date'].startswith(f\"2021-{i+1}\")]\n        average_price = sum(prices_for_day) / len(prices_for_day)\n        averages.append({\n            'Date': f\"2021-{i+1}\",\n            'average': average_price\n        })\n\n    # calculate the forecast for the next 30 days\n    forecasts = []\n    for i in range(30):\n        if i < lookback_days:\n            forecast = averages[i]['average']\n        else:\n            # use the previous day's average as a starting point and add random noise\n            previous_forecast = forecasts[-1]['average']\n            forecast = round(previous_forecast + random.uniform(-0.5, 0.5), 2)\n            # add some volatility to the forecast by randomly increasing or decreasing it up to 5%\n            if random.random() < 0.05:\n                forecast *= 1.05\n            elif random.random() < 0.05:\n                forecast /= 1.05\n\n        forecasts.append({\n            'Date': f\"2021-{i+1}\",\n            'forecast': forecast\n        })\n\n    # return the forecast as a JSON object\n    return json.dumps(forecasts)\n\n# example usage\ndata = {\n    \"symbol\": \"AAPL\",\n    \"timeframe\": \"1D\",\n    \"lookback_days\": 5,\n    \"volume\": 1000000\n}\nprint(stock_forecast(data))",
+      "parse_failed": true,
+      "lookback": 21,
+      "horizon": 30,
+      "symbol": "V"
+    }
+  ]
+}

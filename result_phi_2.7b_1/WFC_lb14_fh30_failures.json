@@ -1,0 +1,16 @@
+{
+  "symbol": "WFC",
+  "lookback": 14,
+  "horizon": 30,
+  "total_failures": 1,
+  "failures": [
+    {
+      "date": "2026-02-25",
+      "raw_output": "import json\nimport numpy as np\n\ndef stock_forecast(data):\n    # Load the data from JSON file\n    with open(data) as f:\n        stock_data = json.load(f)\n\n    # Extract the required information\n    symbol = stock_data['symbol']\n    timeframe = stock_data['timeframe']\n    lookback_days = stock_data['lookback_days']\n    data = np.array([d['close'] for d in stock_data['data']])\n\n    # Calculate the moving average and standard deviation\n    moving_avg = np.convolve(data, np.ones((lookback_days,))/lookback_days, mode='valid')\n    std = np.std(data[-lookback_days:])\n\n    # Generate the forecast\n    forecast = []\n    for i in range(30):\n        # Calculate the next day's closing price\n        next_day_close = moving_avg[i] + std * np.random.randn()\n\n        # Round to 2 decimal places and append to the forecast\n        forecast.append(round(next_day_close, 2))\n\n    return ';'.join([str(f) for f in forecast])\n\nprint(stock_forecast('WFC daily data'))",
+      "parse_failed": true,
+      "lookback": 14,
+      "horizon": 30,
+      "symbol": "WFC"
+    }
+  ]
+}

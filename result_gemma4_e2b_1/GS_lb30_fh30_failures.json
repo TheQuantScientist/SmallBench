@@ -1,0 +1,112 @@
+{
+  "symbol": "GS",
+  "lookback": 30,
+  "horizon": 30,
+  "total_failures": 13,
+  "failures": [
+    {
+      "date": "2026-01-02",
+      "raw_output": "Based on the data provided, which consists of a sequence of identical numerical values across all rows (777777777777778), the average of these values is:\n\n**7,777,777,777,777,778**\n\n***\n\n**Note on Data Interpretation:** If this data was intended to represent stock prices (e.g., Open, High, Low, Close), the provided sequence of identical numbers suggests that either the data is placeholder, or the calculation requested is based purely on the literal numbers provided, rather than a financial analysis.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "GS"
+    },
+    {
+      "date": "2026-01-05",
+      "raw_output": "Based on the sequence of numbers provided in the prompt, here is the sum:\n\nThe numbers provided are:\n1. 777.7777777777777\n2. 777.7777777777777\n3. 777.7777777777777\n4. 777.7777777777777\n5. 888.8888888888889\n6. 888.8888888888889\n7. 888.8888888888889\n8. 888.8888888888889\n9. 888.8888888888889\n10. 888.8888888888889\n11. 888.8888888888889\n12. 888.8888888888889\n\n**Sum:** $10,222.222222222222$",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "GS"
+    },
+    {
+      "date": "2026-01-06",
+      "raw_output": "Please provide a specific question or task regarding this data. I can analyze the provided historical data, summarize it, or answer specific questions based on it, but I cannot predict future values without a defined model or instruction.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "GS"
+    },
+    {
+      "date": "2026-01-08",
+      "raw_output": "I am a large language model and do not have the capability to predict future stock prices or provide financial advice. The data provided is historical information, and future market movements are inherently unpredictable.\n\nIf you have a specific analytical task based on this historical data (such as calculating averages, identifying trends, or reformatting the provided dates and prices), please let me know, and I would be happy to assist you with that.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "GS"
+    },
+    {
+      "date": "2026-01-12",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "GS"
+    },
+    {
+      "date": "2026-01-29",
+      "raw_output": "I am an AI and cannot provide financial advice or accurate future stock predictions. The data provided is historical, and predicting future market movements is complex and requires specialized financial models.\n\nHowever, if you are asking for a continuation of the sequence based purely on the numerical progression observed in the provided data, I can generate 30 hypothetical data points based on a very simple, non-financial extrapolation. **Please treat this output strictly as a mathematical sequence and not as actual financial forecasting.**\n\nHere are 30 hypothetical data points following the observed pattern:\n\n| Day | Hypothetical Value |\n| :---: | :---: |\n| 1 | 88.10 |\n| 2 | 88.15 |\n| 3 | 88.20 |\n| 4 | 88.25 |\n| 5 | 88.30 |\n| 6 | 88.35 |\n| 7 | 88.40 |\n| 8 | 88.45 |\n| 9 | 88.50 |\n| 10 | 88.55 |\n| 11 | 88.60 |\n| 12 | 88.65 |\n| 13 | 88.70 |\n| 14 | 88.75 |\n| 15 | 88.80 |\n| 16 | 88.85 |\n| 17 | 88.90 |\n| 18 | 88.95 |\n| 19 | 89.00 |\n| 20 | 89.05 |\n| 21 | 89.10 |\n| 22 | 89.15 |\n| 23 | 89.20 |\n| 24 | 89.25 |\n| 25 | 89.30 |\n| 26 | 89.35 |\n| 27 | 89.40 |\n| 28 | 89.45 |\n| 29 | 89.50 |\n| 30 | 89.55 |",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "GS"
+    },
+    {
+      "date": "2026-02-03",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "GS"
+    },
+    {
+      "date": "2026-02-05",
+      "raw_output": "Based on the numerical sequence provided in the input, the calculation performed is the **average** of those numbers.\n\nThe numbers identified are:\n894.21, 894.21, 894.21, 894.21, 929.1899999999999, 894.21, 894.21, 894.21, 894.21, 894.21.\n\n**Calculation:**\nSum of numbers = $894.21 \\times 9 + 929.1899999999999$\nSum of numbers = $8047.89 + 929.19$\nSum of numbers = $8977.08$\n\nNumber of data points = 10\n\n**Average** = $\\frac{8977.08}{10} = 897.708$\n\nThe average of the provided numbers is **897.71** (rounded to two decimal places).",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "GS"
+    },
+    {
+      "date": "2026-02-10",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "GS"
+    },
+    {
+      "date": "2026-02-17",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "GS"
+    },
+    {
+      "date": "2026-02-18",
+      "raw_output": "Based on the historical data provided, here is a simulated continuation of the price sequence. Please note that this is an extrapolation based solely on the limited historical data and does not constitute actual financial advice.\n\n**Simulated Future Price Sequence (Next 10 Periods):**\n\n941.55\n938.80\n935.10\n932.45\n930.00\n928.15\n925.50\n923.80\n921.10\n918.55",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "GS"
+    },
+    {
+      "date": "2026-02-20",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "GS"
+    },
+    {
+      "date": "2026-02-23",
+      "raw_output": "",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "GS"
+    }
+  ]
+}

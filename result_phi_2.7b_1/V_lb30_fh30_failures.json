@@ -1,0 +1,216 @@
+{
+  "symbol": "V",
+  "lookback": 30,
+  "horizon": 30,
+  "total_failures": 26,
+  "failures": [
+    {
+      "date": "2026-01-02",
+      "raw_output": "import pandas as pd\nimport numpy as np\n\n# Read the data from a csv file\ndf = pd.read_csv('data.csv')\n\n# Extract the 'Open' column and convert it to float\nopen_col = df['Open']\nopen_col = open_col.astype(float)\n\n# Round the values to 2 decimal places\nrounded_values = np.round(open_col, 2)\n\n# Create a new dataframe with only the rounded values\nnew_df = pd.DataFrame({'Rounded Values': rounded_values})\n\n# Print the first 5 rows of the new dataframe\nprint(new_df.head())",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-01-05",
+      "raw_output": "import json\nimport random\n\ndef generate_random_numbers(num_of_numbers):\n    # Generate a list of 30 random numbers between 0 and 1\n    random_numbers = [round(random.uniform(0, 1), 2) for _ in range(num_of_numbers)]\n\n    # Convert the list to a string with semicolon-separated values\n    return ';'.join(str(number) for number in random_numbers)\n\n# Example usage:\nrandom_numbers = generate_random_numbers(30)\nprint(random_numbers)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-01-07",
+      "raw_output": "import json\nimport re\n\ndef extract_data(json_string):\n    # Parse the JSON string into a Python dictionary\n    data = json.loads(json_string)\n\n    # Extract the data from each row of the table\n    for row in data['table']:\n        # Find all numbers in the row and store them in a list\n        numbers = re.findall('\\d+\\.\\d+', str(row))\n\n        # If there are at least 30 numbers, return the first 30\n        if len(numbers) >= 30:\n            return numbers[:30]\n\n    # If no row has 30 or more numbers, return an empty list\n    return []\n\njson_string = '''{\n \t\"system\": {\n \t\t\"name\": \"System\",\n \t\t\"type\": \"System\",\n \t\t\"version\": \"1.0\",\n \t\t\"description\": \"A system for processing data\",\n \t\t\"table\": [\n \t\t\t[\n \t\t\t\t\"Date\",\n \t\t\t\t\"Open\",\n \t\t\t\t\"High\",\n \t\t\t\t\"Low\",\n \t\t\t\t\"Close\",\n \t\t\t\t\"Volume\"\n \t\t\t]\n \t]\n }\n}'''\n\nprint(extract_data(json_string)) # Output: ['142.35', '142.85', '143.35']",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-01-13",
+      "raw_output": "import random\n\ndef generate_random_numbers(num_of_numbers):\n    \"\"\"Generate a list of random numbers with two decimal places.\"\"\"\n    return [round(random.uniform(0, 1), 2) for _ in range(num_of_numbers)]\n\n# Generate 30 random numbers between 0 and 1\nrandom_numbers = generate_random_numbers(30)\n\n# Format the list of random numbers as a string with semicolon-separation\nformatted_numbers = ';'.join([f'{num:.2f}' for num in random_numbers])\n\nprint(formatted_numbers)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-01-16",
+      "raw_output": "import json\nimport re\n\ndef extract_numbers(data):\n    pattern = r'\\d+\\.\\d{1,2}'\n    matches = []\n    for item in data['results']:\n        match = re.findall(pattern, str(item))\n        if match:\n            matches.extend(match)\n    return matches[:30]\n\ndata = {\n    'system': {\n        'name': 'System',\n        'version': '1.0',\n        'description': 'A simple system for testing.',\n        'results': [\n            {\n                'date': '2021-01-02',\n                'time': '12:00:00',\n                'temperature': [\n                    {'value': 35.0, 'unit': 'Celsius'},\n                    {'value': 36.5, 'unit': 'Celsius'}\n                ]\n            },\n            {\n                'date': '2021-01-03',\n                'time': '12:00:00',\n                'temperature': [\n                    {'value': 34.0, 'unit': 'Celsius'},\n                    {'value': 35.5, 'unit': 'Celsius'}\n                ]\n            },\n            {\n                'date': '2021-01-04',\n                'time': '12:00:00',\n                'temperature': [\n                    {'value': 36.0, 'unit': 'Celsius'},\n                    {'value': 37.5, 'unit': 'Celsius'}\n                ]\n            },\n            {\n                'date': '2021-01-05',\n                'time': '12:00:00',\n                'temperature': [\n                    {'value': 33.0, 'unit': 'Celsius'},\n                    {'value': 34.5, 'unit': 'Celsius'}\n                ]\n            },\n            {\n                'date': '2021-01-06',\n                'time': '12:00:00',\n                'temperature': [\n                    {'value': 35.0, 'unit': 'Celsius'},\n                    {'value': 36.5, 'unit': 'Celsius'}\n                ]\n            },\n            {\n                'date': '2021-01-07',\n                'time': '12:00:00',\n                'temperature': [\n                    {'value': 34.0, 'unit': 'Celsius'},\n                    {'value': 35.5, 'unit': 'Celsius'}\n                ]\n            },\n            {\n                'date': '2021-01-08',\n                'time': '12:00:00',\n                'temperature': [\n                    {'value': 36.0, 'unit': 'Celsius'},\n                    {'value': 37.5, 'unit': 'Celsius'}\n                ]\n            },\n            {\n                'date': '2021-01-09',\n                'time': '12:00:00',\n                'temperature': [\n                    {'value': 33.0, 'unit': 'Celsius'},\n                    {'value': 34.5, 'unit': 'Celsius'}\n                ]\n            },\n            {\n                'date': '2021-01-10',\n                'time': '12:00:00',\n                'temperature': [\n                    {'value': 35.0, 'unit': 'Celsius'},\n                    {'value': 36.5, 'unit': 'Celsius'}\n                ]\n            },\n            {\n                'date': '2021-01-11',\n                'time': '12:00:00',\n                'temperature': [\n                    {'value': 34.0, 'unit': 'Celsius'},\n                    {'value': 35.5, 'unit': 'Celsius'}\n                ]",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-01-21",
+      "raw_output": "import json\nimport re\n\ndata = {'system': 'System', 'data': [{'date': '2021-01-02', 'open': 342.076, 'high': 328.642, 'low': 324.8982, 'close': 325.149, 'volume': 827990}, {'date': '2021-01-05', 'open': 327.644, 'high': 331.742, 'low': 320.8982, 'close': 325.149, 'volume': 827990}]}\n\njson_data = json.dumps(data)\n\n# Extract the numbers from the JSON data\nnumbers = re.findall('\\d+\\.\\d{2}', json_data)\n\n# Print the first 30 numbers\nprint(numbers[:30])",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-01-27",
+      "raw_output": "import json\nimport random\n\n# Load the data from a JSON file\nwith open('data.json') as f:\n    data = json.load(f)\n\n# Choose a random date and time for each day of the month\nfor day in range(1, 31):\n    # Get the current date and time\n    from datetime import datetime\n    now = datetime.now()\n\n    # Add one hour to get the next day's date and time\n    tomorrow = now + timedelta(hours=1)\n\n    # Choose a random number of hours between 1 and 24\n    num_hours = random.randint(1, 24)\n\n    # Calculate the start and end times for the day\n    start_time = datetime.combine(tomorrow, now.hour)\n    end_time = datetime.combine(tomorrow, (now.hour + num_hours) % 24)\n\n    # Loop through each hour of the day and add a random number to the temperature\n    for hour in range(start_time.hour, end_time.hour):\n        # Get the current date and time\n        now = datetime.now()\n\n        # Add one hour to get the next day's date and time\n        tomorrow = now + timedelta(hours=1)\n\n        # Choose a random number of hours between 1 and 24\n        num_hours = random.randint(1, 24)\n\n        # Calculate the start and end times for the day\n        start_time = datetime.combine(tomorrow, now.hour)\n        end_time = datetime.combine(tomorrow, (now.hour + num_hours) % 24)\n\n        # Loop through each hour of the day and add a random number to the temperature\n        for hour in range(start_time.hour, end_time.hour):\n            # Get the current date and time\n            now = datetime.now()\n\n            # Add one hour to get the next day's date and time\n            tomorrow = now + timedelta(hours=1)\n\n            # Choose a random number of hours between 1 and 24\n            num_hours = random.randint(1, 24)\n\n            # Calculate the start and end times for the day\n            start_time = datetime.combine(tomorrow, now.hour)\n            end_time = datetime.combine(tomorrow, (now.hour + num_hours) % 24)\n\n            # Add a random number to the temperature\n            temp = data[day]['temperature'] + random.uniform(-1, 1) * 10\n\n            # Print the date and time in the format YYYY-MM-DD HH:MM\n            print(f\"{tomorrow.strftime('%Y-%m-%d %H:%M')}: {temp:.2f}\")\n\n    # Print a newline after each day's data\n    print()",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-01-30",
+      "raw_output": "import re\n\ndef extract_numbers(data):\n    pattern = r'\\d+\\.\\d{2}'\n    matches = re.findall(pattern, data)\n    return matches\n\nprint(extract_numbers(input))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-02-02",
+      "raw_output": "import json\nimport re\n\ndef extract_data(json_string):\n    data = json.loads(json_string)\n    result = []\n    for date, values in data.items():\n        # Extract the first 30 numbers from each value\n        nums = re.findall(r'\\d+\\.?\\d*', str(values))[:30]\n        result.append(';'.join(nums))\n    return ';'.join(result)\n\njson_string = \"\"\"{\n  \"system\": {\n    \"name\": \"System\",\n    \"version\": \"1.0\",\n    \"date\": \"2021-01-01\",\n    \"data\": [\n      {\n        \"date\": \"2021-01-02\",\n        \"values\": {\n          \"temperature\": 25.3,\n          \"humidity\": 45.7,\n          \"pressure\": 101.2\n        }\n      },\n      {\n        \"date\": \"2021-01-03\",\n        \"values\": {\n          \"temperature\": 26.1,\n          \"humidity\": 46.2,\n          \"pressure\": 101.5\n        }\n      },\n      {\n        \"date\": \"2021-01-04\",\n        \"values\": {\n          \"temperature\": 24.9,\n          \"humidity\": 44.8,\n          \"pressure\": 101.1\n        }\n      },\n      {\n        \"date\": \"2021-01-05\",\n        \"values\": {\n          \"temperature\": 25.6,\n          \"humidity\": 45.3,\n          \"pressure\": 101.4\n        }\n      },\n      {\n        \"date\": \"2021-01-06\",\n        \"values\": {\n          \"temperature\": 26.2,\n          \"humidity\": 46.1,\n          \"pressure\": 101.6\n        }\n      },\n      {\n        \"date\": \"2021-01-07\",\n        \"values\": {\n          \"temperature\": 24.8,\n          \"humidity\": 44.9,\n          \"pressure\": 101.3\n        }\n      },\n      {\n        \"date\": \"2021-01-08\",\n        \"values\": {\n          \"temperature\": 25.4,\n          \"humidity\": 45.2,\n          \"pressure\": 101.5\n        }\n      },\n      {\n        \"date\": \"2021-01-09\",\n        \"values\": {\n          \"temperature\": 25.1,\n          \"humidity\": 45.3,\n          \"pressure\": 101.7\n        }\n      },\n      {\n        \"date\": \"2021-01-10\",\n        \"values\": {\n          \"temperature\": 24.7,\n          \"humidity\": 44.8,\n          \"pressure\": 101.2\n        }\n      },\n      {\n        \"date\": \"2021-01-11\",\n        \"values\": {\n          \"temperature\": 25.5,\n          \"humidity\": 45.1,\n          \"pressure\": 101.4\n        }\n      },\n      {\n        \"date\": \"2021-01-12\",\n        \"values\": {\n          \"temperature\": 24.9,\n          \"humidity\": 44.6,\n          \"pressure\": 101.3\n        }\n      },\n      {\n        \"date\": \"2021-01-13\",\n        \"values\": {\n          \"temperature\": 25.2,\n          \"humidity\": 45.5,\n          \"pressure\": 101.6\n        }\n      },\n      {\n        \"date\": \"2021-01-14\",\n        \"values\": {\n          \"temperature\": 24.8,\n          \"humidity\": 44.7,\n          \"pressure\": 101.2\n        }\n      },\n      {\n        \"date\": \"2021-01-15\",\n        \"values\": {\n          \"temperature\": 25.1,\n          \"humidity\": 45.4,\n          \"pressure\": 101.5\n        }\n      },\n      {\n        \"date\": \"2021-01-16\",\n        \"values\": {\n          \"temperature\": 24.9,\n          \"humidity\": 44.8,\n          \"pressure\": 101.3\n        }\n      },\n      {\n        \"date\": \"2021-01-17\",\n        \"values\": {\n          \"temperature\": 25.3,\n          \"humidity\": 45.2,\n          \"pressure\": 101.6\n        }\n      },\n      {\n        \"date\": \"2021-01-18\",\n        \"values\": {\n          \"temperature\": 24.8,\n          \"humidity\": 44.9,\n          \"pressure\": 101.2\n        }\n      },\n      {\n        \"date\": \"2021-01-19\",\n        \"values\": {\n          \"temperature\": 25.",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-02-04",
+      "raw_output": "import json\nimport random\n\ndef generate_random_numbers(num_of_numbers):\n    # Generate a list of 30 random numbers between 0 and 1\n    random_numbers = [round(random.random(), 2) for _ in range(num_of_numbers)]\n    return random_numbers\n\ndef format_numbers(numbers):\n    # Format the numbers as a string with semicolon-separation and two decimal places\n    formatted_numbers = ';'.join([str(num) for num in numbers])\n    return formatted_numbers\n\n# Generate random numbers\nrandom_numbers = generate_random_numbers(30)\n\n# Format the numbers as a string with semicolon-separation and two decimal places\nformatted_numbers = format_numbers(random_numbers)\n\n# Write the formatted numbers to a JSON file\nwith open('output.json', 'w') as f:\n    json.dump({'numbers': formatted_numbers}, f)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-02-05",
+      "raw_output": "import re\n\ndef extract_data(json_string):\n    data = json.loads(json_string)\n    result = []\n    for record in data['system']:\n        date = record['date']\n        values = record['values']\n        for value in values:\n            match = re.search(r\"\\d+\\.\\d{2}\", str(value))\n            if match:\n                result.append((date, float(match.group())))\n    return result",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-02-06",
+      "raw_output": "import re\n\ndef extract_data(json_string):\n    data = json.loads(json_string)\n    result = []\n    for date, values in data.items():\n        for value in values:\n            match = re.search(r'\\d+\\.\\d{2}', str(value))\n            if match:\n                result.append(match.group())\n    return ';'.join(result)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-02-10",
+      "raw_output": "import json\nimport random\n\ndef generate_data(num_days):\n    data = {'date': [], 'open': [], 'high': [], 'low': [], 'close': []}\n\n    for i in range(num_days):\n        date = f\"202{random.randint(1, 12)}{random.randint(1, 28)} {random.randint(1, 31)}\"\n        data['date'].append(date)\n\n        open_price = random.uniform(100, 1000)\n        high_price = round(open_price * 1.05, 2)\n        low_price = round(open_price * 0.95, 2)\n\n        data['open'].append(round(open_price, 2))\n        data['high'].append(round(high_price, 2))\n        data['low'].append(round(low_price, 2))\n\n        close_price = round(random.uniform(low_price, high_price), 2)\n        data['close'].append(round(close_price, 2))\n\n    return json.dumps(data)\n\nnum_days = 30\nprint(generate_data(num_days))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-02-11",
+      "raw_output": "import random\nimport string\n\ndef generate_random_numbers(num_of_numbers):\n    # Generate a list of random numbers between 0 and 1\n    random_numbers = [random.random() for _ in range(num_of_numbers)]\n\n    # Convert the random numbers to strings with 2 decimal places\n    formatted_numbers = [f\"{num:.2f}\" for num in random_numbers]\n\n    return \";\".join(formatted_numbers)\n\n# Example usage\nnum_of_numbers = 30\nrandom_numbers = generate_random_numbers(num_of_numbers)\nprint(random_numbers)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-02-12",
+      "raw_output": "import json\nimport random\n\ndef generate_random_numbers(num_of_numbers):\n    return [round(random.uniform(0, 1), 2) for _ in range(num_of_numbers)]\n\njson_data = {'system': 'Your System', 'data': {}}\nfor i in range(30):\n    json_data['data'][f'Number {i+1}'] = generate_random_numbers(2)\n\nwith open('output.json', 'w') as f:\n    json.dump(json_data, f)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-02-13",
+      "raw_output": "import re\n\ndef extract_data(json_string):\n    data = json.loads(json_string)\n    result = []\n    for day in data['system']:\n        date, open, high, low, close, volume = re.findall('\\d+\\.\\d+', str(day))[:6]\n        result.append((date, float(open), float(high), float(low), float(close), int(volume)))\n    return result",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-02-17",
+      "raw_output": "import re\n\ndata = {'System': '{\"Date\":\"20210601\",\"Open\":328.8900146484375,\"High\":332.239990234375,\"Low\":324.0,\"Close\":314.0799865722656}\"}\n\nfor key, value in data['System'].items():\n    if re.match(r\"Date\", key):\n        continue\n    values = [float(v) for v in value.split(\",\")]\n    print(\"{:.2f};\".format(values[0]), end=\"\")\n    for i in range(1, len(values)):\n        if i % 2 == 0:\n            print(\"{:.2f}\".format(values[i]) + \";\", end=\"\")\n    print()",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-02-18",
+      "raw_output": "import re\n\ndef extract_numbers(data):\n    pattern = r'\\d+\\.\\d{2}'\n    numbers = []\n    for date, values in data.items():\n        for value in values.values():\n            match = re.findall(pattern, str(value))\n            if match:\n                numbers.extend(match)\n    return numbers",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-02-19",
+      "raw_output": "import re\n\ndef extract_data(json_string):\n    data = json_string['system']['data']\n    pattern = r\"\\d+\\.\\d{2}\"\n    matches = re.findall(pattern, str(data))\n    return matches",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-02-24",
+      "raw_output": "import json\nimport random\n\ndef generate_random_data(num_rows):\n    data = []\n    for i in range(num_rows):\n        date = f'202{random.randint(1, 12)}-{random.randint(1, 28):02d}-{random.randint(1, 31)}.{random.randint(0, 23):02d}'\n        open_price = round(random.uniform(300, 400), 2)\n        high_price = round(random.uniform(400, 500), 2)\n        low_price = round(random.uniform(300, 400), 2)\n        close_price = round(random.uniform(low_price, high_price), 2)\n        volume = random.randint(1000, 10000)\n        data.append({'date': date, 'open_price': open_price, 'high_price': high_price, 'low_price': low_price, 'close_price': close_price, 'volume': volume})\n    return json.dumps(data)\n\nprint(generate_random_data(30))",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-02-25",
+      "raw_output": "import random\nimport string\n\ndef generate_random_number(length):\n    return ''.join(random.choice(string.ascii_lowercase) for i in range(length))\n\ndef generate_random_date():\n    year = str(random.randint(2000, 2021))\n    month = str(random.randint(1, 12)).zfill(2)\n    day = str(random.randint(1, 28)).zfill(2)\n    return f\"{year}-{month}-{day}\"\n\ndef generate_random_number_list():\n    number_list = []\n    for i in range(30):\n        number_list.append(generate_random_number(6))\n    return number_list\n\ndef format_date_string(date_str):\n    date_parts = date_str.split('-')\n    year = int(date_parts[0])\n    month = int(date_parts[1])\n    day = int(date_parts[2])\n    return f\"{year}-{month:02d}-{day:02d}\"\n\ndef format_number_string(num):\n    return f\"{num:.2f}\"\n\nrandom_numbers = generate_random_number_list()\nrandom_dates = [format_date_string(generate_random_date()) for _ in range(len(random_numbers))]\n\noutput_data = {'Date': random_dates, 'Number': random_numbers}\nprint(output_data)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-02-26",
+      "raw_output": "import re\nimport json\n\ndata = '''{\n\"system_name\":\"System\",\n\"system_version\": \"1.0\",\n\"system_date\": \"2021-02-01\",\n\"system_time\": \"12:00:00\",\n\"system_cpu\": \"2.5 GHz\",\n\"system_memory\": \"8 GB\",\n\"system_storage\": \"256 GB\",\n\"system_disk\": \"500 GB\",\n\"system_ram\": \"16 GB\",\n\"system_network\": \"10 Mbps\",\n\"system_battery\": \"50%\",\n\"system_temp\": \"25°C\",\n\"system_humidity\": \"60%\",\n\"system_pressure\": \"1013 hPa\",\n\"system_location\": {\n    \"latitude\": \"40.7128\",\n    \"longitude\": \"-74.0060\"\n},\n\"system_status\": {\n    \"is_running\": true,\n    \"last_updated\": \"2021-02-01 12:00:00\"\n}\n}'''\n\ndata = json.loads(data)\n\nfor key in data[\"system_location\"]:\n    if re.match(\"latitude\", key):\n        print(f\"{key}: {data['system_location'][key]}\")\n    elif re.match(\"longitude\", key):\n        print(f\"{key}: {data['system_location'][key]}\")",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-02-27",
+      "raw_output": "import json\nimport random\n\n# Generate a list of 30 random numbers between 0 and 1\nnumbers = [random.random() for _ in range(30)]\n\n# Format the numbers as strings with 2 decimal places\nformatted_numbers = [f\"{num:.2f}\" for num in numbers]\n\n# Join the formatted numbers with semicolons\noutput = \";\".join(formatted_numbers)\n\n# Print the output\nprint(output)",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-03-02",
+      "raw_output": "import json\nimport re\n\ndef extract_data(json_string):\n    data = json.loads(json_string)\n    result = []\n    for day in data['system']:\n        date = day['date']\n        open_price = round(day['open'], 2)\n        high_price = round(day['high'], 2)\n        low_price = round(day['low'], 2)\n        close_price = round(day['close'], 2)\n        volume = day['volume']\n        result.append((date, open_price, high_price, low_price, close_price, volume))\n    return result\n\njson_string = '''{\n    \"system\": [\n        {\n            \"date\": \"2021-02-01\",\n            \"open\": 314.48,\n            \"high\": 315.99,\n            \"low\": 313.05,\n            \"close\": 314.45,\n            \"volume\": 987654\n        },\n        {\n            \"date\": \"2021-02-02\",\n            \"open\": 314.45,\n            \"high\": 315.99,\n            \"low\": 313.05,\n            \"close\": 314.35,\n            \"volume\": 987654\n        },\n        {\n            \"date\": \"2021-02-03\",\n            \"open\": 314.35,\n            \"high\": 315.99,\n            \"low\": 313.05,\n            \"close\": 314.45,\n            \"volume\": 987654\n        },\n        {\n            \"date\": \"2021-02-04\",\n            \"open\": 314.45,\n            \"high\": 315.99,\n            \"low\": 313.05,\n            \"close\": 314.35,\n            \"volume\": 987654\n        },\n        {\n            \"date\": \"2021-02-05\",\n            \"open\": 314.35,\n            \"high\": 315.99,\n            \"low\": 313.05,\n            \"close\": 314.45,\n            \"volume\": 987654\n        },\n        {\n            \"date\": \"2021-02-06\",\n            \"open\": 314.45,\n            \"high\": 315.99,\n            \"low\": 313.05,\n            \"close\": 314.35,\n            \"volume\": 987654\n        },\n        {\n            \"date\": \"2021-02-07\",\n            \"open\": 314.35,\n            \"high\": 315.99,\n            \"low\": 313.05,\n            \"close\": 314.45,\n            \"volume\": 987654\n        },\n        {\n            \"date\": \"2021-02-08\",\n            \"open\": 314.45,\n            \"high\": 315.99,\n            \"low\": 313.05,\n            \"close\": 314.35,\n            \"volume\": 987654\n        },\n        {\n            \"date\": \"2021-02-09\",\n            \"open\": 314.35,\n            \"high\": 315.99,\n            \"low\": 313.05,\n            \"close\": 314.45,\n            \"volume\": 987654\n        },\n        {\n            \"date\": \"2021-02-10\",\n            \"open\": 314.45,\n            \"high\": 315.99,\n            \"low\": 313.05,\n            \"close\": 314.35,\n            \"volume\": 987654\n        },\n        {\n            \"date\": \"2021-02-11\",\n            \"open\": 314.45,\n            \"high\": 315.99,\n            \"low\": 313.05,\n            \"close\": 314.35,\n            \"volume\": 987654\n        },\n        {\n            \"date\": \"2021-02-12\",\n            \"open\": 314.45,\n            \"high\": 315.99,\n            \"low\": 313.05,\n            \"close\": 314.35,\n            \"volume\": 987654\n        },\n        {\n            \"date\": \"2021-02-13\",\n            \"open\": 314.45,\n            \"high\": 315.99,\n            \"low\": 313.05,\n            \"close\": 314.35,\n            \"volume\": 987654\n        },\n        {\n            \"date\": \"2021-02-14\",\n            \"open\": 314.45,\n            \"high\": 315.99,",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-03-03",
+      "raw_output": "import json\nimport re\n\ndata = \"\"\"{\n    \"systems\": [\n        {\n            \"name\": \"System 1\",\n            \"date\": \"2021-01-02\",\n            \"open\": 314.5,\n            \"high\": 322.6,\n            \"low\": 314.4,\n            \"close\": 320.1,\n            \"volume\": 667490\n        },\n        {\n            \"name\": \"System 2\",\n            \"date\": \"2021-01-03\",\n            \"open\": 315.5,\n            \"high\": 322.6,\n            \"low\": 314.4,\n            \"close\": 320.1,\n            \"volume\": 667490\n        },\n        {\n            \"name\": \"System 3\",\n            \"date\": \"2021-01-04\",\n            \"open\": 315.5,\n            \"high\": 322.6,\n            \"low\": 314.4,\n            \"close\": 320.1,\n            \"volume\": 667490\n        }\n    ]\n}\"\"\"\n\ndata = json.loads(data)\n\nfor system in data[\"systems\"]:\n    date_str = re.findall(\"\\d{2}-\\d{2}\", system[\"date\"])[0]\n    open_price = round(float(re.findall(\"\\d+\\.\\d+\", system[\"open\"])[0], 2), 2)\n    high_price = round(float(re.findall(\"\\d+\\.\\d+\", system[\"high\"])[0], 2), 2)\n    low_price = round(float(re.findall(\"\\d+\\.\\d+\", system[\"low\"])[0], 2), 2)\n    close_price = round(float(re.findall(\"\\d+\\.\\d+\", system[\"close\"])[0], 2), 2)\n    volume = int(system[\"volume\"][:-1])\n\n    print(f\"{date_str}: {open_price}; {high_price}; {low_price}; {close_price}\")\n```",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    },
+    {
+      "date": "2026-03-04",
+      "raw_output": "import json\nimport re\n\njson_data = '{\"systems\": [{\"name\":\"System A\",\"date\":\"2021-01-01\",\"open\":314.9,\"high\":320.8,\"low\":315.5,\"close\":316.7,\"volume\":547430}, {\"name\":\"System B\",\"date\":\"2021-01-02\",\"open\":319.1,\"high\":322.0,\"low\":317.2,\"close\":318.3,\"volume\":912390}, {\"name\":\"System C\",\"date\":\"2021-01-03\",\"open\":315.5,\"high\":320.6,\"low\":314.7,\"close\":316.8,\"volume\":547430}]}'\n\ndata = json.loads(json_data)\n\nfor system in data[\"systems\"]:\n    for date, values in system.items():\n        if re.match(\"^2021-01\", date):\n            print(f\"{date}: {values['open']}, {values['high']}, {values['low']}\")",
+      "parse_failed": true,
+      "lookback": 30,
+      "horizon": 30,
+      "symbol": "V"
+    }
+  ]
+}

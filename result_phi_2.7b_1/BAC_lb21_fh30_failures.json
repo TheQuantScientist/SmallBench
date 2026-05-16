@@ -1,0 +1,16 @@
+{
+  "symbol": "BAC",
+  "lookback": 21,
+  "horizon": 30,
+  "total_failures": 1,
+  "failures": [
+    {
+      "date": "2026-01-09",
+      "raw_output": "import json\nimport random\n\ndef stock_forecast(data):\n    # Extract the data from the JSON object\n    symbol = data['symbol']\n    timeframe = data['timeframe']\n    lookback_days = data['lookback_days']\n    \n    # Generate a random number of days to forecast\n    num_days = random.randint(1, 30)\n    \n    # Create an empty list to store the forecasted prices\n    forecast = []\n    \n    # Loop through the next num_days and generate a random price for each day\n    for i in range(num_days):\n        open_price = round(random.uniform(data['open'], data['high']), 4)\n        high_price = round(random.uniform(data['low'], data['close']), 4)\n        low_price = round(random.uniform(data['low'], data['close']), 4)\n        volume = random.randint(0, data['volume'])\n        \n        # Append the prices to the forecast list\n        forecast.append((symbol, open_price, high_price, low_price, volume))\n    \n    return forecast\n\n# Example usage:\ndata = {'symbol': 'AAPL', 'timeframe': '1d', 'lookback_days': 5}\nforecast = stock_forecast(data)\nprint(forecast)\n```",
+      "parse_failed": true,
+      "lookback": 21,
+      "horizon": 30,
+      "symbol": "BAC"
+    }
+  ]
+}

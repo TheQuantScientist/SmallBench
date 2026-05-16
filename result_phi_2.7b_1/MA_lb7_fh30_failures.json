@@ -1,0 +1,32 @@
+{
+  "symbol": "MA",
+  "lookback": 7,
+  "horizon": 30,
+  "total_failures": 3,
+  "failures": [
+    {
+      "date": "2026-02-11",
+      "raw_output": "import json\nimport datetime\n\ndef get_ma(data):\n    symbol = data['symbol']\n    timeframe = data['timeframe']\n    lookback_days = data['lookback_days']\n\n    # Calculate the MA for each day\n    ma = []\n    for i in range(1, lookback_days+1):\n        date = datetime.datetime.strptime(data['data'][i-1]['Date'], '%Y-%m-%d')\n        open = data['data'][i-1]['open']\n        high = data['data'][i-1]['high']\n        low = data['data'][i-1]['low']\n        close = data['data'][i-1]['close']\n        volume = data['data'][i-1]['volume']\n\n        ma.append(round((open + high + low + close) / 4, 2))\n\n    return ma\n\n# Load the user's input data\nwith open('user_input.json') as f:\n    user_data = json.load(f)\n\n# Get the MA for each day and format it as a string with exactly 30 numbers and 2 decimal places\nma = get_ma(user_data)\noutput = ';'.join([str(round(x, 2)) for x in ma])\n\nprint(output)",
+      "parse_failed": true,
+      "lookback": 7,
+      "horizon": 30,
+      "symbol": "MA"
+    },
+    {
+      "date": "2026-02-20",
+      "raw_output": "import json\nimport random\n\ndef stock_forecast(data):\n    symbol = data['symbol']\n    timeframe = data['timeframe']\n    lookback_days = data['lookback_days']\n    data = []\n\n    for i in range(1, lookback_days + 1):\n        date = f\"202{i:02d}-01\"\n        open_price = random.randint(500, 1000)\n        high_price = open_price + random.randint(50, 100)\n        low_price = high_price - random.randint(50, 100)\n        close_price = low_price + random.randint(10, 20)\n        volume = random.randint(100000, 500000)\n\n        data.append({'Date': date, 'open': open_price, 'high': high_price, 'low': low_price, 'close': close_price, 'volume': volume})\n\n    return f\"{symbol} {timeframe}: \" + \";\".join([f\"{d['close']:.4f}\" for d in data])\n\ndata = {\"symbol\": \"MA\", \"timeframe\": \"1d\", \"lookback_days\": 7, \"data\": [{\"Date\": \"20260210\", \"open\": 535.35024576947, \"high\": 546.061597289284, \"low\": 534.082183820415, \"close\": 539.462951660156, \"volume\": 222270}, {\"Date\": \"20260211\", \"open\": 537.226782551071, \"high\": 539.7723956244012, \"low\": 532.195390101676, \"close\": 536.537963867187, \"volume\": 369100}, {\"Date\": \"20260212\", \"open\": 539.003692042, \"high\": 542.068432481, \"low\": 526.245649017438, \"close\": 526.555114746093, \"volume\": 346620}, {\"Date\": \"20260213\", \"open\": 539.152358724753, \"high\": 542.068432481, \"low\": 532.195390101676, \"close\": 527.470703125, \"volume\": 401770}, {\"Date\": \"20260214\", \"open\": 528.152358724753, \"high\": 533.073893658834, \"low\": 515.134751677, \"close\": 517.470703125, \"volume\": 346620}, {\"Date\": \"20260215\", \"open\": 521.593646719296, \"high\": 529.849478843103, \"low\": 518.508981805942, \"close\": 527.07421875, \"volume\": 35780}]}\nprint(stock_forecast(data))",
+      "parse_failed": true,
+      "lookback": 7,
+      "horizon": 30,
+      "symbol": "MA"
+    },
+    {
+      "date": "2026-02-27",
+      "raw_output": "import json\nimport random\n\ndef stock_forecast(data):\n    # get the symbol and timeframe from the data\n    symbol = data['symbol']\n    timeframe = data['timeframe']\n\n    # create a list of possible values for each variable (open, high, low, volume)\n    open_values = [random.randint(data['open'][0], data['open'][-1]) for _ in range(7)]\n    high_values = [random.randint(data['high'][0], data['high'][-1]) for _ in range(7)]\n    low_values = [random.randint(data['low'][0], data['low'][-1]) for _ in range(7)]\n    volume_values = [random.randint(data['volume'][0], data['volume'][-1]) for _ in range(7)]\n\n    # create a list of random numbers based on the values\n    forecast = []\n    for i in range(30):\n        open_value = round(random.choice(open_values), 2)\n        high_value = round(random.choice(high_values), 2)\n        low_value = round(random.choice(low_values), 2)\n        volume_value = random.randint(data['volume'][0], data['volume'][-1])\n        forecast.append([open_value, high_value, low_value, volume_value])\n\n    # return the forecast as a string with semicolon-separated numbers\n    return ';'.join(str(num) for num in forecast[0])\n\n# example input data\ndata = {'symbol': 'MA', 'timeframe': '1d', 'lookback_days': 7, 'data': [{'Date': '20260218', 'open': 521.593646, 'high': 529.849478, 'low': 518.508981, 'close': 527.074218, 'volume': 357590}, {'Date': '20260219', 'open': 523.909674, 'high': 525.626755, 'low': 515.164693, 'close': 519.367492, 'volume': 300940}, {'Date': '20260220', 'open': 521.823231, 'high': 526.595253, 'low': 517.700366, 'close': 525.506896, 'volume': 283850}, {'Date': '20260221', 'open': 519.357491, 'high': 521.823231, 'low': 515.164693, 'close': 527.074218, 'volume': 631230}, {'Date': '20260222', 'open': 519.577091, 'high': 521.823231, 'low': 489.159392, 'close': 497.145661, 'volume': 63130}, {'Date': '20260223', 'open': 521.957407, 'high': 522.952524, 'low': 488.567234, 'close': 508.166429, 'volume': 529290}, {'Date': '20260224', 'open': 492.892, 'high': 490.39315, 'low': 489.159392, 'close': 487.145661, 'volume': 53110}]}\n\n# call the function and print the output\nprint(stock_forecast(data))",
+      "parse_failed": true,
+      "lookback": 7,
+      "horizon": 30,
+      "symbol": "MA"
+    }
+  ]
+}
