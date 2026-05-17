@@ -1,13 +1,5 @@
 # Phân Tích Kết Quả Dự Đoán Giá Cổ Phiếu — So Sánh Model
 
-> **Ngày phân tích:** 2026-05-17
-> **Dataset:** 10 cổ phiếu tài chính (JPM, BAC, WFC, C, GS, MS, V, MA, AXP, BLK)
-> **Test period:** 2026-01-01 → 2026-04-17
-> **Forecast horizon:** 30 ngày
-> **Lookbacks:** 1, 7, 14, 21, 30 ngày
-
----
-
 ## 1. Tổng Quan Các Model Đã Test
 
 | Model | Size | Folder | Ghi chú |
@@ -210,14 +202,6 @@
 
 ## 6. Nguyên Nhân Parse Fail
 
-### 6.1 Gemma3 (run 1, 2)
-
-| Lookback | Nguyên nhân chính |
-|---|---|
-| lb=1-7 | Model output thiếu số (25-29 thay vì 30) |
-| lb=14-21 | Model thêm text thừa: stock symbol, giải thích |
-| lb=30 | Model output JSON/dict thay vì semicolon-separated numbers |
-
 ### 6.2 Gemma4 E2B
 
 | Lookback | Nguyên nhân chính |
@@ -236,42 +220,81 @@
 
 ---
 
-## 7. Khuyến Nghị
-
-### 7.1 Model
-
-| Ưu tiên | Model | Lý do |
-|---|---|---|
-| **1** | **Gemma3 4B (run 3.5 prompt)** | Tốt nhất hiện tại, 0% fail |
-| **2** | **qwen2.5:3b** | Follow instruction rất tốt, đáng thử |
-| **3** | **phi4-mini:3.8b** | Mạnh hơn phi:2.7b rất nhiều |
-| **4** | **llama3.2:3b** | Ổn định, community support tốt |
-| **KHÔNG** | phi:2.7b | Quá nhỏ, fail 34%, MAE tệ 20x |
-| **KHÔNG** | gemma4:e2b | Unstable, lb30 catastrophic |
-
-### 7.2 Prompt
-
-1. **Thêm few-shot examples** — input JSON thực tế → output đúng
-2. **Dùng JSON mode** của Ollama (`format` parameter) thay vì parse text
-3. **Retry mechanism** phải nhấn mạnh đúng lỗi, không chỉ đổi số decimals
-
-### 7.3 Input Data
-
-1. **Nén input** — truyền compact format thay vì JSON dài
-2. **Tính sẵn features** — MA, RSI, volatility thay vì raw OHLCV
-3. **Giảm lookback tối đa** — lb=14 cho MAE@30 tốt nhất với Gemma3
-
----
-
-## 8. Kết Luận
-
-**Gemma3 4B với prompt của run 3.5 là lựa chọn tốt nhất hiện tại.**
-- 0% parse fail, MAE@30 = 42.39, MAPE@30 = 11.88%
-- Ổn định qua mọi lookback
-- Cần tiếp tục dùng prompt này làm baseline
-
-**Cần cải thiện:**
-- Test thêm model mới (qwen2.5:3b, phi4-mini:3.8b)
+# **Cần cải thiện:**
+- Test thêm model mới (nemotron-mini 4b, phi4-mini:3.8b)
 - Implement JSON mode để loại bỏ hoàn toàn parse fail
 - Thêm few-shot examples vào prompt
 - Tính technical indicators làm input features
+
+### 1. Technical Indicators làm Input Features
+Vấn đề hiện tại: Input là raw OHLCV (Open, High, Low, Close, Volume) → model phải tự nhận diện pattern từ số liệu thô. Với model nhỏ (2-4B), việc này quá khó.
+Giải pháp: Tính sẵn các chỉ số kỹ thuật phổ biến:
+- MA5/MA10/MA20 (Moving Average): Xu hướng giá ngắn/trung hạn
+- RSI (Relative Strength Index): Overbought (>70) / Oversold (<30)
+- Volatility (Standard Deviation): Độ biến động
+- ATR (Average True Range): Biên độ dao động trung bình
+Lợi ích:
+- Input ngắn hơn (key ngắn: c, o, h, l, v, ma5, rsi...)
+- Model dễ hiểu pattern hơn (ví dụ: RSI > 70 → giá có thể giảm)
+- Giảm token count → ít bị overload ở lookback dài
+Đã implement: compute_features() trong main_improved.py
+
+### 2. Few-shot Examples trong Prompt
+Vấn đề hiện tại: Prompt chỉ có ví dụ trừu tượng (number;number;...) → model không thấy input JSON thực tế trông như thế nào và output đúng phải ra sao.
+Giải pháp: Thêm 1 ví dụ đầy đủ vào system prompt:
+Input: {"symbol":"BAC","lb":7,"data":[{"c":45.12,"o":45.00,...},...]}
+Output: 45.4200;45.5800;45.3100;...
+Lợi ích:
+- Model hiểu rõ format: "nhận JSON này → trả về dãy số kia"
+- Giảm hallucination (model không output Python dict hay code nữa)
+- Đặc biệt hiệu quả với model nhỏ (2-4B)
+Đã implement: FEWSHOT_EXAMPLE trong main_improved.py
+
+### 3. Compact Input Format
+Vấn đề hiện tại: Input JSON dài dòng:
+{"Date":"2025-12-01","open":45.1,"high":45.8,"low":44.9,"close":45.2,"volume":50000000}
+Với lookback=30 → ~300-500 tokens chỉ cho input.
+Giải pháp: Nén JSON:
+- Bỏ Date (không cần thiết cho prediction)
+- Dùng key ngắn: c, o, h, l, v thay vì close, open, high, low, volume
+- Làm tròn số: 2 decimals thay vì full precision
+Kết quả: Input ngắn hơn ~40-50% → model xử lý nhanh hơn, ít overload hơn.
+Đã implement: prepare_input_json() + compute_features() trong main_improved.py
+
+### 4. Smart Retry Mechanism
+Vấn đề hiện tại: Retry chỉ đổi "4 decimals → 2 decimals" → không giải quyết gốc vấn đề. Model fail vì:
+- Output Python dict: {'2021-12-31': {'open': 178.53, ...}}
+- Output thiếu số: 25 thay vì 30
+- Output JSON thay vì semicolon-separated
+Giải pháp: Retry message nhấn mạnh đúng lỗi:
+Attempt 1: "ERROR: DO NOT output Python dicts, JSON objects, or code. Output ONLY numbers separated by semicolons."
+Attempt 2: "CRITICAL: You MUST output EXACTLY 30 numbers. Output ONLY: number;number;... (30 numbers total). NOTHING else."
+Lợi ích: Retry giải quyết đúng nguyên nhân fail → tăng tỷ lệ thành công.
+Đã implement: RETRY_MESSAGES trong main_improved.py
+
+### 5. Ollama JSON Mode (CHƯA implement)
+Vấn đề hiện tại: Parse text thủ công bằng regex → fragile, dễ fail.
+Giải pháp: Dùng format parameter của Ollama để bắt buộc model output JSON đúng schema:
+```
+response = await client.chat(
+    model=MODEL_NAME,
+    messages=messages,
+    format={
+        "type": "object",
+        "properties": {
+            "predictions": {
+                "type": "array",
+                "items": {"type": "number"},
+                "minItems": horizon,
+                "maxItems": horizon
+            }
+        },
+        "required": ["predictions"]
+    }
+)
+```
+Lợi ích:
+- Ollama bắt buộc model output JSON đúng schema
+- Không cần regex parse nữa → 0% parse fail do format sai
+- Lấy trực tiếp response["predictions"]
+Chưa implement vì cần test xem model có support JSON mode không.
