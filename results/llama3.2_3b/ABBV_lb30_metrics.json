@@ -1,0 +1,12 @@
+{
+  "symbol": "ABBV",
+  "lookback": 30,
+  "results_per_step": [
+    {
+      "step": 30,
+      "mae": 17.1947,
+      "rmse": 21.2877,
+      "mape": 8.0007
+    }
+  ]
+}

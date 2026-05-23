@@ -31,3 +31,5 @@ for symbol in healthcare_stocks:
         print(f"Lỗi khi tải mã {symbol}: {e}")
 
 print("--- HOÀN THÀNH ---")
+
+my_healthcare_stocks = ["PFE", "JNJ", "UNH", "ABBV", "MRK", "LLY", "TMO", "DHR", "BMY", "AMGN"]

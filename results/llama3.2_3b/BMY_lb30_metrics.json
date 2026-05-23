@@ -1,0 +1,12 @@
+{
+  "symbol": "BMY",
+  "lookback": 30,
+  "results_per_step": [
+    {
+      "step": 30,
+      "mae": 7.8091,
+      "rmse": 11.3679,
+      "mape": 13.2515
+    }
+  ]
+}

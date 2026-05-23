@@ -1,0 +1,40 @@
+{
+  "symbol": "ABBV",
+  "lookback": 21,
+  "total_samples_attempted": 43,
+  "success_samples": 9,
+  "fail_samples": 34,
+  "success_rate": "20.93%",
+  "results_per_step": [
+    {
+      "step": 1,
+      "mae": 122.9014,
+      "rmse": 139.1531,
+      "mape": 55.4133
+    },
+    {
+      "step": 7,
+      "mae": 125.8149,
+      "rmse": 140.8579,
+      "mape": 55.9632
+    },
+    {
+      "step": 14,
+      "mae": 122.1879,
+      "rmse": 134.5697,
+      "mape": 55.8901
+    },
+    {
+      "step": 21,
+      "mae": 119.4697,
+      "rmse": 133.9878,
+      "mape": 54.2839
+    },
+    {
+      "step": 30,
+      "mae": 113.8382,
+      "rmse": 126.9093,
+      "mape": 53.1766
+    }
+  ]
+}

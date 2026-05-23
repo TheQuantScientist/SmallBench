@@ -1,0 +1,12 @@
+{
+  "symbol": "AMGN",
+  "lookback": 30,
+  "results_per_step": [
+    {
+      "step": 30,
+      "mae": 47.9338,
+      "rmse": 85.4423,
+      "mape": 13.204
+    }
+  ]
+}

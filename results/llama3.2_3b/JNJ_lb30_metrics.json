@@ -1,0 +1,12 @@
+{
+  "symbol": "JNJ",
+  "lookback": 30,
+  "results_per_step": [
+    {
+      "step": 30,
+      "mae": 20.9503,
+      "rmse": 25.8896,
+      "mape": 8.6277
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "symbol": "DHR",
+  "lookback": 30,
+  "results_per_step": [
+    {
+      "step": 30,
+      "mae": 32.547,
+      "rmse": 36.8306,
+      "mape": 16.666
+    }
+  ]
+}

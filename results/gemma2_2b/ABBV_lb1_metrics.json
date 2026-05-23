@@ -1,36 +1,40 @@
 {
   "symbol": "ABBV",
   "lookback": 1,
+  "total_samples_attempted": 43,
+  "success_samples": 41,
+  "fail_samples": 2,
+  "success_rate": "95.35%",
   "results_per_step": [
     {
       "step": 1,
-      "mae": 137.228,
-      "rmse": 137.8557,
-      "mape": 61.7764
+      "mae": 6.8019,
+      "rmse": 24.5091,
+      "mape": 3.05
     },
     {
       "step": 7,
-      "mae": 134.5326,
-      "rmse": 135.4821,
-      "mape": 60.5602
+      "mae": 9.1328,
+      "rmse": 23.7191,
+      "mape": 4.14
     },
     {
       "step": 14,
-      "mae": 129.9883,
-      "rmse": 131.6584,
-      "mape": 58.8225
+      "mae": 13.2129,
+      "rmse": 26.2263,
+      "mape": 6.0343
     },
     {
       "step": 21,
-      "mae": 126.4494,
-      "rmse": 129.0489,
-      "mape": 57.236
+      "mae": 15.8696,
+      "rmse": 27.3834,
+      "mape": 7.229
     },
     {
       "step": 30,
-      "mae": 120.5472,
-      "rmse": 123.9903,
-      "mape": 55.0705
+      "mae": 20.0589,
+      "rmse": 28.8987,
+      "mape": 9.4248
     }
   ]
 }

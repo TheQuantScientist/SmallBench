@@ -1,0 +1,12 @@
+{
+  "symbol": "LLY",
+  "lookback": 30,
+  "results_per_step": [
+    {
+      "step": 30,
+      "mae": 100064.7174,
+      "rmse": 519194.4688,
+      "mape": 11284.5153
+    }
+  ]
+}
