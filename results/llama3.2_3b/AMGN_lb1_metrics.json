@@ -1,36 +1,40 @@
 {
   "symbol": "AMGN",
   "lookback": 1,
+  "total_samples_attempted": 43,
+  "success_samples": 1,
+  "fail_samples": 42,
+  "success_rate": "2.33%",
   "results_per_step": [
     {
       "step": 1,
-      "mae": 6.3877,
-      "rmse": 8.3524,
-      "mape": 1.7603
+      "mae": 1.6188,
+      "rmse": 1.6188,
+      "mape": 0.464
     },
     {
       "step": 7,
-      "mae": 15.0939,
-      "rmse": 19.4467,
-      "mape": 4.117
+      "mae": 16.2105,
+      "rmse": 16.2105,
+      "mape": 4.4574
     },
     {
       "step": 14,
-      "mae": 18.8331,
-      "rmse": 24.0998,
-      "mape": 5.0497
+      "mae": 22.4044,
+      "rmse": 22.4044,
+      "mape": 6.0685
     },
     {
       "step": 21,
-      "mae": 23.4718,
-      "rmse": 29.4353,
-      "mape": 6.3191
+      "mae": 37.3783,
+      "rmse": 37.3783,
+      "mape": 9.7256
     },
     {
       "step": 30,
-      "mae": 30.411,
-      "rmse": 34.3248,
-      "mape": 8.3477
+      "mae": 28.4727,
+      "rmse": 28.4727,
+      "mape": 7.584
     }
   ]
 }

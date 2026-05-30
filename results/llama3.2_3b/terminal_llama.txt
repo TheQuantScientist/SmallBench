@@ -1,0 +1,841 @@
+ Đang chạy: ABBV | Lookback=1 | Tổng cộng: 43 ngày cần xử lý
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-23 | Lỗi 7/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 222.9603; 223.1884; 225.1111 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-07 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 219.5138; 219.8762; 221.0075 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-08 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 229.6517; 230.3511; 231.0514 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-10 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 221.4230; 219.9115; 220.3058 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-29 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 216.8708; 217.1511; 217.4324 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-03-02 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 230.1705; 229.9111; 231.3458 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-04 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 223.8033; 224.1011; 225.3985 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-16 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 213.2508; 213.2508; 213.2508 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-26 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 225.0529; 226.0323; 226.9921 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-17 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 229.5952; 230.3958; 231.1969 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-23 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 216.6151; 216.8763; 217.1389 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-12 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 216.5271; 217.0114; 216.5989 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-02 | Lỗi 2/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 224.8013; 225.0114; 225.2217 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-13 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 216.5038; 216.5019; 216.5001 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-20 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 212.5864; 212.5864; 212.5864 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-26 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 217.4559; 216.9113; 217.0071 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-30 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 218.6163; 219.2345; 220.4939 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-05 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 215.3236; 216.3458; 217.3691 ... ❌; ❌
+
+   [❌ FULL PARSE FAIL] Ngày 2026-02-11 | Lỗi toàn bộ chuỗi 30 ngày.
+      👉 AI viết sai hoàn toàn: '; \n; \n; \n; \n; \n; \n; \n; \n; \n; \n; \n; \n; \n; \n; \n; \n; \n; \n; \n; \n; \n; \n; \n; \n; \n; \n;'
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-18 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 230.9441; 231.1919; 231.4397 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-24 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 227.5919; 228.3431; 230.1454 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-05 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 225.6094; 225.6109; 225.6125 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-09 | Lỗi 8/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 220.5117; 221.0323; 221.5559 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-14 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 217.1863; 216.9931; 217.0319 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-21 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 212.2789; 211.9111; 213.1414 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-27 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 218.9535; 218.9535; 218.9535 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-02 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 221.1751; 221.1751; 221.1751 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-06 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 217.2179; 216.9903; 217.0111 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-12 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 219.0731; 219.0743; 219.0755 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-19 | Lỗi 1/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 226.8381; 227.1914; 228.0118 ... 290.0118; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-25 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 226.5604; 226.5604; 226.5604 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-03-04 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 231.9358; 232.2014; 232.4655 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-28 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 222.1079; 222.1093; 222.1121 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-06 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 216.6255; 217.0078; 217.4902 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-15 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 218.3079; 218.3079; 218.3079 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-22 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 214.3715; 215.0321; 215.6939 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-03 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 223.7835; 224.1519; 225.0462 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-09 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 221.5916; 221.5916; 221.5916 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-13 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 225.6282; 226.1558; 226.7431 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-20 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 222.5041; 223.0324; 224.0469 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-03-03 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 232.5323; 232.5428; 232.5559 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-27 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 222.8413; 223.1911; 224.1418 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-03-05 | Lỗi 10/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +21d (Missing), +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 233.9119; 236.4814; 229.0522 ... ❌; ❌
+
+✅ Đã lưu kết quả ngầm cho ABBV | Tỷ lệ Parse chuẩn: 0/43 (0.00%)
+
+🚀 Đang chạy: ABBV | Lookback=14 | Tổng cộng: 43 ngày cần xử lý
+   [OK] Ngày 2026-02-18 | Xử lý: 38.46s | Horizon: 221.4230; 218.6163; 221.1751 ... 231.8764; 232.8086
+   [OK] Ngày 2026-01-30 | Xử lý: 74.77s | Horizon: 216.8708; 217.4559; 214.1038 ... 215.4724; 217.2477
+   [OK] Ngày 2026-01-02 | Xử lý: 110.34s | Horizon: 220.6888; 219.2229; 223.1583 ... 223.7781; 220.0591
+   [OK] Ngày 2026-01-26 | Xử lý: 146.68s | Horizon: 216.6255; 220.3149; 229.6517 ... 212.5864; 219.2342
+   [OK] Ngày 2026-03-02 | Xử lý: 183.19s | Horizon: 221.4230; 220.6098; 219.0725 ... 222.8413; 230.1706
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-05 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 213.9111; 216.8765; 220.4444 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-21 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 226.5018; 220.3131; 216.9873 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-24 | Lỗi 2/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 221.5921; 219.9113; 222.3545 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-07 | Lỗi 1/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 226.8018; 225.3923; 224.9015 ... 252.2809; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-08 | Lỗi 1/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 226.8014; 225.3415; 224.9131 ... 275.7399; ❌
+
+   [OK] Ngày 2026-01-14 | Xử lý: 390.95s | Horizon: 224.8013; 225.0965; 226.2673 ... 216.6255; 217.6192
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-11 | Lỗi 1/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 216.6163; 218.9342; 222.2615 ... 219.3428; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-15 | Lỗi 1/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 226.8013; 225.5017; 224.9891 ... 251.2410; ❌
+
+   [OK] Ngày 2026-01-22 | Xử lý: 420.12s | Horizon: 224.8013; 225.6081; 216.6255 ... 217.1863; 218.3079
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-27 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 220.3149; 229.6517; 220.5117 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-02 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 216.8708; 219.1863; 215.4724 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-06 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 216.8765; 219.4598; 221.9113 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-12 | Lỗi 2/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 217.4758; 221.1791; 223.8033 ... ❌; ❌
+
+   [OK] Ngày 2026-02-19 | Xử lý: 415.02s | Horizon: 218.5965; 221.1751; 223.7835 ... 231.0000; 228.4567
+   [OK] Ngày 2026-02-25 | Xử lý: 416.02s | Horizon: 215.3236; 217.2179; 221.5916 ... 230.7457; 233.3144
+   [OK] Ngày 2026-02-27 | Xử lý: 416.48s | Horizon: 221.5916; 221.4230; 220.6098 ... 219.3106; 221.1885
+   [OK] Ngày 2026-03-05 | Xử lý: 416.76s | Horizon: 225.9289; 228.3418; 229.9554 ... 234.1597; 228.3456
+   [OK] Ngày 2026-01-12 | Xử lý: 416.64s | Horizon: 226.8019; 225.5014; 224.3053 ... 194.1543; 193.0000
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-16 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 226.8019; 225.3414; 224.9892 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-23 | Lỗi 10/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +21d (Missing), +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 225.6081; 216.6255; 220.3149 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-28 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 216.5289; 213.9113; 217.1918 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-03 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 217.4759; 219.9114; 221.9288 ... ❌; ❌
+
+   [OK] Ngày 2026-02-09 | Xử lý: 414.13s | Horizon: 212.9155; 219.9119; 222.3418 ... 223.0832; 216.9837
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-13 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 218.6163; 221.1751; 223.7835 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-20 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 221.5916; 219.0725; 225.6282 ... ❌; ❌
+
+   [OK] Ngày 2026-02-26 | Xử lý: 413.06s | Horizon: 217.9178; 221.5911; 220.6098 ... 224.6166; 220.1139
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-03-04 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 219.0321; 225.5134; 229.5913 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-06 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 226.8013; 225.3921; 224.9112 ... ❌; ❌
+
+   [OK] Ngày 2026-01-05 | Xử lý: 411.64s | Horizon: 226.8019; 224.9018; 223.1017 ... 141.3271; 137.4280
+   [OK] Ngày 2026-01-09 | Xử lý: 411.20s | Horizon: 226.8019; 225.3418; 224.9913 ... 226.7308; 225.4125
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-13 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 224.8013; 225.0965; 226.1787 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-20 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 224.8013; 226.0311; 227.1134 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-29 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 220.4999; 213.9114; 215.9645 ... ❌; ❌
+
+   [OK] Ngày 2026-02-04 | Xử lý: 415.68s | Horizon: 218.6163; 219.6577; 222.0875 ... 215.4724; 216.3154
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-10 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 214.9118; 219.4421; 223.0355 ... ❌; ❌
+
+   [OK] Ngày 2026-02-17 | Xử lý: 416.41s | Horizon: 222.5981; 219.8765; 223.1919 ... 223.6935; 221.4439
+   [OK] Ngày 2026-02-23 | Xử lý: 417.79s | Horizon: 223.7835; 219.8033; 215.3236 ... 219.0725; 225.6282
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-03-03 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 220.6098; 219.0725; 225.6282 ... ❌; ❌
+
+✅ Đã lưu kết quả ngầm cho ABBV | Tỷ lệ Parse chuẩn: 19/43 (44.19%)
+
+🚀 Đang chạy: ABBV | Lookback=21 | Tổng cộng: 43 ngày cần xử lý
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-08 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 219.9891; 220.3545; 222.1592 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-19 | Lỗi 10/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +21d (Missing), +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 218.6163; 221.1751; 223.7835 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-25 | Lỗi 8/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 218.6163; 221.1751; 223.7835 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-13 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 220.9111; 223.1919; 226.3425 ... ❌; ❌
+
+   [OK] Ngày 2026-02-06 | Xử lý: 234.17s | Horizon: 221.1751; 216.8708; 218.6163 ... 216.2063; 219.0626
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-03-05 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 223.9119; 225.0328; 226.9394 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-20 | Lỗi 1/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 220.5319; 219.9113; 223.4698 ... 250.4541; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-22 | Lỗi 8/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 223.1583; 224.2307; 225.0965 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-12 | Lỗi 10/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +21d (Missing), +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 217.6161; 221.1751; 218.9535 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-02 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 224.8013; 225.6081; 216.6255 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-27 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 221.9138; 218.3491; 220.9115 ... ❌; ❌
+
+   [OK] Ngày 2026-01-27 | Xử lý: 551.75s | Horizon: 226.0311; 224.8013; 225.6081 ... 220.3149; 229.6517
+   [OK] Ngày 2026-01-05 | Xử lý: 552.72s | Horizon: 226.0311; 224.8013; 224.8013 ... 227.4774; 227.4774
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-09 | Lỗi 10/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +21d (Missing), +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 219.9119; 221.3418; 223.1914 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-14 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 220.5019; 223.1918; 225.5555 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-23 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 224.8013; 225.0965; 226.1787 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-28 | Lỗi 8/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 226.8019; 223.5918; 221.5011 ... ❌; ❌
+
+   [OK] Ngày 2026-01-21 | Xử lý: 556.17s | Horizon: 226.8018; 219.3921; 223.9114 ... 221.6038; 227.3987
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-03 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 225.6081; 216.6255; 220.3149 ... ❌; ❌
+
+   [OK] Ngày 2026-02-09 | Xử lý: 557.01s | Horizon: 220.9114; 217.5319; 219.9565 ... 223.8033; 215.3236
+   [OK] Ngày 2026-02-13 | Xử lý: 561.88s | Horizon: 218.6163; 221.1751; 222.0875 ... 225.6282; 221.5817
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-20 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 214.6169; 219.3513; 223.1915 ... ❌; ❌
+
+   [OK] Ngày 2026-01-02 | Xử lý: 566.86s | Horizon: 220.8138; 225.3914; 227.1134 ... 221.3677; 221.2102
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-06 | Lỗi 8/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 224.8013; 225.0965; 226.1787 ... ❌; ❌
+
+   [OK] Ngày 2026-01-12 | Xử lý: 561.85s | Horizon: 226.0311; 225.0965; 226.1787 ... 221.4857; 217.1583
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-15 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 223.8013; 226.0311; 224.8013 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-26 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 224.8013; 226.0311; 225.0965 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-29 | Lỗi 10/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +21d (Missing), +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 226.0329; 219.9114; 215.3995 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-04 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 216.9155; 219.4118; 220.9111 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-10 | Lỗi 10/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +21d (Missing), +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 216.8708; 217.4559; 219.7344 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-17 | Lỗi 8/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 213.2508; 212.5864; 212.2789 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-23 | Lỗi 10/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +21d (Missing), +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 216.6169; 219.3921; 222.0875 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-03-03 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 221.5916; 225.6282; 229.5952 ... ❌; ❌
+
+   [OK] Ngày 2026-01-07 | Xử lý: 546.81s | Horizon: 222.8011; 225.3913; 226.9115 ... 229.6036; 228.1808
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-16 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 220.8019; 221.3051; 222.0593 ... ❌; ❌
+
+   [OK] Ngày 2026-01-30 | Xử lý: 545.97s | Horizon: 226.0329; 223.5151; 221.9114 ... 182.0478; 180.7481
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-05 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 220.5138; 221.1911; 222.0355 ... ❌; ❌
+
+   [OK] Ngày 2026-02-11 | Xử lý: 545.39s | Horizon: 216.8708; 218.6163; 221.1751 ... 218.0609; 219.0329
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-18 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 217.6169; 219.9115; 222.4573 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-24 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 217.4559; 218.9535; 222.0875 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-26 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 222.5911; 219.9114; 223.3465 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-03-02 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 218.6163; 221.1751; 223.7835 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-03-04 | Lỗi 9/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 223.7835; 222.8033; 215.3236 ... ❌; ❌
+
+✅ Đã lưu kết quả ngầm cho ABBV | Tỷ lệ Parse chuẩn: 11/43 (25.58%)
+
+🚀 Đang chạy: ABBV | Lookback=30 | Tổng cộng: 43 ngày cần xử lý
+   [OK] Ngày 2026-02-17 | Xử lý: 71.64s | Horizon: 221.1751; 218.6163; 216.8708 ... 217.2179; 221.5916
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-06 | Lỗi 1/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 226.8011; 225.3928; 224.9842 ... 251.0751; ❌
+
+   [OK] Ngày 2026-01-14 | Xử lý: 207.28s | Horizon: 226.0311; 224.8013; 225.0965 ... 219.1584; 221.8989
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-13 | Lỗi 1/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 226.8019; 225.3921; 224.9018 ... 242.0261; ❌
+
+   [OK] Ngày 2026-01-20 | Xử lý: 341.09s | Horizon: 226.0311; 224.8013; 225.0965 ... 226.2673; 227.1134
+   [OK] Ngày 2026-01-29 | Xử lý: 407.84s | Horizon: 226.0311; 223.1583; 224.2307 ... 224.9934; 221.7602
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-04 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 224.8013; 225.0965; 226.1787 ... ❌; ❌
+
+   [OK] Ngày 2026-01-07 | Xử lý: 542.48s | Horizon: 226.8013; 225.5018; 224.3051 ... 220.1996; 221.8800
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-23 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 220.9119; 219.8765; 216.9642 ... ❌; ❌
+
+   [OK] Ngày 2026-02-27 | Xử lý: 675.05s | Horizon: 218.6163; 221.1751; 223.7835 ... 218.6163; 221.7602
+   [OK] Ngày 2026-01-23 | Xử lý: 743.32s | Horizon: 226.0311; 225.0965; 227.1134 ... 225.6081; 216.6255
+   [OK] Ngày 2026-02-10 | Xử lý: 810.08s | Horizon: 226.8011; 219.0114; 220.9118 ... 250.2779; 251.3092
+   [OK] Ngày 2026-01-21 | Xử lý: 807.98s | Horizon: 226.8011; 225.3924; 224.9428 ... 170.6812; 167.3446
+   [OK] Ngày 2026-01-26 | Xử lý: 810.38s | Horizon: 226.0311; 224.8013; 225.0965 ... 213.2508; 212.5864
+   [OK] Ngày 2026-01-30 | Xử lý: 808.78s | Horizon: 226.8705; 219.3499; 221.3514 ... 250.7188; 251.7865
+   [OK] Ngày 2026-02-05 | Xử lý: 809.50s | Horizon: 224.8013; 226.0311; 225.0965 ... 223.8033; 215.3236
+   [OK] Ngày 2026-02-11 | Xử lý: 810.50s | Horizon: 222.8703; 219.9114; 217.8765 ... 170.9204; 169.4167
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-18 | Lỗi 2/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 221.1751; 218.6163; 216.8708 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-24 | Lỗi 1/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 216.8785; 219.3921; 221.9113 ... 257.4680; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-26 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 217.4559; 221.1751; 223.7835 ... ❌; ❌
+
+   [OK] Ngày 2026-03-04 | Xử lý: 807.73s | Horizon: 221.1751; 218.6163; 216.8708 ... 222.8413; 230.1705
+   [OK] Ngày 2026-03-05 | Xử lý: 807.92s | Horizon: 214.9119; 221.5098; 223.1914 ... 259.7593; 261.6601
+   [OK] Ngày 2026-01-09 | Xử lý: 807.66s | Horizon: 226.0311; 225.0965; 226.1787 ... 221.8989; 219.7148
+   [OK] Ngày 2026-01-15 | Xử lý: 809.69s | Horizon: 226.0311; 225.0965; 226.1787 ... 224.8013; 225.0473
+   [OK] Ngày 2026-01-22 | Xử lý: 807.62s | Horizon: 226.8019; 224.8914; 223.0111 ... 197.3269; 196.5177
+   [OK] Ngày 2026-01-27 | Xử lý: 806.11s | Horizon: 226.0311; 224.8013; 225.0965 ... 227.1134; 224.8013
+   [OK] Ngày 2026-02-02 | Xử lý: 806.94s | Horizon: 226.5319; 219.3414; 223.3513 ... 223.6713; 219.3432
+   [OK] Ngày 2026-02-06 | Xử lý: 807.78s | Horizon: 224.8013; 225.0965; 226.2673 ... 214.5005; 215.4724
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-12 | Lỗi 1/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 221.1751; 218.6163; 221.1751 ... 221.1751; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-19 | Lỗi 10/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +21d (Missing), +22d (Missing), +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 220.5138; 219.8763; 221.3924 ... ❌; ❌
+
+   [OK] Ngày 2026-02-25 | Xử lý: 803.40s | Horizon: 216.9119; 219.4215; 222.1911 ... 271.8376; 274.4941
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-03-03 | Lỗi 1/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 221.1751; 218.6163; 216.8708 ... 233.7210; ❌
+
+   [OK] Ngày 2026-01-05 | Xử lý: 807.30s | Horizon: 226.0329; 224.9114; 223.9015 ... 219.5555; 221.9119
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-02 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 226.8018; 225.5014; 223.9892 ... ❌; ❌
+
+   [OK] Ngày 2026-01-08 | Xử lý: 806.88s | Horizon: 226.8011; 225.9342; 227.0114 ... 223.6394; 225.6627
+   [OK] Ngày 2026-01-12 | Xử lý: 805.38s | Horizon: 226.0311; 225.0965; 226.1787 ... 229.6517; 220.5117
+   [OK] Ngày 2026-01-16 | Xử lý: 805.94s | Horizon: 226.0311; 225.0965; 226.1787 ... 226.1787; 226.1099
+   [OK] Ngày 2026-01-28 | Xử lý: 804.84s | Horizon: 226.0311; 223.1583; 220.5117 ... 224.9934; 221.6038
+   [OK] Ngày 2026-02-03 | Xử lý: 808.05s | Horizon: 226.0311; 224.8013; 225.0965 ... 224.8013; 217.1863
+   [OK] Ngày 2026-02-09 | Xử lý: 808.57s | Horizon: 226.5318; 219.9119; 222.3914 ... 252.5381; 253.6194
+   [OK] Ngày 2026-02-13 | Xử lý: 809.55s | Horizon: 220.8119; 221.3411; 222.0328 ... 254.0758; 255.5131
+   [OK] Ngày 2026-02-20 | Xử lý: 814.11s | Horizon: 220.9119; 219.9154; 223.0113 ... 251.3543; 252.6374
+   [OK] Ngày 2026-03-02 | Xử lý: 813.25s | Horizon: 221.1751; 222.0875; 216.8708 ... 230.1705; 220.6098
+✅ Đã lưu kết quả ngầm cho ABBV | Tỷ lệ Parse chuẩn: 32/43 (74.42%)
+
+🚀 Đang chạy: AMGN | Lookback=1 | Tổng cộng: 43 ngày cần xử lý
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-03-03 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 385.9900; 386.3900; 387.7900 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-25 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 382.9700; 382.9100; 382.8500 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-19 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 379.7300; 380.5800; 381.4500 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-07 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 327.8979; 327.8979; 327.8979 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-12 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 364.0574; 364.0574; 364.0574 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-20 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 328.1363; 327.9119; 329.1098 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-13 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 323.2998; 323.2998; 323.2998 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-30 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 340.5801; 341.1514; 342.0955 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-04 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 336.2600; 337.1100; 339.1500 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-10 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 373.2338; 373.2338; 373.2338 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-06 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 319.1110; 320.2340; 321.4590 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-03-05 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 379.2700; 379.4300; 378.9900 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-14 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 322.0683; 321.9111; 321.7538 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-23 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 344.6816; 344.6816; 344.6816 ... ❌; ❌
+
+   [OK] Ngày 2026-01-27 | Xử lý: 121.75s | Horizon: 347.2836; 346.9119; 346.5411 ... 347.0832; 346.9573
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-21 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 328.7222; 327.9897; 327.2573 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-02 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 339.5274; 339.5274; 339.5274 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-05 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 363.6800; 364.1200; 365.4500 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-11 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 362.1407; 362.1407; 362.1407 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-13 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 363.9300; 363.8500; 363.7800 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-20 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 375.5900; 375.6100; 375.6300 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-26 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 342.3776; 342.3776; 342.3776 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-09 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 327.8383; 327.8383; 327.8383 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-15 | Lỗi 8/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +23d (Missing), +24d (Missing), +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 326.7062; 326.7071; 326.7083 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-22 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 341.2355; 339.9114; 342.5097 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-28 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 348.9024; 349.1098; 349.3195 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-03 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 342.4198; 342.4393; 342.4597 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-06 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 365.4019; 365.4024; 365.4038 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-17 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 369.1900; 369.3800; 369.5700 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-23 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 374.7900; 374.8100; 375.0300 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-27 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 379.3300; 380.0100; 381.3400 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-26 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 384.5900; 384.5800; 384.5700 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-03-04 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 377.0000; 378.1400; 379.2900 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-05 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 325.3854; 325.3854; 325.3854 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-02 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 325.0576; 325.0576; 325.0576 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-08 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 339.2890; 339.2890; 339.2890 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-12 | Lỗi 4/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 323.8560; 324.3199; 325.0164 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-16 | Lỗi 3/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 327.7589; 329.1511; 331.4444 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-01-29 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 339.8650; 339.8650; 339.8650 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-09 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 381.6753; 381.6753; 381.6753 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-18 | Lỗi 5/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 373.5900; 373.8300; 373.9900 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-24 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 379.4200; 380.1500; 381.0300 ... ❌; ❌
+
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-03-02 | Lỗi 6/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +25d (Missing), +26d (Missing), +27d (Missing), +28d (Missing), +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 388.1900; 388.2100; 388.2300 ... ❌; ❌
+
+✅ Đã lưu kết quả ngầm cho AMGN | Tỷ lệ Parse chuẩn: 1/43 (2.33%)
+
+🚀 Đang chạy: AMGN | Lookback=14 | Tổng cộng: 43 ngày cần xử lý
+   [OK] Ngày 2026-01-02 | Xử lý: 40.80s | Horizon: 322.3519; 323.1918; 329.1094 ... 323.2049; 328.4814
+
+   [⚠️ PARTIAL FAIL] Ngày 2026-02-02 | Lỗi 2/30 ngày forecast
+      👉 Chi tiết lỗi tại mốc: +29d (Missing), +30d (Missing)
+      👉 Chuỗi nhận diện tổng quan: 323.8998; 341.2355; 344.6816 ... ❌; ❌

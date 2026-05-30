@@ -12,7 +12,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 # ────────────────────────────────────────────────
 #  CONFIG
 # ────────────────────────────────────────────────
-MODEL_NAME = "gemma2:2b"
+MODEL_NAME = "llama3.2:3b"
 BASE_DATA_DIR = Path(r"D:\forecast slm proj\data")
 HISTORY_DIR   = BASE_DATA_DIR / "history"
 TRUTH_DIR     = BASE_DATA_DIR / "ground_truth"
