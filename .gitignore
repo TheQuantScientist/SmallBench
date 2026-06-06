@@ -1,0 +1,4 @@
+/venv
+*:Zone.Identifier
+requirements.txt
+scrape_energy_stocks.py
