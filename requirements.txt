@@ -1,5 +1,6 @@
 numpy
 pandas
 scikit-learn
-ollama
+httpx
 matplotlib
+yfinance
