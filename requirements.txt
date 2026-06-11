@@ -4,3 +4,5 @@ scikit-learn
 httpx
 matplotlib
 yfinance
+beautifulsoup4
+requests

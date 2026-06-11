@@ -1,31 +1,38 @@
 """
-Crawl stock OHLCV data via yfinance.
+Crawl OHLCV:
+  - BeautifulSoup: kiểm tra mã + lấy tên công ty từ Yahoo Finance
+  - yfinance     : tải lịch sử giá (OHLCV)
 
-Date range: TEST_START_DATE → TEST_END_DATE (khớp main.py)
-  2026-01-01 → 2026-04-17
+Output: data/<sector>/<SYMBOL>_1d_full.csv  (Date,open,high,low,close,volume)
 
-Output: data/{sector}/{SYMBOL}_1d_full.csv
-Format: Date,open,high,low,close,volume
-
-Usage:
   python crawl_data.py
-  python crawl_data.py --sector tech
-  python crawl_data.py --symbol AAPL
+  python crawl_data.py --sector energy
+  python crawl_data.py --symbol XOM
 """
 
+from __future__ import annotations
+
 import argparse
+import time
 from pathlib import Path
 
 import pandas as pd
+import requests
 import yfinance as yf
+from bs4 import BeautifulSoup
 
-PROJECT_ROOT = Path(__file__).resolve().parent
-DATA_DIR = PROJECT_ROOT / "data"
+DATA_DIR = Path(__file__).parent / "data"
+START = "2025-05-30"
+END = "2026-04-17"
+YFINANCE_END = "2026-04-18"  # end exclusive → lấy đủ tới 17/04/2026
 
-TEST_START_DATE = "2025-05-30"
-TEST_END_DATE = "2026-04-17"
-# yfinance end date is exclusive → +1 day để lấy đủ 17/04/2026
-YFINANCE_END = "2026-04-18"
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    ),
+    "Accept-Language": "en-US,en;q=0.9",
+}
 
 SECTORS = {
     "tech": ["AAPL", "ADBE", "AVGO", "CRM", "CSCO", "GOOGL", "INTC", "MSFT", "NVDA", "ORCL"],
@@ -35,108 +42,91 @@ SECTORS = {
 }
 
 
-def fetch_symbol(symbol: str, start: str, end: str) -> pd.DataFrame:
-    stock = yf.Ticker(symbol)
-    df = stock.history(start=start, end=end, auto_adjust=False)
+def scrape_quote(symbol: str) -> str | None:
+    """BeautifulSoup: xác nhận mã tồn tại trên Yahoo, trả về tên công ty."""
+    url = f"https://finance.yahoo.com/quote/{symbol}"
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=15)
+        if resp.status_code != 200:
+            return None
+        soup = BeautifulSoup(resp.text, "html.parser")
 
+        h1 = soup.find("h1")
+        if h1 and h1.get_text(strip=True):
+            return h1.get_text(strip=True)
+
+        price = soup.find("fin-streamer", {"data-field": "regularMarketPrice"})
+        if price:
+            return symbol
+    except requests.RequestException:
+        return None
+    return None
+
+
+def download(symbol: str) -> pd.DataFrame | None:
+    name = scrape_quote(symbol)
+    if not name:
+        return None
+
+    df = yf.Ticker(symbol).history(start=START, end=YFINANCE_END, auto_adjust=False)
     if df.empty:
-        return pd.DataFrame()
+        return None
 
     df = df.reset_index()
     if "Date" in df.columns:
         df["Date"] = pd.to_datetime(df["Date"]).dt.tz_localize(None)
 
-    df = df.rename(
-        columns={
-            "Open": "open",
-            "High": "high",
-            "Low": "low",
-            "Close": "close",
-            "Volume": "volume",
-        }
-    )
+    df = df.rename(columns={
+        "Open": "open", "High": "high", "Low": "low",
+        "Close": "close", "Volume": "volume",
+    })
 
-    cols = ["Date", "open", "high", "low", "close", "volume"]
-    df = df[[c for c in cols if c in df.columns]].copy()
+    keep = ["Date", "open", "high", "low", "close", "volume"]
+    df = df[[c for c in keep if c in df.columns]].copy()
 
+    end_dt = pd.to_datetime(END)
+    df = df[(df["Date"] >= pd.to_datetime(START)) & (df["Date"] <= end_dt)]
+    df = df.dropna(subset=["close"]).sort_values("Date").reset_index(drop=True)
+
+    df["Date"] = df["Date"].dt.strftime("%Y-%m-%d")
     for col in ["open", "high", "low", "close"]:
-        df[col] = pd.to_numeric(df[col], errors="coerce").round(4)
-    df["volume"] = pd.to_numeric(df["volume"], errors="coerce").astype("Int64")
-
-    start_dt = pd.to_datetime(start)
-    end_dt = pd.to_datetime(TEST_END_DATE)
-    df = df[(df["Date"] >= start_dt) & (df["Date"] <= end_dt)]
-    df = df.dropna(subset=["Date", "close"]).sort_values("Date").reset_index(drop=True)
-
+        df[col] = df[col].round(3)
+    df["volume"] = df["volume"].astype("int64")
     return df
 
 
-def crawl_sector(sector: str, symbols: list[str], start: str, end: str) -> dict[str, int]:
-    out_dir = DATA_DIR / sector
-    out_dir.mkdir(parents=True, exist_ok=True)
-
-    saved = {}
-    for symbol in symbols:
-        print(f"  [{sector}] {symbol}...", end=" ", flush=True)
-        try:
-            df = fetch_symbol(symbol, start, end)
-            if df.empty:
-                print("SKIP (no data)")
-                saved[symbol] = 0
-                continue
-
-            path = out_dir / f"{symbol}_1d_full.csv"
-            df.to_csv(path, index=False, float_format="%.4f")
-            saved[symbol] = len(df)
-            print(f"OK ({len(df)} rows) → {path.name}")
-
-        except Exception as e:
-            print(f"ERROR: {e}")
-            saved[symbol] = 0
-
-    return saved
-
-
-def parse_args():
-    parser = argparse.ArgumentParser(description="Crawl stock data for SmallBench pipeline")
-    parser.add_argument("--sector", choices=list(SECTORS.keys()), default=None)
-    parser.add_argument("--symbol", default=None, help="e.g. AAPL")
-    return parser.parse_args()
-
-
 def main():
-    args = parse_args()
+    p = argparse.ArgumentParser()
+    p.add_argument("--sector", choices=SECTORS)
+    p.add_argument("--symbol")
+    args = p.parse_args()
 
-    sectors = {args.sector: SECTORS[args.sector]} if args.sector else SECTORS
-
-    print("=" * 60)
-    print("  SmallBench — Crawl Data")
-    print("=" * 60)
-    print(f"  Range: {TEST_START_DATE} → {TEST_END_DATE}")
-    print(f"  Output: {DATA_DIR}/{{sector}}/{{SYMBOL}}_1d_full.csv")
-    print("=" * 60)
-
-    total_ok = 0
-    total_rows = 0
-
-    for sector, symbols in sectors.items():
-        if args.symbol:
-            sym = args.symbol.upper()
-            if sym not in symbols:
+    pairs = []
+    for sector, symbols in SECTORS.items():
+        if args.sector and sector != args.sector:
+            continue
+        for sym in symbols:
+            if args.symbol and sym != args.symbol.upper():
                 continue
-            symbols = [sym]
+            pairs.append((sector, sym))
 
-        print(f"\n── Sector: {sector} ({len(symbols)} symbols) ──")
-        results = crawl_sector(sector, symbols, TEST_START_DATE, YFINANCE_END)
+    print(f"Crawl {len(pairs)} mã | {START} → {END}\n")
 
-        for sym, n in results.items():
-            if n > 0:
-                total_ok += 1
-                total_rows += n
+    for sector, sym in pairs:
+        out = DATA_DIR / sector
+        out.mkdir(parents=True, exist_ok=True)
+        path = out / f"{sym}_1d_full.csv"
 
-    print(f"\n{'=' * 60}")
-    print(f"  Done: {total_ok} files saved, {total_rows} total rows")
-    print(f"{'=' * 60}")
+        print(f"[{sector}] {sym}...", end=" ", flush=True)
+        time.sleep(0.5)  # tránh spam Yahoo khi dùng BeautifulSoup
+
+        df = download(sym)
+        if df is None:
+            print("skip")
+            continue
+
+        df.to_csv(path, index=False, float_format="%.3f")
+        print(f"ok ({len(df)} rows) → {path.name}")
 
 
 if __name__ == "__main__":
