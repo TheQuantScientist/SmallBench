@@ -6,3 +6,5 @@ matplotlib
 yfinance
 beautifulsoup4
 requests
+aiohttp
+python-dotenv

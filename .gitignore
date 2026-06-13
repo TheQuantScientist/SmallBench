@@ -5,3 +5,8 @@ venv/
 .venv/
 plots/
 results/
+example.py
+preview_prompt.py
+scrape_data.py
+/scratch
+
